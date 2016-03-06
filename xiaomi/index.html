@@ -1,0 +1,1002 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>小米</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+/*--------------头部开始-------------*/
+    .header{ height:36px; background:#fafafa; 
+	         border-bottom:1px solid #dfdfdf;}
+	.header_b{ width:930px; height:36px; 
+	           margin:0 auto;}
+	.tit_l{ padding-top:12px;}
+	.tit_l .xmw{ padding-left:0;}
+	.tit_l li{ float:left; height:12px; 
+	           padding-left:12px; padding-right:16px;
+	           border-right:1px solid #dfdfdf; clear:#8c8c8c;
+			   font-size:12px;}
+	.tit p{ float:right;}
+	#select{ border-right:none;}
+/*--------------头部结束-------------*/	
+
+/*--------------搜索部分开始-------------*/
+    .sousuo{ width:930px; height:110px;
+	         margin:0 auto;
+			 }
+	.bt_bj{ width:370px; height:110px; float:left;
+	        background:url(img/logo.png) no-repeat 0 25px;}
+	.bt_bk{ float:left;}		 
+	.bt_gwc{ background:url(img/naozhong.jpg) no-repeat;
+	         width:123px; height:16px; float:right;
+			 padding-left:21px;
+			 margin-top:23px; margin-bottom:16px;}		 
+	.sousuokuang{ float:left;}
+	.gouwuche{ width:75px; height:40px; position:relative; 
+	           background:url(img/gouwuche.png) no-repeat #ffdb3d 34px 13px; 
+			   line-height:40px; padding-left:51px; float:left; margin-left:10px;}
+	.tianjiasp{ position:absolute; left:-134px; background:#ffdb3d;
+	            width:260px; height:50px; display:none; text-align:center;}
+	.gouwuche:hover .tianjiasp{ display:block;}
+		
+/*--------------搜索部分结束-------------*/
+
+/*--------------导航部分开始-------------*/
+    .daohang{ width:930px; background:#404144;
+	          margin:0 auto;}
+	.daohang_u li{ float:left; color:#ffffff; font-size:16px;
+	               height:50px; line-height:50px; 
+				   padding-right:22px;}
+	.daohang_u .shangping{ width:226px; height:50px; 
+	                       background:#ff4a00;
+	                       font-size:20px; text-align:center; 
+				           line-height:50px; margin-right:11px;}
+/*--------------导航部分结束-------------*/	
+
+/*--------------主题商品部分开始-------------*/
+    .zhuti_sp{ width:930px; height:591px;
+	           margin:0 auto;}
+	.zhuti_lb{ width:246px; height:591px; 
+	           border:1px solid #dfdfdf;
+			   float:left;}
+	.zhuti_lb li{ width:246px; height:73px;
+	              position:relative; float:right; 
+	              border-bottom:1px solid #dfdfdf;}
+	.zhuti_lb .goumai_xbk{ border-bottom:none;}
+	.zhuti_lb p{ margin-left:20px;}
+	.goumai{ font-size:12px; color:#ff4a00; 
+	         padding-top:19px; padding-bottom:10px;}
+	.hongmi{ color:#6d6d6d;}
+	.zhuti_spt{ float:left;}
+    .zhuti_sp_xt{ height:171px;border-top:1px solid #dfdfdf;
+	              border-right:1px solid #dfdfdf;
+				  border-bottom:1px solid #dfdfdf;}
+	.zhuti_sp_xt img{ float:left;}
+	.zhuti_sp_xt .dianshi{ border-left:1px solid #dfdfdf;
+	                       border-right:1px solid #dfdfdf;}
+						   
+	.zhuti_sp_tt{ width:682px; height:420px;
+	              position:relative;}
+				  
+	.lbtn{ width:20px; height:30px; background:#000;
+	            position:absolute; left:20px; top:50%; 
+				border-radius:20%;
+				opacity:0.5;}
+	.rbtn{ width:20px; height:30px; background:#000;
+	             position:absolute; right:20px; top:50%;
+				 border-radius:20%;
+				 opacity:0.5;}					   
+						   
+	
+	.zhuti_sp_tt li{ display:none;}
+	.zhuti_sp_tt .show{ display:block;}					   
+	
+
+
+    .syj_lft{ width:238px; border-bottom:1px dotted #cbcbcb;
+	          height:115px; 
+			  background:#FFF;
+			  position:relative;}
+	.syj_lft_h1{ width:195px; height:43px; 
+	             font-size:16px; font-weight:bold; 
+				 line-height:43px; color:#ff6f9f;
+				 background:url(img/syj_1.png) no-repeat 22px 12px;
+				 padding-left:43px;}
+	.syj_chanping{ width:198px; height:72px;  margin-left:20px; 
+	               border-bottom:1px dotted #cbcbcb;
+				   position:relative;}
+	.chanp_qxbk{ border:none;}
+	.syj_chanping span{ padding-left:15px; 
+	                    padding-right:15px; color:#ff6699;}
+	.syj_chanping p{ padding-bottom:12px; line-height:100%;}
+	.syj_lft i{ width:2px; height:73px;                         
+	            background:#fff;
+	            position:absolute; left:-2px; top:0;}
+	#syj_dbk{ border-bottom:none;}
+
+
+	.active{ border-left:1px solid red;}
+	.zhuti_ycol{ position:absolute;
+	             left:246px; top:-1px;
+				 display:none;
+				 z-index:1;}					   
+	.zhuti_lb .zhuti_ycol li{ width:238px;
+	                          height:230px;
+							  border:1px solid #cbcbcb;}
+/*--------------主题商品部分结束-------------*/
+
+
+
+
+
+/*--------------小米明星单品部分开始-------------*/
+    .mingxingdp{ width:930px; height:60px; 
+	             margin:0 auto;}
+	.peijian{ float:left; font-size:18px; color:#333333;
+	          margin-top:26px;}
+	.peijian span{ font-size:12px; color:#836d6d;}
+	.dianjian{ float:right; margin-top:30px;}
+	.anniu_z{ float:left;}
+	.anniu_y{ float:right;}
+	.xiaomi_cp{ width:930px; height:308px; 
+	            border:1px solid #dfdfdf; margin:0 auto;}
+	.xiaomi_cp li{ width:309px; height:308px; text-align:center;
+	               border-right:1px solid #dfdfdf; float:left;}
+	.dianyuan{ font-size:14px; color:#000000; 
+	           margin-bottom:7px;
+	           width:309px;}
+	.dianyuancz{ font-size:12px; color:#8c8c8c;}
+	.xiaomi_cp .dianyuan_rbk{ border-right:none;}
+/*--------------小米明星单品部分结束-------------*/
+
+/*--------------新品上架左边部分开始-------------*/
+    .xinping{ width:930px; height:929px; margin:0 auto;
+	           border:1px solid #dfdfdf;}
+	.xinping_z{ width:619px; height:929px; float:left; 
+	            border-right:1px solid #dfdfdf;}
+	.xinping_z_s{ border-bottom:1px solid #dfdfdf;}
+	.xinping_wy{ width:309px; height:309px; float:left;
+	             border-bottom:1px solid #dfdfdf; position:relative;
+				 border-right:1px solid #dfdfdf; position:relative;}
+	.tongkuan{ width:100px; height:90px; position:absolute; left:190px; top:40px;
+	           text-align:center; font-size:30px; color:#fff; padding-top:10px; font-weight:bold;}
+	.toumingcen{ width:100px; height:100px; border:2px solid red;
+	             position:absolute; left:190px; top:40px; 
+				 background:#000; opacity:0.5; filter:alpah(opacity:50); border-radius:50%;}
+	.baoyou{ width:70px; height:20px; background:#f32f39; 
+	         text-align:center; line-height:20px; position:absolute; right:26px; top:0;}
+	.xinping_mc,.erji_mingcheng{ margin-left:30px; color:#000000;
+	             padding-top:33px;}
+	.weiyi_jiage,.erji_jiage{ margin-left:30px; padding-top:6px;}
+	.weiyi_jiage span{ font-size:12px; color:#8c8c8c;
+	                   text-decoration:line-through;}
+	.erji{ width:309px; height:154px;
+	       border-bottom:1px solid #dfdfdf;}
+	.erji_zfd{ float:left;}
+	.erji_tu{ float:right;}
+	.xinping_z_yz{ float:left;}
+	#xinping_wy_rfd{ border-right:none;}
+/*--------------新品上架左边部分结束-------------*/
+
+/*--------------新品上架右边部分开始-------------*/
+    .xinping_y{ float:left; position:relative; background:#fafafa;}
+	.xinpin_ys{ width:308px; height:380px;}
+	.xinping_youbian{ width:308px; }
+	.xinping_youbian li{ padding-left:30px; width:280px;
+	                     border-bottom:1px solid #dfdfdf;}
+	.xinping_yq{  float:left;}
+	.xinping_yqt{ height:126px; float:right;}
+	.tjmiaosha{ width:70px; height:20px; background:#f32f39;
+	            text-align:center; line-height:20px; color:#ffffff;
+				position:absolute; left:30px;}
+	.hongmi_3d{ font-size:19px; color:#333333; margin-top:34px;}
+	.hongmi_3d_jd{ margin:8px 0;}
+	.hongmi_3d_jd span{ color:#f32f39;}
+	.hongmi_3d_jd .jiage_xj{ color:#8c8c8c; text-decoration:line-through;}
+	.hongmi_miaosha_sj{ color:#6d6d6d;}
+	
+	.huafeichongzhi{ width:310px; height:279px; 
+	                 border-bottom:1px solid #dfdfdf;}
+	.huafeichongzhi h3{ font-size:17px; color:#333333;
+	                    margin-top:30px; margin-left:30px;}
+	.shifujiage{ color:#6d6d6d; margin-left:30px; margin-bottom:21px;}
+	.lijichongzhi{ width:248px; height:40px; background:#dcdee4;
+	               text-align:center; line-height:40px; color:#fdfdfd;
+				   margin-left:30px;}
+				   
+	.xingwengg h2{ font-size:17px; color:#333333; 
+	               margin-left:30px; margin-top:30px;}
+	.xingwengg_nr{ width:248px; margin:0 auto;}
+    .xingwengg_nr li{ width:231px; height:45px; line-height:45px; 
+	                  border-bottom:1px solid #dfdfdf; padding-left:17px;  
+	                  background:url(img/yuandianbjt.png) no-repeat 0 center;
+					  position:relative;}
+	.xingwengg .xingwengg_nr span{ position:absolute; top:0px; right:0;}
+	.xingwengg_nr .goujibuchang{ border-bottom:none;}
+	
+/*--------------新品上架右边部分结束-------------*/
+
+/*--------------热评产品部分开始-------------*/
+    .repingcp{ width:930px; height:410px;  
+	           border:1px solid #dfdfdf; 
+			   margin:0 auto;}
+	.repingcp_nr li{ width:309px; height:410px; float:left; 
+	                 border-right:1px solid #dfdfdf;}
+	.repingcp_nr img{ display:inline;}
+	.chanpin_ms{ width:275px; height:43px;
+	             background:#f3f3f3; color:#6d6d6d;
+				 margin-left:10px; padding-left:15px; 
+				 padding-top:13px; position:relative;}
+	.sanjiao{ width:11px; height:6px;
+	          position:absolute; left:143px; top:-6px;}
+	.hongmi_hougai{ margin-left:30px; padding-top:34px;}
+	.hongmi_pj{ margin-left:30px; padding-top:9px; padding-bottom:5px;}
+	.hongmi_jg{ margin-left:30px;}
+	#qingchu_rbk{ border-right:none;}
+/*--------------热评产品部分结束-------------*/
+
+/*--------------尾部上半部分开始-------------*/
+    .weibu{ height:532px; background:#fafafa; margin-top:66px;}
+	.weibu_shang{ width:930px; height:532px; 
+	              margin:0 auto;}
+	.weibu_sdh{ width:930px; height:156px; border-bottom:1px solid #dfdfdf;}
+	.wubu_zfd li{ width:186px; height:156px; text-align:center;
+	              font-size:16px; float:left;}
+/*--------------尾部上半部分结束-------------*/
+
+/*--------------尾部中间半部分开始-------------*/
+    .weibu_zhongjian{ width:930px; height:198px; 
+	                  border-bottom:1px solid #dfdfdf;}
+	.weibu_zj_nr{ width:154px; height:118px; 
+	              border-right:1px solid #dfdfdf; 
+				  float:left; margin-top:40px;}
+	.weibu_zj_nr dt{ font-size:17px; color:#333333; 
+	                 padding-bottom:18px;  
+	                 margin-left:20px;}
+	.weibu_zj_nr dd{ padding-left:20px; color:#6d6d6d; 
+	                 line-height:27px;}
+	.weibu_zj_nr_kfdh{ width:155px; height:118px; padding-top:40px; text-align:center; float:left;}
+	.weibu_zj_nr_kefu{ font-size:19px; font-weight:bold;}
+	.weibu_zj_nr_shijian{ color:#6d6d6d; margin-top:13px; 
+	                      margin-bottom:9px;}
+	.weibu_zj_nr_huafei{ color:#6d6d6d;}
+	.weibu_zj_nr_tupian{padding:19px;}
+/*--------------尾部中间半部分结束-------------*/
+
+/*--------------尾部底部部分开始-------------*/
+    .wubu_dibu_z{ margin-top:39px; float:left;}
+	.wubu_dibu_y{ float:right;}
+    .wubu_dibu_z p{ color:#333333; line-height:18px;}
+/*--------------尾部底部部分结束-------------*/
+		 
+</style>
+
+
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+
+  window.onload=function(){
+    var oList=document.getElementById('btn')
+	var aLi=oList.children;
+	for(var i=0; i<aLi.length;i++){
+		aLi[i].onmouseover=function(){
+			this.className='active';
+			var Ol=this.getElementsByTagName('ol')[0];
+			Ol.style.display='block';
+		};
+		aLi[i].onmouseout=function(){
+			this.className='';
+			var Ol=this.getElementsByTagName('ol')[0];
+			Ol.style.display='none';
+		};
+	};
+     
+	 
+    var oBox=document.getElementById('box');
+		var aBtn=oBox.getElementsByTagName('a');	
+		var aLi=oBox.getElementsByTagName('li');
+		var iNow=0;
+		
+		aBtn[1].onclick=function(){
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].className='';
+			}
+			iNow++;
+			if(iNow==4){
+				iNow=0;
+			}
+			aLi[iNow].className='show';
+		};
+		
+		aBtn[0].onclick=function(){
+			for(var i=0;i<aLi.length;i++){
+				aLi[i].className='';
+			}
+			iNow--;
+			if(iNow==-1){
+				iNow=3;
+			}
+			aLi[iNow].className='show';
+		};
+	
+  };
+  
+  
+  
+</script>
+
+</head>
+
+<body style="height:2000px;">
+<!---------头部开始---------->
+    <div class="header clearfix">
+        <div class="header_b">
+            <div class="tit clearfix">
+                <ul class="tit_l">
+                    <li class="xmw">小米网</li>
+                    <li>MIUI</li>
+                    <li>米聊</li>
+                    <li>游戏</li>
+                    <li>多看阅读</li>
+                    <li>云服务</li>
+                    <li>小米网移动版</li>
+                    <li id="select">Select region</li>
+                </ul>
+                <p>注册 | 登录</p>
+            </div>
+        </div>
+    </div>
+<!---------头部结束---------->
+
+<!---------搜索栏开始----------> 
+    <div class="sousuo clearfix">
+        <h1 class="bt_bj"></h1>     
+        <div class="bt_bk clearfix">
+            <div class="bt_gwc">
+                11月18日预约开放
+            </div>
+            <div class="dht_r clearfix">
+                <div class="sousuokuang">
+                    <img src="img/sousuokuang.jpg" />
+                </div>
+                <div class="gouwuche">
+                    购物车
+                    <div class="tianjiasp">抱歉！！您还没添加商品</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------搜索栏结束---------->
+
+<!---------导航开始---------->
+    <div class="daohang">
+        <ul class="daohang_u clearfix">
+            <li class="shangping">全部商品分类</li>
+            <li>首页</li>
+            <li>小米手机</li>
+            <li>红米</li>
+            <li>小米平板</li>
+            <li>小米电视</li>
+            <li>盒子</li>
+            <li>路由器</li>
+            <li>合约机</li>
+            <li>服务</li>
+            <li>社区</li>
+        </ul>
+    </div>
+<!---------导航结束---------->
+
+<!---------主题商品分类部分---------->
+    <div class="zhuti_sp clearfix">
+        <ul class="zhuti_lb clearfix" id="btn">
+            <li class="active">
+                <p class="goumai">购买手机</p>
+                <p class="hongmi">小米4 小米3 红米 红米Note</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+             <li>
+                <p class="goumai">购买电视与平板</p>
+                <p class="hongmi">小米电视 小米盒子 小米平板</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+             <li>
+                <p class="goumai">后盖与个性化配件</p>
+                <p class="hongmi">米键 后盖 贴纸 手机支架</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                               <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+             <li>
+                <p class="goumai">保护套与贴膜</p>
+                <p class="hongmi">保护套/保护膜 贴膜 防尘塞</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                        </div>
+                    </li> 
+                </ol>
+            </li>
+             <li>
+                <p class="goumai">移动电源与电池</p>
+                <p class="hongmi">小米移动电源 电池 充电器</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                               <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+             <li>
+                <p class="goumai">路由器与智能家庭</p>
+                <p class="hongmi">小米路由器 随身wifi 智能家庭</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>耳机<span>数据线</span>随声wifi</p>
+                                <p>手机壳<span>无线路由器</span>蓝牙耳机</p>
+                                <p>红米6<span>红米noto</span>小米3</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+             <li>
+                <p class="goumai">耳机与音响</p>
+                <p class="hongmi">小米活塞耳机 更多耳机 音响</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                            </div>
+                            <i></i>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+             <li class="goumai_xbk">
+                <p class="goumai">小米生活方式</p>
+                <p class="hongmi">小米手环 服装 血压计 米兔</p>
+                <ol class="zhuti_ycol">
+                    <li>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米明星产品</h1>
+                            <div class="syj_chanping">
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                            </div>
+                        </div>
+                        <div class="syj_lft">
+                            <h1 class="syj_lft_h1">小米热销产品</h1>
+                            <div class="syj_chanping chanp_qxbk">
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                                <p>冬季新品<span>毛衣</span>活力运动鞋</p>
+                            </div>
+                        </div>
+                    </li>  
+                </ol>
+            </li>
+        </ul>
+
+        <div class="zhuti_spt">
+            <div class="zhuti_sp_tt" id="box">
+                <a href="javascript:;" class="lbtn"></a>
+                <ul>
+                    <li class="show"><img src="img/1105wxhd-s.jpg" /></li>
+                    <li><img src="img/1111.jpg" /></li>
+                    <li><img src="img/22.jpg" /></li>
+                    <li><img src="img/33.jpg" /></li>
+					<li><img src="img/44.jpg" /></li>
+                </ul>
+                <a href="javascript:;" class="rbtn"></a>
+            </div>
+            <div class="zhuti_sp_xt clearfix">
+                <img src="img/hongmi.jpg" />
+                <img src="img/dianshi.jpg" class="dianshi" />
+                <img src="img/xiaomi3.jpg" />
+            </div>
+        </div>
+    </div>
+<!---------主题商品分类结束---------->
+
+
+<!---------小米明显星品部分开始---------->
+    <div class="mingxingdp clearfix">
+        <p class="peijian">
+            小米明显单品 
+            <span>
+                根据机型选配件
+            </span>
+        </p>
+        <p class="dianjian clearfix">
+            <img src="img/anniuzuo.png" class="anniu_z" />
+            <img src="img/anniuyou.png" class="anniu_y" />
+        </p>
+    </div>
+    <div class="xiaomi_cp">
+        <ul class="clearfix">
+            <li>
+                <img src="img/T15TVvBXxT1RXrhCrK.jpg" />
+                <p class="dianyuan">10400毫安小米移动电源</p>
+                <p class="dianyuancz">全铝金属外壳,LG/三星等优质电芯</p>
+            </li>
+            <li>
+                <img src="img/xiaomiluyouqi.jpg" />
+                <p class="dianyuan">10400毫安小米移动电源</p>
+                <p class="dianyuancz">全铝金属外壳,LG/三星等优质电芯</p>
+            </li>
+            <li class="dianyuan_rbk">
+                <img src="img/xiaomishouji.jpg" />
+                <p class="dianyuan">10400毫安小米移动电源</p>
+                <p class="dianyuancz">全铝金属外壳,LG/三星等优质电芯</p>
+            </li>
+        </ul>
+    </div>
+<!---------小米明显星品部分结束---------->
+
+<!---------新品上架标题部分开始---------->
+    <div class="mingxingdp clearfix">
+        <p class="peijian">
+            新品上架   
+        </p>
+        <p class="dianjian clearfix">
+            更多
+        </p>
+    </div>
+<!---------新品上架标题部分结束---------->
+
+       <!--新品上架部分开始-->
+    <div class="xinping clearfix">
+<!---------新品上架左边部分开始---------->
+        <div class="xinping_z">
+           <div class="xinping_z_s">
+               <img src="img/xueyaji.jpg" />
+           </div>
+           <div class="xinping_z_z clearfix">
+               <div class="xinping_wy">
+                   <p class="baoyou">包邮</p>
+                   <p class="xinping_mc">
+                       大人物米兔圆领套头卫衣！
+                   </p>
+                   <p class="weiyi_jiage">
+                       99元 
+                       <span>
+                           129元
+                       </span>
+                   </p>
+                   <p class="toumingcen"></p>
+                   <p class="tongkuan">宝哥<br />专款</p>                  
+                   <p><img src="img/weiyi.jpg" /></p> 
+               </div>
+               <div class="xinping_z_y clearfix">
+                   <div class="xinping_z_yz clearfix">
+                       <div class="erji clearfix">
+                           <div class="erji_zfd">
+                               <p class="erji_mingcheng">运动蓝牙耳机</p>
+                               <p class="erji_jiage">129元</p>
+                           </div>
+                           <p class="erji_tu"><img src="img/erji.jpg" /></p>
+                       </div>
+                       <div class="erji clearfix">
+                           <div class="erji_zfd">
+                               <p class="erji_mingcheng">运动蓝牙耳机</p>
+                               <p class="erji_jiage">129元</p>
+                           </div>
+                           <p class="erji_tu"><img src="img/jingtou.jpg" /></p>
+                       </div>
+                   </div> 
+               </div>
+           </div>
+           <div class="xinping_z_x clearfix">
+               <div class="xinping_wy">
+                   
+                   <p class="xinping_mc">
+                       大人物米兔圆领套头卫衣
+                   </p>
+                   <p class="weiyi_jiage">
+                       99元 
+                       <span>
+                           129元
+                       </span>
+                   </p>
+                   <p><img src="img/yxerji.jpg" /></p> 
+               </div>
+               <div class="xinping_wy" id="xinping_wy_rfd">
+                   <p class="xinping_mc">
+                       大人物米兔圆领套头卫衣
+                   </p>
+                   <p class="weiyi_jiage">
+                       99元 
+                       <span>
+                           129元
+                       </span>
+                   </p>
+                   <p><img src="img/shoujike.jpg" /></p> 
+               </div>
+           </div>
+        </div>
+<!---------新品上架左边部分结束---------->
+
+<!---------新品上架右边部分结束---------->
+        <div class="xinping_y">
+            <div class="xinpin_ys">
+                <div class="xinpin_zfd">
+                    <ul class="xinping_youbian">
+                        <li class="clearfix">
+                            <div class="xinping_yq">
+                                <p class="tjmiaosha">特价秒杀</p>
+                                <h3 class="hongmi_3d">红米3D月球系列</h3>
+                                <p class="hongmi_3d_jd">
+                                    <span>29元</span> 
+                                    <span class="jiage_xj">39元</span>
+                                </p>
+                                <p hongmi_miaosha_sj>上午十点开始秒杀</p>
+                            </div>
+                            <div class="xinping_yqt">
+                                <img src="img/xiaomiyueqiu.jpg" />
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="xinping_yq">
+                                <p class="tjmiaosha">特价秒杀</p>
+                                <h3 class="hongmi_3d">红米3D月球系列</h3>
+                                <p class="hongmi_3d_jd">
+                                    <span>29元</span> 
+                                    <span class="jiage_xj">39元</span>
+                                </p>
+                                <p hongmi_miaosha_sj>上午十点开始秒杀</p>
+                            </div>
+                            <div class="xinping_yqt">
+                                <img src="img/shoujipeijian.jpg" />
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="xinping_yq">
+                                <p class="tjmiaosha">特价秒杀</p>
+                                <h3 class="hongmi_3d">红米3D月球系列</h3>
+                                <p class="hongmi_3d_jd">
+                                    <span>29元</span> 
+                                    <span class="jiage_xj">39元</span>
+                                </p>
+                                <p hongmi_miaosha_sj>上午十点开始秒杀</p>
+                            </div>
+                            <div class="xinping_yqt">
+                                <img src="img/xiaomiwanju.jpg" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="huafeichongzhi">
+                <h3>话费充值</h3>
+                <p>
+                    <img src="img/shoujihaomak.jpg" />
+                </p>
+                <p>
+                    <img src="img/jiagek.jpg" />
+                </p>
+                <p class="shifujiage">实付价格:98.4元起</p>
+                <p class="lijichongzhi">立即充值</p>
+            </div>
+            <div class="xingwengg">
+                <h2>新闻公告</h2>
+                <ul class="xingwengg_nr">
+                    <li>
+                        企业用户采购频道
+                        <span>&gt;</span>
+                    </li>
+                    <li>
+                        小米手机防伪查询
+                        <span>&gt;</span>
+                    </li>
+                    <li>
+                        小米手机官方版
+                        <span>&gt;</span>
+                    </li>
+                    <li class="goujibuchang">
+                        小米3购机用户补偿
+                        <span>&gt;</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+<!---------新品上架右边部分结束---------->
+    </div>
+       <!--新品上架部分结束-->
+    
+<!---------热评产品部分结束----------> 
+    <div class="mingxingdp clearfix">
+        <p class="peijian">
+            热评产品   
+        </p>
+    </div>
+    <div class="repingcp">
+         <ul class="repingcp_nr clearfix">
+             <li>
+                 <p class="hongmi_hougai">红米色彩主题后盖</p>
+                 <p class="hongmi_pj">
+                     <img src="img/wujiaoxing.jpg" /> | 1231人好评
+                 </p>
+                 <p class="hongmi_jg">39元</p>
+                 <p>
+                     <img src="img/xiaomike.jpg" />
+                 </p>
+                 <p class="sanjiaodw">
+                     <div class="chanpin_ms">
+                         <p class="sanjiao"><img src="img/sanjiao.png" /></p>
+                         <p>后盖团非常漂亮,不愧是官方产品,和机型严<br />丝合缝很赞！</p>
+                     </div>
+                 </p>   
+             </li>
+             <li>
+                 <p class="hongmi_hougai">小米飞行器！直飞月球</p>
+                 <p class="hongmi_pj">
+                     <img src="img/wujiaoxing.jpg" /> | 1231人好评
+                 </p>
+                 <p class="hongmi_jg">39元</p>
+                 <p>
+                     <img src="img/feixingqiu.jpg" />
+                 </p>
+                 <p class="sanjiaodw">
+                     <div class="chanpin_ms">
+                         <p class="sanjiao"><img src="img/sanjiao.png" /></p>
+                         <p>后盖团非常漂亮,不愧是官方产品,和机型严<br />丝合缝很赞！</p>
+                     </div>
+                 </p>   
+             </li>
+             <li id="qingchu_rbk">
+                 <p class="hongmi_hougai">小米啥时候出钱包了</p>
+                 <p class="hongmi_pj">
+                     <img src="img/wujiaoxing.jpg" /> | 1231人好评
+                 </p>
+                 <p class="hongmi_jg">39元</p>
+                 <p>
+                     <img src="img/qianbao.jpg" />
+                 </p>          
+                 <p class="sanjiaodw">
+                     <div class="chanpin_ms">
+                         <p class="sanjiao"><img src="img/sanjiao.png" /></p>
+                         <p>后盖团非常漂亮,不愧是官方产品,和机型严<br />丝合缝很赞！</p>
+                     </div>
+                 </p>   
+             </li>
+         </ul>
+    </div>
+<!---------热评产品部分结束----------> 
+
+       <!--尾部开始-->
+    <div class="weibu">
+<!---------尾部上半部分开始---------->  
+        <div class="weibu_shang">
+            <div class="weibu_sdh">
+                <ul class="wubu_zfd clearfix">
+                    <li>
+                        <p>
+                            <img src="img/kuaixiu.jpg" />
+                        </p>
+                        <p>1小时快修服务</p>
+                    </li>
+                    <li>
+                        <p>
+                            <img src="img/tuihuo.jpg" />
+                        </p>
+                        <p>7天无理由退货</p>
+                    </li>
+                    <li>
+                        <p>
+                            <img src="img/huanhuo.jpg" />
+                        </p>
+                        <p>15天免费换货</p>
+                    </li>
+                    <li>
+                        <p>
+                            <img src="img/youji.jpg" />
+                        </p>
+                        <p>满150元包邮</p>
+                    </li>
+                    <li>
+                        <p>
+                            <img src="img/wangdian.jpg" />
+                        </p>
+                        <p>520余家售后网店</p>
+                    </li>
+                </ul>
+            </div>
+<!---------尾部上半部分结束---------->
+
+<!---------尾部中间部分开始---------->
+            <div class="weibu_zhongjian clearfix">
+                <dl class="weibu_zj_nr">
+                    <dt>帮助中心</dt>
+                    <dd>购物指南</dd>
+                    <dd>支付方式</dd>
+                    <dd>配送方式</dd>
+                </dl>
+                <dl class="weibu_zj_nr">
+                    <dt>服务支持</dt>
+                    <dd>售后政策</dd>
+                    <dd>自助服务</dd>
+                    <dd>相关下载</dd>
+                </dl>
+                <dl class="weibu_zj_nr">
+                    <dt>小米之家</dt>
+                    <dd>小米之家</dd>
+                    <dd>服务网点</dd>
+                    <dd>预约亲临到店服务</dd>
+                </dl>
+                <dl class="weibu_zj_nr">
+                    <dt>关于小米</dt>
+                    <dd>了解小米</dd>
+                    <dd>加入小米</dd>
+                    <dd>练习我们	</dd>
+                </dl>
+                <dl class="weibu_zj_nr">
+                    <dt>关于我们</dt>
+                    <dd>新浪微博</dd>
+                    <dd>QQ空间</dd>
+                    <dd>官方微信</dd>
+                </dl>
+                <dl class="weibu_zj_nr_kfdh">
+                    <dt class="weibu_zj_nr_kefu">400-100-5678</dt>
+                    <dd class="weibu_zj_nr_shijian">周一至周日8:00-18:00</dd>
+                    <dd class="weibu_zj_nr_huafei">(仅收市话费)</dd>
+                    <dd class="weibu_zj_nr_tupian">
+                        <img src="img/kefu.jpg" />
+                    </dd>
+                </dl>
+            </div>
+<!---------尾部中间部分结束---------->           
+ 
+<!---------尾部底部部分开始---------->
+            <div class="weibu_dibu clearfix">
+                <div class="wubu_dibu_z">
+                    <p>小米旗下网站:小米网 | MIUI | 米聊 | 多看书城 | 小米路由器 | English | 小米后院 | 小米天猫店 | 小米网盟</p>
+                    <p>这个备案号太长了就不打字了，京icp备案宏福大厦备案</p>
+                    <p><img src="img/chengxing.jpg" /></p>
+                </div>
+                <div class="wubu_dibu_y">
+                    <img src="img/yuyankuang.jpg" />
+                </div>
+            </div>
+        </div>  
+<!---------尾部底部部分结束----------> 
+    </div>
+        <!--尾部结束-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
