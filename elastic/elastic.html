@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>弹性导航</title>
+<style>
+body {
+ body {
+margin: 0;
+padding: 0;
+border: 0;
+}
+}
+body {
+	background: url(img/bodybg.png) center top no-repeat #000;
+}
+.nav {
+	margin:0 auto;
+	height: 77px;
+	padding-top: 3px; /*padding-left: 31px;*/
+	padding-left: 33px;
+	width: 703px;
+	text-align: center;
+	background: url(img/navbg.png) left top no-repeat; /*margin-top: 26px;*/
+	margin-top: 15px;
+	position: relative;
+	z-index: 2;
+	font-family: Verdana;
+}
+
+
+.navbg {
+	background: url(img/nava.png) center top no-repeat;
+	position: absolute;
+	left: 35px;
+	top: -2px;
+	width: 98px;
+	height: 78px;
+	margin-left: -4px;
+}
+.nav a {
+	text-decoration: none;
+	float: left;
+	font-size: 14px;
+	text-shadow: 1px 1px 1px #000;
+	-webkit-transition: 0.4s all ease;
+	-moz-transition: 0.4s all ease;
+	-ms-transition: 0.4s all ease;
+	-o-transition: 0.4s all ease;
+	transition: 0.4s all ease;
+	display: inline-block;
+	text-align: center;
+	line-height: 60px; /* width: 108px; */
+	width: 90px;
+	height: 77px;
+	position: relative;
+	z-index: 31;
+	color: #FFF;
+}
+.nav a:hover {
+	color: #63B1FF;
+	text-shadow: 1px 1px 1px #000;
+}
+.nav span {
+	float: left;
+	display: inline-block;
+	width: 1px;
+	height: 14px;
+	overflow: hidden;
+	background: #FFF;
+	box-shadow: 1px 1px 0 #000;
+	margin: 0 4px;
+	vertical-align: top;
+	margin-top: 24px;
+}
+</style>
+<script src="js/eMove.js"></script>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('nav');	
+	var aA=oDiv.getElementsByTagName('a');
+	var oTdiv=oDiv.children[0];
+	var iNow=0;
+	
+	for(var i=0; i<aA.length; i++){
+		aA[i].index=i;
+		aA[i].onmouseover=function(){
+			//oBox.style.left=this.offsetLeft+'px';
+			eMove(oTdiv,this.offsetLeft);
+		};
+
+		aA[i].onmouseout=function(){	
+			eMove(oTdiv,iNow*(aA[0].offsetWidth+9)+33);
+		};
+
+		aA[i].onclick=function(){
+			iNow=this.index;
+		};
+	}
+};
+</script>
+</head>
+
+<body>
+<div>
+	<div class="logo"></div>
+    <div class="nav" id="nav">
+        <div class="navbg"></div>
+        <a href="javascript:;">首&nbsp;页</a>
+        <span></span>
+        <a href="javascript:;">CSS课程</a>
+        <span></span>
+        <a href="javascript:;">JS课程</a>
+        <span></span>
+        <a href="javascript:;">HTML5课程</a>
+        <span></span>
+        <a href="javascript:;">视频教程</a>
+        <span></span>
+        <a href="javascript:;">课程案例</a>
+        <span></span>
+        <a href="javascript:;">联系方式</a>
+    </div>
+</div>
+</body>
+</html>
