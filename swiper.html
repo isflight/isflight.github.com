@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="SunYongJie" />
+<title>swiper</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <style>
+	body{background:#6CF;
+		background:rgba(108,108,225,0.5);}
+	.box{ margin:100px auto 0px;
+		}
+        .swiper-container{
+            width:400px;
+            height:400px;
+            margin: 100px auto;
+        }
+        .swiper-slide{
+            width:400px;
+            height:400px;
+        }
+		.swiper-slide img{
+			width:400px;
+            height:400px;}
+        .swiper-pagination span{
+            background: red;
+        }
+		
+		p{text-align:center; padding:10px 0; color:#FFF;}
+		p a{color:#FFF; text-decoration:none;}
+		p a:hover{text-decoration:underline;}
+    </style>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+
+</head>
+<body>
+<p><a href="index.html" style="color:blue;">回到主页</a></p>
+<div class="box">
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" ><img src="images/w1.jpg" /></div>
+        <div class="swiper-slide" ><img src="images/w2.jpg"/></div>
+        <div class="swiper-slide" ><img src="images/w3.jpg"/></div>
+        <div class="swiper-slide" ><img src="images/w4.jpg"/></div>
+        <div class="swiper-slide" ><img src="images/w5.jpg"/></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+</div>
+<script>
+    new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        spaceBetween:10,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        effect: 'cube',
+        grabCursor: true,
+        cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        },
+        loop:true
+    });
+</script>
+</head>
+
+</html>
