@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="LiCaiJuan" />
+<title>鼠标移入移除</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<style>
+*{ margin:0; padding:0; list-style:none;}
+body{background: #B0DCFD;}
+#ul1{ width:840px; margin:5px auto;}
+#ul1 li{ width:200px; height:200px; float:left; margin:5px; position:relative; text-align:center; line-height:200px; overflow:hidden;}
+#ul1 li span{ position:absolute; left:-200px; top:0; background:rgba(122,0,0,0.4); color:#fff; font-size:30px; font-weight:bold; font-family:微软雅黑; width:100%; height:100%;}
+#ul1 li img{ width:200px; height:200px; display:block;}
+.sl{ width:1000px; margin:0 auto; font-size: 14px; line-height: 24px;}
+.copyright{position: absolute; width: 400px; left: 50%; margin-left: -200px; bottom: 20px;}
+.tip{color: red;}
+</style>
+<script src="js/move.js"></script>
+<script>
+//判断移入的方向
+function hoverDir(obj,ev){
+	var x=obj.offsetLeft+obj.offsetWidth/2-ev.clientX;
+	var y=obj.offsetTop+obj.offsetHeight/2-ev.clientY;
+	return Math.round((Math.atan2(y,x)*180/Math.PI+180)/90)%4;
+}
+function isChild(oParent,obj){
+	while(obj){
+		if(obj==oParent)return true;
+		obj=obj.parentNode;
+	}
+	return false;
+}
+window.onload=function(){
+	var oUl=document.getElementById('ul1');
+	var aLi=oUl.children;
+	var aSpan=oUl.getElementsByTagName('span');
+	
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].index=i;
+		aLi[i].onmouseover=function(ev){
+			var oEvent=ev || event;
+			var from=oEvent.fromElement || oEvent.relatedTarget;
+			if(isChild(this,from))return;
+			var n=hoverDir(this,oEvent);
+			switch(n){
+				case 0:
+					aSpan[this.index].style.left='200px';
+					aSpan[this.index].style.top=0;
+					break;
+				case 1:
+					aSpan[this.index].style.top='200px';
+					aSpan[this.index].style.left=0;
+					break;
+				case 2:
+					aSpan[this.index].style.left='-200px';
+					aSpan[this.index].style.top=0;
+					break;
+				case 3:
+					aSpan[this.index].style.top='-200px';
+					aSpan[this.index].style.left=0;
+					break;
+			}
+			document.title=n;
+			startMove(aSpan[this.index],{left:0, top:0});
+		};
+		
+		aLi[i].onmouseout=function(ev){
+			var oEvent=ev || event;
+			var to=oEvent.toElement || oEvent.relatedTarget;
+			if(isChild(this,to))return;
+			var n=hoverDir(this,oEvent);
+			switch(n){
+				case 0:
+				startMove(aSpan[this.index],{left:200,top:0});
+				break;
+			case 1:
+				startMove(aSpan[this.index],{left:0, top:200});
+				break;
+			case 2:
+				startMove(aSpan[this.index],{left:-200,top:0});
+				break;
+			case 3:
+				startMove(aSpan[this.index],{left:0, top:-200});
+				break;
+			}
+		};
+	}
+};
+</script>
+</head>
+
+<body>
+<p class="sl">
+	拉钩网的一个效果,原理是判断鼠标移入以及移出的方向，我称这个效果为：跟随鼠标移入移出.<br>
+	思路:<br>
+	1.封一函数，专门负责计算X、Y点的坐标，如X的坐标就是物体的offsetLeft加上它宽度的一半再减去鼠标对于页面的水平坐标（clientX）;并且运用反正切、圆周率等数学运算返回上下左右对应的四个值0、1、2、3。<br>
+	2.循环加移入移出事件，并用封装的那个函数返回的值来判断覆盖层运动的方向，此效果实现。<br>
+	<span class="tip">*：整个效果的难点在于那个小函数，运用到反正切、圆周率等，对于数学不过关的我来说确实够喝一壶的，一旦明白那个小函数以后一切都是很简单。注意onmouseover（out）的bug，要判断是否真移入移出。</span>
+</p>
+<ul id="ul1">
+	<li><img src="images/hoverdir_img/1.jpg"><span>un</span></li>
+    <li><img src="images/hoverdir_img/2.jpg"><span>ibk</span></li>
+    <li><img src="images/hoverdir_img/3.jpg"><span>motor</span></li>
+    <li><img src="images/hoverdir_img/4.jpg"><span>beautiful</span></li>
+    <li><img src="images/hoverdir_img/5.jpg"><span>so good</span></li>
+    <li><img src="images/hoverdir_img/6.jpg"><span>nice</span></li>
+    <li><img src="images/hoverdir_img/7.jpg"><span>drink</span></li>
+    <li><img src="images/hoverdir_img/8.jpg"><span>flybike</span></li>
+</ul>
+<br>
+<p class="copyright"><a href="index.html" style="text-decoration:none; color:blue;">回到主页</a></p>
+</body>
+</html>
