@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>世康博</title>
+<link rel="stylesheet" href="css/base.css" />
+<script src="js/jquery-1.7.2.js"></script>
+<style>
+/*--------------------头部开始----------------------*/
+.header{
+	height:26px;
+	background:#f6f3f3;}
+	
+.header_top{
+	width:1000px;                             
+	height:26px;
+	margin:0 auto;}
+	
+.header_top p{
+	float:right;
+	line-height:26px;
+	margin-right:12px;}
+	
+.header_top a{
+	color:#978679;}
+/*--------------------头部结束----------------------*/
+
+
+/*--------------------头部搜索部分开始----------------------*/
+.header_logo{
+	width:1000px;                     
+	height:102px;
+	margin:0 auto;}
+	
+.logo_l{
+	float:left;
+	margin-top:25px;
+	margin-right:86px;}
+	
+.logo_c{
+	float:left;
+	margin-top:32px;
+	margin-right:68px;
+	position:relative;}
+	
+.logo_c i{
+	width:19px;
+	height:19px;
+	display:inline-block;
+	cursor:pointer;
+	position:absolute; top:6px; right:8px;
+	background:url(img/2.png) no-repeat;}
+	
+.logo_c input{
+	width:360px;
+	height:30px;
+	border:none;
+	outline:none;
+	padding-left:10px;
+	margin-bottom:5px;
+	border:2px solid #e9e4e4;}
+	
+.logo_c p{
+	margin-left:10px;}
+	
+.logo_c p a{
+	color:#a4a4a4;}
+
+.logo_r{
+	float:left;
+	margin-top:22px;}
+/*--------------------头部搜索部分结束----------------------*/
+
+
+/*--------------------导航部分开始----------------------*/
+.nav{
+	height:40px;
+	background:#ca141d;}
+	
+.nav_list{
+	width:1000px;
+	height:40px;
+	margin:0 auto;}
+	
+.nav_list li{
+	float:left;
+	height:40px;
+	line-height:40px;}
+		
+.nav_list a{
+	font-size:16px;
+	color:#fff;
+	height:40px;
+	padding-left:24px;
+	padding-right:24px;
+	display:inline-block;}
+	
+.nav_list a:hover{
+	background:#ba181f;}
+	
+.nav_list .nav_list_fist{
+	width:203px;
+	color:#fff;
+	font-size:16px;
+	padding-left:15px;
+	border-left:2px solid #da5b61;
+	border-right:2px solid #da5b61;}
+	
+.nav_list .nav_list_tow{
+	width:128px;
+	text-align:center;
+	padding:0;
+	margin-right:12px;
+	background:#ba181f;}
+	
+.nav_list .nav_list_end{
+	padding-right:0;}
+/*--------------------导航部分结束----------------------*/
+
+
+/*--------------------主题部分开始----------------------*/
+.coetent{
+	width:1000px;
+	margin:0 auto;}
+
+.coetent_l{
+	width:202px;
+	height:389px;
+	float:left;
+	padding-top:10px;
+	padding-left:16px;
+	border:2px solid #e8e8e8;
+	border-top:none;}
+	
+.coetent_nr{
+	margin-bottom:18px;
+	position:relative;}
+	
+.coetent_nr i{
+	width:15px;
+	height:15px;
+	position:absolute; right:10px; border-bottom:0;
+	background:url(img/3.png) no-repeat;}
+
+.coetent_nr h2{
+	font-size:13px;
+	color:#413a36;
+	margin-bottom:10px;}
+	
+.coetent_nr_ul li{
+	float:left;
+	line-height:100%;
+	margin-right:13px;}
+
+.coetent_nr_ul a{
+	color:#978679;}
+	
+.coetent_nr_ul a:hover{
+	color:red;}
+	
+.coetent_r{
+	width:778px;
+	height:399px;
+	float:left;
+	position:relative;
+	border-bottom:2px solid #e8e8e8;}
+	
+.coetent_r_bg{}
+	
+.coetent_r_bgdw{
+	text-align:right;
+	padding-right:25px;
+	height:399px;background:url(img/1.jpg) no-repeat;}
+	
+.coetent_r_bgdw img{
+	margin-bottom:20px;}
+	
+.ct_pic{
+	margin-top:102px;}
+	
+.ct_p1{
+	margin-bottom:10px;
+	color:#101010;}
+	
+.ct_p2{
+	padding-right:48px;
+	margin-bottom:76px;}
+	
+.ct_p1 span{
+	color:#F00;}
+	
+.ct_list{
+	position:absolute; right:20px; bottom:10px;}
+	
+.ct_list li{
+	width:12px;
+	height:12px;
+	float:left;
+	background:#c3c3c3;
+	margin-right:10px;
+	cursor:pointer;
+	border:2px solid #3f5d72;}
+	
+.ct_list .ct_list_active{
+	width:12px;
+	height:12px;
+	border:2px solid #96313f;
+	background:#ce2b33;}
+/*--------------------主题部分结束----------------------*/
+
+
+/*--------------------主题一部分开始----------------------*/
+.ct_one_fist{
+	width:998px;
+	height:637px;
+	margin:0 auto;
+	margin-top:10px;
+	border:1px solid #efefef;}
+	
+.ct_one_fist li{
+	width:497px;                     
+	height:318px;
+	float:left;}
+	
+.ct_dw_tu{
+	position:relative;}
+	
+.ct_dw_tu i{
+	display:inline-block;
+	width:62px;
+	height:59px;
+	background:url(img/6.png) no-repeat;
+	position:absolute; left:0; top:0;}
+	
+.ct_dw_tu img{
+	margin-top:85px;
+	margin-left:12px;}
+	
+.ct_dwnr{
+	width:207px;                         
+	height:209px;
+	margin-top:70px;
+	position:absolute; right:0; top:0;}
+	
+.ct_dwnr h3{
+	font-size:24px;
+	font-weight:bold;
+	margin-bottom:20px;}
+	
+.ct_dwnr_p1{
+	color:#696969;
+	font-size:14px;
+	margin-bottom:10px;}
+	
+.ct_dwnr_p2{
+	color:#ff0000;
+	font-size:14px;}
+	
+.ct_dwnr a{
+	width:78px;
+	height:30px;
+	background:#d81b24;
+	border:2px solid #b3131a;
+	text-align:center;
+	line-height:30px;
+	font-size:16px;
+	color:#fff;
+	display:inline-block;
+	margin-left:92px;
+	margin-top:86px;}
+	
+.ct_dw_bk{
+	border-right:1px solid #efefef;}
+	
+.ct_dw_dbk{
+	border-top:1px solid #efefef;
+	border-right:1px solid #efefef;}
+
+.ct_dw_dbk img{
+	margin:0;}
+	
+.ct_one_fist .ct_dw_rbk{
+	width:498px;
+	border-top:1px solid #efefef;}
+	
+.ct_dw_rbk img{
+	margin:0;}
+	
+.ct_dw_pic img{
+	margin:0;
+	margin-top:25px;}
+/*--------------------主题一部分结束----------------------*/
+
+
+/*--------------------广告部分开始----------------------*/
+.gg{
+	width:1000px;
+	height:160px;
+	margin:0 auto;
+	background:#f4f4f4;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+	line-height:160px;
+	font-size:24px;}
+/*--------------------广告部分结束----------------------*/
+
+
+/*--------------------主题二部分开始----------------------*/
+.two_list{
+	width:1000px;              
+	height:410px;
+	margin:0 auto;}
+	
+.two_list_l1{
+	width:482px;
+	height:408px;
+	float:left;
+	position:relative;
+	border:1px solid #d7d7d7;}
+	
+.two_list_l1 img{
+	float:left;
+	margin-left:20px;
+	margin-top:45px;}
+	
+.two_list_ul{
+	float:left;}
+	
+.two_list_ul dt{
+	font-size:24px;
+	color:#0d0d0d;
+	font-weight:bold;
+	margin-top:78px;
+	margin-bottom:18px;}
+	
+.two_list_ul dd{
+	font-size:14px;
+	color:#696969;
+	line-height:24px;}
+	
+.two_list_ul span{
+	color:red;}
+	
+.two_list_l1 i{
+	width:78px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	font-size:14px;
+	color:#fff;
+	background:#d81b24;
+	border:2px solid #b3131a;
+	position:absolute; right:22px; bottom:22px;}
+	
+.two_list_l1 p{
+	width:62px;
+	height:59px;
+	background:url(img/6.png) no-repeat;
+	position:absolute; left:0; right:0;}
+	
+	
+.two_list_l2{
+	float:right;                      
+	width:508px;
+	height:408px;}
+	
+.two_r_nr{}
+
+.two_r_bt{
+	position:relative;}
+
+.two_r_nr li{
+	width:247px;
+	height:200px;
+	float:left;
+	border:1px solid #d7d7d7;}
+	
+.two_r_dl{
+	margin-top:52px;
+	position:absolute; right:0; top:0;}
+	
+.two_r_dl dt{
+	font-size:16px;
+	font-weight:bold;
+	margin-right:10px;
+	margin-bottom:15px;}
+	
+.two_r_dl dd{
+	line-height:18px;}
+	
+.two_r_dl span{
+	color:red;}
+	
+.two_r_btbk{
+	margin-right:10px;}
+	
+.two_r_btlbk{
+	margin-right:10px;
+	margin-top:6px;}
+	
+.two_r_btlbk img{
+	margin-top:50px;}
+	
+.two_r_bttrbk{
+	margin-top:6px;}
+	
+.two_r_bttrbk img{
+	margin-top:30px;}
+/*--------------------主题二部分结束----------------------*/
+
+
+/*--------------------尾部开始----------------------*/
+.end{
+	width:1000px;
+	height:138px;
+	margin:0 auto;
+	padding-top:22px;
+	border-top:1px solid #e4e4e4;
+	border-bottom:1px solid #e4e4e4;}
+	
+.end_dl{
+	float:left;}
+
+.end_dl dt{
+	font-size:14px;
+	font-weight:bold;
+	color:#777777;
+	padding-left:23px;
+	margin-bottom:13px;
+	background:url(img/7.png) no-repeat;}
+	
+.end_dl dd{
+	padding-left:21px;
+	line-height:22px;
+	background:url(img/12.png) no-repeat 0 5px;}
+	
+.end_dl a{
+	color:#978679;}
+	
+.end_dl_d1{
+	margin-right:148px;}
+
+.end_dl_d2{
+	margin-right:132px;}
+	
+.end_dl_d2 dt{
+	background:none;
+	background:url(img/8.png) no-repeat;}
+
+.end_dl_d3{
+	margin-right:148px;}
+	
+.end_dl_d3 dt{
+	background:none;
+	background:url(img/9.png) no-repeat;}
+
+.end_dl_d4{
+	margin-right:144px;}
+	
+.end_dl_d4 dt{
+	background:none;
+	background:url(img/10.png) no-repeat;}
+	
+.end_dl_d5{}
+
+.end_dl_d5 dt{
+	background:none;
+	background:url(img/11.png) no-repeat;}
+	
+.end_dl_d5 .end_sine{
+	background:none;
+	background:url(img/13.png) no-repeat;}
+	
+.end_dl_d5 .end_tent{
+	background:none;
+	background:url(img/14.png) no-repeat;}
+/*--------------------尾部结束----------------------*/
+
+
+/*--------------------尾部版权部分开始----------------------*/
+.den_nav{
+	width:1000px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:20px;}
+	
+.den_nav p{
+	margin-bottom:10px;}
+/*--------------------尾部版权部分结束----------------------*/
+
+
+
+</style>
+</head>
+
+<body>
+<!--------------------头部开始---------------------->
+<div class="header">
+    <div class="header_top clearfix">
+        <p>
+            <a href="#">[登录][注册]</a> |
+            <a href="#">我的订单</a> |
+            <a href="#">帮助中心</a> |
+            <a href="#">世康博手机版</a>
+        </p>
+    </div>
+</div>
+<!--------------------头部结束---------------------->
+
+
+<!--------------------头部搜索部分开始---------------------->
+<div class="header_logo clearfix">
+    <p class="logo_l">
+        <img src="img/logo.png" />
+    </p>
+    <div class="logo_c">
+        <input type="text" placeholder="战略报告" />
+        <i></i>
+        <p>
+            <a>热门搜索：</a>
+            <a href="#">战略咨询</a>
+            <a href="#">管理咨询</a>
+            <a href="#">创新营销</a>
+            <a href="#">软件开发</a>
+        </p>
+    </div>
+    <p class="logo_r">
+        <img src="img/1.png" />
+    </p>
+</div>
+<!--------------------头部搜索部分结束---------------------->
+
+
+<!--------------------导航部分开始---------------------->
+<div class="nav">
+    <ul class="nav_list clearfix">
+        <li class="nav_list_fist">全部产品</li>
+        <li class="nav_list_tow">
+            <a href="#">首页</a>
+        </li>
+        <li>
+            <a href="#">行业数据快递</a>
+        </li>
+        <li>
+            <a href="#">产业研究报告</a>
+        </li>
+        <li>
+            <a href="#">融资报告</a>
+        </li>
+        <li>
+            <a href="#">ERP系统</a>
+        </li>
+        <li class="nav_list_end">
+            <a href="#">猎头服务</a>
+        </li>
+    </ul>
+</div>
+<!--------------------导航部分结束---------------------->
+
+
+<!--------------------主题部分开始---------------------->
+<div class="coetent clearfix">
+    <div class="coetent_l">
+        <div class="coetent_nr clearfix">
+            <h2>战略咨询</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">企业业务定位</a>
+                </li>
+                <li>
+                    <a href="#">组织架构</a>
+                </li>
+                <li>
+                    <a href="#">报告等</a>
+                </li>
+            </ul>
+        </div>
+        <div class="coetent_nr clearfix">
+            <h2>管理咨询</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">内控报告</a>
+                </li>
+                <li>
+                    <a href="#">管理报告</a>
+                </li>
+            </ul>
+        </div>
+        <div class="coetent_nr clearfix">
+            <h2>市场营销</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">微信营销</a>
+                </li>
+                <li>
+                    <a href="#">微博营销</a>
+                </li>
+                <li>
+                    <a href="#">VI设计</a>
+                </li>
+            </ul>
+        </div>
+        <div class="coetent_nr clearfix">
+            <h2>财务审计</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">会计服务</a>
+                </li>
+                <li>
+                    <a href="#">财税顾问</a>
+                </li>
+                <li>
+                    <a href="#">审计报告</a>
+                </li>
+            </ul>
+        </div>
+        <div class="coetent_nr clearfix">
+            <h2>人力资源</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">人事报告</a>
+                </li>
+                <li>
+                    <a href="#">EAP</a>
+                </li>
+                <li>
+                    <a href="#">员工帮助计划等</a>
+                </li>
+            </ul>
+        </div>
+        <div class="coetent_nr clearfix">
+            <h2>只是产权</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">商标注册</a>
+                </li>
+                <li>
+                    <a href="#">商标交易</a>
+                </li>
+                <li>
+                    <a href="#">专利申请等</a>
+                </li>
+            </ul>
+        </div>
+        <div class="coetent_nr clearfix">
+            <h2>商旅服务</h2>
+            <ul class=" coetent_nr_ul clearfix">
+                <li>
+                    <a href="#">酒店预定</a>
+                </li>
+                <li>
+                    <a href="#">机（车）</a>
+                </li>
+                <li>
+                    <a href="#">票预定等</a>
+                </li>
+            </ul>
+            <i></i>
+        </div>
+    </div>
+    <div class="coetent_r">
+        <div class="coetent_r_bg">
+            <div class="coetent_r_bgdw">
+                <img src="img/5.png" class="ct_pic" />
+                <p class="ct_p1">
+                    预约时间：<span>3月10日--3月15日</span>
+                </p>
+                <p class="ct_p1">
+                    开售时间：<span>8月10日--8月15日</span>
+                </p>
+                <p class="ct_p2">预约客户购买</p>
+                <a href="#"><img src="img/4.png" /></a>
+            </div>
+        </div>
+        <ul class="ct_list clearfix">
+            <li class="ct_list_active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+<!--------------------主题部分结束---------------------->
+
+
+<!--------------------主题一部分开始---------------------->
+<ul class="ct_one_fist clearfix">
+    <li class="ct_dw_tu ct_dw_bk">
+        <img src="img/2.jpg" />
+        <div class="ct_dwnr">
+            <h3>&lt;&lt;老板书橱&gt;&gt;</h3>
+            <p class="ct_dwnr_p1">企业采购必备工具</p>
+            <p class="ct_dwnr_p2">读物提供专业咨询服务</p>
+            <a href="#">立即抢购</a>
+        </div>
+        <i></i>
+    </li>
+    <li class="ct_dw_tu ct_dw_pic">
+        <img src="img/3.jpg" />
+        <div class="ct_dwnr">
+            <h3>全媒体广告方案</h3>
+            <p class="ct_dwnr_p1">企业采购必备工具</p>
+            <p class="ct_dwnr_p2">读物提供专业咨询服务</p>
+            <a href="#">立即抢购</a>
+        </div>
+        <i></i>
+    </li>
+    <li class="ct_dw_tu ct_dw_dbk">
+        <img src="img/4.jpg" />
+        <div class="ct_dwnr">
+            <h3>员工帮主计划</h3>
+            <p class="ct_dwnr_p1">企业采购必备工具</p>
+            <p class="ct_dwnr_p2">读物提供专业咨询服务</p>
+            <a href="#">立即抢购</a>
+        </div>
+        <i></i>
+    </li>
+    <li class="ct_dw_tu ct_dw_rbk">
+        <img src="img/5.jpg" />
+        <div class="ct_dwnr">
+            <h3>服务商旅</h3>
+            <p class="ct_dwnr_p1">企业采购必备工具</p>
+            <p class="ct_dwnr_p2">读物提供专业咨询服务</p>
+            <a href="#">立即抢购</a>
+        </div>
+        <i></i>
+    </li>
+</ul>
+<!--------------------主题一部分结束---------------------->
+
+
+<!--------------------广告部分开始---------------------->
+<div class="gg">
+    广告
+</div>
+<!--------------------广告部分结束---------------------->
+
+
+<!--------------------主题二部分开始---------------------->
+<ul class="two_list clearfix">
+    <li class="two_list_l1 clearfix">
+        <img src="img/6.jpg" />
+        <dl class="two_list_ul">
+            <dt>移动商务管理系统</dt>
+            <dd>帮助企业简历客户管理制度</dd>
+            <dd>客户关系管理</dd>
+            <dd>客户关系维护</dd>
+            <dd><span>开发客户关系管理</span></dd>
+        </dl>
+        <i>立即抢购</i>
+        <p></p>
+    </li>
+    <li class="two_list_l2">
+        <ul class="two_r_nr">
+            <li class="two_r_bt two_r_btbk">
+                <img src="img/7.jpg" />
+                <dl class="two_r_dl">
+                    <dt>产业研究报告</dt>
+                    <dd>权威月刊, 电子周刊</dd>
+                    <dd>
+                        <span>（SD-YLI-NO-1）</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="two_r_bt">
+                <img src="img/8.jpg" />
+                <dl class="two_r_dl">
+                    <dt>产业研究报告</dt>
+                    <dd>权威月刊, 电子周刊</dd>
+                    <dd>
+                        <span>（SD-YLI-NO-1）</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="two_r_bt two_r_btlbk">
+                <img src="img/9.jpg" />
+                <dl class="two_r_dl">
+                    <dt>产业研究报告</dt>
+                    <dd>权威月刊, 电子周刊</dd>
+                    <dd>
+                        <span>（SD-YLI-NO-1）</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="two_r_bt two_r_bttrbk">
+                <img src="img/10.jpg" />
+                <dl class="two_r_dl">
+                    <dt>产业研究报告</dt>
+                    <dd>权威月刊, 电子周刊</dd>
+                    <dd>
+                        <span>（SD-YLI-NO-1）</span>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </li>
+</ul>
+<!--------------------主题二部分结束---------------------->
+
+
+<!--------------------广告部分开始---------------------->
+<div class="gg">
+    广告
+</div>
+<!--------------------广告部分结束---------------------->
+
+
+<!--------------------尾部开始---------------------->
+<div class="end clearfix">
+    <dl class="end_dl end_dl_d1">
+        <dt>帮助中心</dt>
+        <dd>
+            <a href="#">帮助指南</a>
+        </dd>
+        <dd>
+            <a href="#">服务方式</a>
+        </dd>
+        <dd>
+            <a href="#">签约指南</a>
+        </dd>
+    </dl>
+    <dl class="end_dl end_dl_d2">
+        <dt>售后服务</dt>
+        <dd>
+            <a href="#">帮助指南</a>
+        </dd>
+        <dd>
+            <a href="#">服务方式</a>
+        </dd>
+        <dd>
+            <a href="#">签约指南</a>
+        </dd>
+    </dl>
+    <dl class="end_dl end_dl_d3">
+        <dt>技术支持</dt>
+        <dd>
+            <a href="#">帮助指南</a>
+        </dd>
+        <dd>
+            <a href="#">服务方式</a>
+        </dd>
+        <dd>
+            <a href="#">签约指南</a>
+        </dd>
+    </dl>
+    <dl class="end_dl end_dl_d4">
+        <dt>关于我们</dt>
+        <dd>
+            <a href="#">帮助指南</a>
+        </dd>
+        <dd>
+            <a href="#">服务方式</a>
+        </dd>
+        <dd>
+            <a href="#">签约指南</a>
+        </dd>
+    </dl>
+    <dl class="end_dl end_dl_d5">
+        <dt>关注我们</dt>
+        <dd class="end_sine">
+            <a href="#">帮助指南</a>
+        </dd>
+        <dd class="end_tent">
+            <a href="#">服务方式</a>
+        </dd>
+        <dd>
+            <a href="#">签约指南</a>
+        </dd>
+    </dl>
+</div>
+<!--------------------尾部结束---------------------->
+
+
+<!--------------------尾部版权部分开始---------------------->
+<div class="den_nav">
+    <p>
+        <a href="#">资源中心</a> | 
+        <a href="#">客户中心</a> |
+        <a href="#">产品中心</a> |
+        <a href="#">技术中心</a> |
+        <a href="#">营销中心</a> |
+        <a href="#">平台中心</a> |
+        <a href="#">个案中心</a>
+    </p>
+    <p>版权所有：北京世康博商务服务有限公司</p>
+    <p>世康博网址：www.shikangbo.com</p>
+    <p>京icp备案</p>
+    <p>世康博商务</p>
+    <p>世康博商务合作</p>
+    <p>
+        <img src="img/11.jpg" />
+        <img src="img/12.jpg" />
+        <img src="img/13.jpg" />
+    </p>
+</div>
+<!--------------------尾部版权部分结束---------------------->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
