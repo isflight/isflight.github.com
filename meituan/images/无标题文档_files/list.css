@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{height:10000px}
+a:hover{ color:#32d3c3;}
+ul li span a:hover{color:#32d3c3;}
+ul li .con-nav-left-list-link  a:hover{color:#32d3c3;}
+/*头部*/
+.header{ height:30px; background:#f9f9f9; border-bottom:1px solid #dddddd;}
+.header-top{ width:980px; margin:0 auto;}
+.header-top-left{ float:left; height:30px;}
+.header-top-left>li{ float:left; padding:10px 5px;} 
+.header-top-left a{ color:#666666;} 
+.star{ width:14px; height:14px; float:left;background:url(../images/xuebitu.png) no-repeat 0 0;margin-right:5px;}
+.header-top-left-tow a{ color:#F00;}
+.header-top-left-four i{ width:10px; height:14px; background:url(../images/xuebitu.png) no-repeat -13px 0; float:left;margin-right:3px;}
+.header-top-left-four a{float:left;}
+.header-top-left-four{position:relative; width:80px;}
+.triangle{ width:5px; height:5px; background:url(../images/xuebitu.png) no-repeat -26px 0; float:right;margin-top:4px;margin-left:3px;}
+.header-top-left-three a{ margin-right:5px;}
+
+.header-top-right{float:right; margin-right:2px;}
+.header-top-right-one{float:left;position:relative; height:28px;border:1px solid #f9f9f9; }
+
+.header-top-left-one1>.xtriangle1{left:80px;}
+.header-top-right-one>a{ border-right:1px solid #999;padding:0 18px; line-height:30px;}
+
+.xtriangle1{width:5px; height:5px; background:url(../images/xuebitu.png) no-repeat -26px 0; position:absolute; top:12px; left:75px;}
+.xtriangle2{width:5px; height:5px; background:url(../images/xuebitu.png) no-repeat -26px 0; position:absolute; top:12px; left:45px;}
+.xtriangle{width:5px; height:5px; background:url(../images/xuebitu.png) no-repeat -26px 0; display:inline-block; margin:5px 0px 0px 8px;}
+.buycar{ width:12px; height:12px; background:url(../images/xuebitu.png) no-repeat -33px 0; display:inline-block; position:absolute; left:2px; top:10px; margin-right:10px;}
+.header-top-right .header-top-left-four span{ color:#F00;}
+
+.header-top-right .header-top-left-last>a{ border-right:none;}
+.header-middle{ position:relative;width:980px; margin:0 auto;}
+.header-middle img{ width:980px;}
+.header-middle .close{ position:absolute; width:12px; height:12px; background:url(../images/xuebitu.png) no-repeat -217px 0; top:10px; right:10px;}
+.header-bottom{ width:980px; margin:0 auto; margin-top:20px;}
+/*logo*/
+h1{ width:85px; height:56px; background:url(../images/xuebitu.png) no-repeat -58px 0; float:left;}
+.header-bottom-address-select{ display:none; }
+.header-bottom-address{ float:left; margin-left:10px; margin-top:10px;}
+.header-bottom-address span{ font-size:18px; font-weight:bold; display:block; text-align:center;}
+.header-bottom-address b a{ width:58px; height:20px; border:1px solid #eee; font-size:12px;
+ display:block; line-height:25px; text-align:center; color:#999}
+.header-bottom-search{ width:486px; height:40px; border:2px solid #2db8ad; float:left; margin-left:85px;}
+.header-bottom-search-left{ width:52px; height:28px; border-right:1px solid #eee; font-size:14px; text-align:center; padding-left:10px; padding-top:13px; float:left;}
+.header-bottom-search-left .xltriangle{ margin-left:0px;width:5px; height:5px; background:url(../images/xuebitu.png) no-repeat -26px 0; display:inline-block; vertical-align:top; margin-top:5px; }
+.header-bottom-search-middle{ width:353px; height:38px; float:left; color:#666; line-height:40px; padding-left:5px; position:relative;}
+
+#search{width:345px; height:39px; color:#666; line-height:40px; padding-left:5px; outline:none; border:none; position:absolute; top:1px; left:0px;}
+
+#span1{color:#666; line-height:40px; padding-left:5px;position:absolute; top:1px; left:0px;}
+.header-bottom-search-right{ width:65px; height:40px; background:#2bb8aa; text-align:center; line-height:40px; float:left;}
+.header-bottom-search-right a{color:#fff; }
+.header-bottom-icon{ float:right; margin-top:10px;}
+.header-bottom-icon a{ float:left; margin-left:20px; text-align:center;}
+.header-bottom-icon a i{width:23px; height:23px;display:block;}
+.header-bottom-icon-one i{background:url(../images/xuebitu.png) no-repeat -144px 0; margin-left:5px;}
+.header-bottom-icon-two i{background:url(../images/xuebitu.png) no-repeat -169px 0;margin-left:18px;}
+.header-bottom-icon-three i{background:url(../images/xuebitu.png) no-repeat -194px 0;margin-left:5px;}
+
+/*导航-全部分类*/
+.con{ width:980px; margin:0 auto; margin-top:30px;}
+.con-nav-left{ width:240px; background:#1cbca7; float:left;}
+.con-nav-left-nav{height:40px;font-size:18px; line-height:40px; padding-left:15px; border:1px solid #eee; width:224px;}
+.con-nav-left-nav a{ color:#fff; font-weight:bold}
+.con-nav-left-list { display:none;background:#fafafa; border:1px solid #eee; border-top:none; position:relative;border-right:none;}
+.con-nav-sublist{display:none;}
+.con-nav-left-list>li{padding:18px 5px;height:17px;border-right:1px solid #eee;}
+.con-nav-left-list>li>div>a{ font-size:14px; font-weight:bold; float:left;}
+.con-nav-left-list>li>div>span{ float:right; padding-left:5px;}
+.con-nav-left-list>li>span>a{font-size:12px; color:#666;}
+.con-nav-left-list .con-nav-left-list-last{ border-bottom:none;}
+.downline{ display:block;width:225px; height:1px; background:url(../images/pic-16.jpg) no-repeat; margin-top:20px;}
+
+.con-nav-left-list>li.show{ background:#fff;border-right:1px solid #fff;}
+.con-nav-left-list>li.show1{ background:#fff;}
+.show-sublist{display:block;position:absolute; left:244px; top:-1px; width:300px; height:476px; border:1px solid #eee;background:#fff; z-index:2; border-left:none; text-align:center; line-height:30px;}
+
+.con-nav-right{ width:740px; float:left;}
+.con-nav-right-nav{width:740px; height:40px; background:#2bb8aa; margin-top:1px;}
+.con-nav-right-nav>li>a{color:#fff; font-weight:bold; font-size:18px;}
+.con-nav-right-nav>li{ float:left; padding:9px 22px;}
+.con-nav-right-nav>li:hover{ background:#6ee5d2; height:22px;}
+
+/*区域*/
+.area{ width:980px; margin:0 auto; border:1px solid #eee; margin-top:10px;}
+.area-nav{width:950px; margin:0 auto; border-bottom:1px dashed #eee; margin-top:10px; padding-bottom:10px;}
+.area-nav>div{ position:relative;float:left;border:1px solid #2bb8aa; padding:3px 10px; padding-bottom:2px;}
+.area-nav-s{ float:left; width:10px; height:10px;background:url(../images/xuebitu.png) no-repeat -152px -77px;margin:4px 5px;}
+.area-nav-i{ background:url(../images/xuebitu.png) no-repeat -245px -55px; width:22px; height:22px; float:left;margin-top:-1px;}
+.area-nav-san{ background:url(../images/xuebitu.png) no-repeat -26px 0; width:7px; height:4px; display:inline-block; padding-top:3px;}
+.area-nav-i:hover{ background:url(../images/xuebitu.png) no-repeat -245px -79px; width:22px; height:22px; float:left;margin-top:-1px;}
+.area-nav-class-ul{ display:none;position:absolute; top:19px;left:-1px; border:1px solid #2bb8aa; width:293px; height:85px; background:#fff;}
+.area-nav-class-ul a{ line-height:20px; margin-left:8px; border-right:1px solid #CCC; padding-right:10px;}
+.area-nav-class-ul li{ margin-top:10px;}
+/*地区*/
+.area-class-ul li{ float:left; padding:3px 5px; margin:5px;}
+.area-class-ul li:hover{ background:#2ab6ab; border-radius:3%;}
+.area-class-span,.area-class-ul{ float:left;}
+.area-class-ul{ width:900px; margin-top:5px;}
+.area-class-span{ margin-left:15px; margin-top:13px; width:50px;} 
+.area-class-ul li:hover a{ color:#fff;}
+/*销量*/
+.salse{ width:980px; margin:0 auto; border:1px solid #eee; margin-top:10px;}
+.salse-class li{ float:left; border-right:1px solid #eee; padding:6px 18px;}
+.salse-class-i1{ display:inline-block; margin-left:3px;background:url(../images/xuebitu.png) no-repeat -155px -65px; width:9px; height:9px;}
+.salse-class-i2{ display:inline-block; margin-left:3px;background:url(../images/xuebitu.png) no-repeat -155px -99px; width:9px; height:9px;}
+.salse-class-active{ border-top:2px solid #2ab6ab}
+.salse-class-active a{color:#2ab6ab}
+
+/*内容*/
+list-con{ width:980px; margin:0 auto;}
+
+
+
+
+
+
+/*导航js*/
+.header-top-right-one ul{ display:none;border:1px solid #ccc;}
+.header-top-right-one.active{background:#fff; border:1px solid #ccc; border-bottom:none; z-index:2;}
+.header-top-right-one.active a{border-right:1px solid #fff;}
+.header-top-right-one .header-top-right-two{width:85px;background:#fff; position:absolute; top:28px; left:-1px; line-height:24px; text-align:center; border-top:none; }
+.header-top-right-one .browse{background:#fff;width:150px; position:absolute; right:-1px; top:27px; height:70px;border-top:1px solid #ccc;line-height:70px;text-align: center;}
+.actived{ width:83px; border:1px solid #fff; height:1px; position:absolute; top:25px; left:0; z-index:2}
+.actived1{ width:89px; border:1px solid #fff; height:1px; position:absolute; top:25px; left:0; z-index:2}
+.header-top-right-one .header-top-buycar{background:#fff;width:150px; position:absolute; right:-1px; top:27px; height:70px;border-top:1px solid #999;line-height:70px;border-top:1px solid #ccc;text-align: center;}
+.header-top-right-use{background:#fff;width:100px; position:absolute; right:-1px; top:27px; border-top:1px solid #999; line-height:30px; text-align:center;border-top:1px solid #ccc;}/*中间选项卡js准备*/
+/*js微信*/
+.dropdown-menu{display:none; width:160px; height:264px; border:1px solid #eee; position:absolute; top:30px; left:-1px; background:#fff; z-index:1; border-top:none;}
+.active.header-top-left-four-block{ width:80px; border:1px solid #eee; background:#fff; height:29px; padding:9px 4px ;}
+.active.dropdown-menu{ display:block;}
+.block-content{ width:88px; height:88px; background:url(../images/xuebitu.png) no-repeat -65px -312px; display:inline-block; margin:10px 36px;}
+.block-title{ display:inline-block; border-left:2px solid #32d3c3; padding-left:10px; margin-left:10px; margin-top:10px;}
+.app-block1{ border-bottom:1px dashed #eee;}
+/*js*/
+/*.con-nav-right-middle-ul{ display:none;}
+.active.con-nav-right-middle-ul{ display:block;}
+*/
+

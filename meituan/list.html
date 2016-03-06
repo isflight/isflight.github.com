@@ -1,0 +1,923 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/list.css" />
+<script src="js/public.js"></script>
+<script src="js/list.js"></script>
+<script src="js/move.js"></script>
+<script>
+window.onload=function(){
+	meituan.public.NavToblock();
+	meituan.public.dropdownToblock();
+	meituan.public.Searchmiddle();
+	meituan.public.picToblock();
+	meituan.public.LeftNav();
+	meituan.public.FooterAdd();
+	meituan.list.ConLeft();
+	meituan.list.Area();
+	meituan.list.AreaDiv();
+	meituan.list.Browse();
+};
+</script>
+</head>
+
+<body>
+<div class="header clearfix">
+		<div class="header-top clearfix">
+			<ul class="header-top-left clearfix">
+				<li class="header-top-left-one clearfix">
+					<i class="star"></i>
+					<a href="javascript:;">收藏美团</a>
+				</li>
+				<li class="header-top-left-tow">
+					<a href="javascript:;">登录</a>
+				</li>
+				<li class="header-top-left-three">
+					<a href="javascript:;">注册</a>|
+				</li>
+				<li class="header-top-left-four header-top-left-four-block" id="header-top-left-four-block">
+					<i></i>
+					<a href="javascript:;">手机看图</a>
+					<em class="triangle"></em>
+					<div class="dropdown-menu" id="dropdown-menu-block">
+						  <a class="app-block app-block1" href="javascript:;">
+							 <span class="block-title">免费下载美团手机版</span>
+							 <span class="block-content"></span>
+						 </a>
+						 <a class="app-block" href="javascript:;">
+							<span class="block-title">免费下载猫眼电影手机版</span>
+							<span class="block-content"></span>
+						</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="header-top-right clearfix" id="header-top-right">
+				<li class="header-top-right-one">
+					<b></b>
+					<a href="javascript:;">我的订单</a>
+					<i class="xtriangle1"></i>
+				</li>
+				<li class="header-top-right-one">
+					<b></b>
+					<a href="javascript:;">我的美团</a>
+					<i class="xtriangle1"></i>
+					<ul class="header-top-right-two">
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-top-right-one">
+					<b></b>
+					<a href="javascript:;">最近浏览</a>
+					<i class="xtriangle1"></i>
+					<div class="actived"></div>
+					<ul class="browse">
+						<li>0</li>
+					</ul>
+				</li>
+				
+				<li class="header-top-right-one header-top-left-one1 ">
+					<b></b>
+					<i class="buycar"></i>
+					<a href="javascript:;">购物车<span>0</span>件</a>
+					<i class="xtriangle1"></i>
+					<div class="actived1"></div>
+					<ul class="header-top-buycar">
+						<li>0</li>
+					</ul>
+				</li>
+			
+				<li class="header-top-right-one">
+					<b></b>
+					<a href="javascript:;">联系客服</a>
+					<i class="xtriangle1"></i>
+					<div class="actived"></div>
+					<ul class="header-top-right-use">
+						<li>
+							<a href="#">申请退款</a>
+						</li>
+						<li>
+							<a href="#">申请退换货</a>
+						</li>
+						<li>
+							<a href="#">查看美团券</a>
+						</li>
+						<li>
+							<a href="#">换绑手机号</a>
+						</li>
+						<li>
+							<a href="#">常见问题</a>
+						</li>
+					</ul>
+					
+				</li>
+				<li class="header-top-right-one ">
+					<b></b>
+					<a href="javascript:;">我是商家</a>
+					<i class="xtriangle1"></i>
+					<div class="actived"></div>
+					<ul class="header-top-right-use">
+						<li>
+							<a href="#">登录商家中心</a>
+						</li>
+						<li>
+							<a href="#">我想合作</a>
+						</li>
+						<li>
+							<a href="#">手机免费开店</a>
+						</li>
+						<li>
+							<a href="#">商家营销平台</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-top-left-last header-top-right-one">
+					<a href="javascript:;">更多</a>
+					<i class="xtriangle2"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--头部广告-->
+		<div class="header-middle">
+			<i class="close" id="header-middle-btn"></i>
+			<img src="images/pic-top.jpg" id="header-middle-close"/>
+		</div>
+	<!--头部广告-->
+	<!--logo-->	
+	<div class="header-bottom clearfix">
+			<h1></h1>
+			<div class="header-bottom-address">
+				<span>北京</span>
+				<b><a href="javascript:;">切换城市</a></b>
+			</div>
+			<div class="header-bottom-search clearfix">
+				<div class="header-bottom-search-left">团购
+					<i class="xltriangle"></i>
+				</div>
+				<div class="header-bottom-search-middle" id="search-middle">
+					<input type="text"/ id="search">
+					<span id="span1">请输入商品名称,地址等</span>
+				</div>
+				<div class="header-bottom-search-right">
+					<a href="javascript:;">搜索</a>
+				</div>
+			</div>
+			
+			<div class="header-bottom-icon clearfix">
+					<a href="javascript:;" class="header-bottom-icon-one">
+						<i></i>
+						随时退
+					</a>
+					<a href="javascript:;" class="header-bottom-icon-two">
+						<i></i>
+						不满意免单
+					</a>
+					<a href="javascript:;" class="header-bottom-icon-three">
+						<i></i>
+						过期退
+					</a>
+			</div>
+		</div>
+		
+		
+	<!--导航-->	
+	<div class="con clearfix">
+		<div class="con-nav-left">
+			<div class="con-nav-left-nav" id="left-nav">
+				<a href="javascript:;">全部分类</a>
+			</div>
+			<ul class="con-nav-left-list clearfix" id="sublist">
+				<li>
+					<div class="clearfix">
+						<a href="javascript:;">美食</a>
+						<span><a href="javascript:;"> 代金卷 &gt;</a></span>
+						<span><a href="javascript:;">自助餐 </a></span>
+					</div>
+					<i class="downline"></i>
+					<ul class="con-nav-sublist">
+						<li><a href="javascript:;">代金卷</a></li>
+						<li><a href="javascript:;"> 代金卷</a></li>
+						<li><a href="javascript:;"> 代金卷</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<div class="clearfix">
+						<a href="javascript:;">客栈 / 酒店</a>
+						<span class="righttriangle"><a href="javascript:;"> 经济型酒店 &gt;</a></span>
+					</div>
+					<i class="downline"></i>
+					<ul class="con-nav-sublist">
+						<li><a href="javascript:;"> 房卡</a></li>
+						<li><a href="javascript:;"> 钥匙</a></li>
+						<li><a href="javascript:;">套房</a></li>
+					</ul>
+				</li>
+				
+				<li class="clearfix">
+					<div class="clearfix">
+						<a href="javascript:;">电影 / 在线选座</a>
+						<span><a href="javascript:;"> &gt;</a></span>
+					</div>
+					<i class="downline"></i>
+					<ul class="con-nav-sublist">
+						<li><a href="javascript:;">1</a></li>
+						<li><a href="javascript:;"> 2</a></li>
+						<li><a href="javascript:;"> 3</a></li>
+					</ul>
+				</li>
+				<li class="clearfix">
+					<div class="clearfix">
+						<a href="javascript:;">KTV / 在线预定</a>
+					</div>
+					<i class="downline"></i>
+				</li>
+				<li class="clearfix">
+					<div class="clearfix">
+						<a href="javascript:;">休闲娱乐</a>
+						<span><a href="javascript:;"> 足疗按摩 &gt;</a></span>
+						<span><a href="javascript:;">温泉 </a></span>
+					</div>
+					<i class="downline"></i>
+					
+					<ul class="con-nav-sublist">
+						<li><a href="javascript:;">温泉</a></li>
+						<li><a href="javascript:;">泰式足疗</a></li>
+						<li><a href="javascript:;"> 开背</a></li>
+					</ul>
+				</li>
+				<li class="clearfix">
+					<div class="clearfix">
+						<a href="javascript:;">周边游 / 旅游</a>
+					</div>
+					<i class="downline"></i>
+				</li>
+				<li class="clearfix">
+					<div class="clearfix">
+						<a href="javascript:;">生活服务</a>
+						<span><a href="javascript:;"> 婚纱摄影 &gt;</a></span>
+						<span><a href="javascript:;">个人写真 </a></span>
+					</div>
+					<i class="downline"></i>
+					<ul class="con-nav-sublist">
+						<li><a href="javascript:;">婚纱摄影</a></li>
+						<li><a href="javascript:;">套餐服务</a></li>
+						<li><a href="javascript:;"> 个人写真</a></li>
+					</ul>
+				</li>
+				<li class="clearfix">
+					<div class="clearfix">
+						<a href="javascript:;">购物</a>
+						<span><a href="javascript:;"> 男装 &gt;</a></span>
+						<span><a href="javascript:;">女装 </a></span>
+					</div>
+					<i class="downline"></i>
+					<ul class="con-nav-sublist">
+						<li><a href="javascript:;">今日新款</a></li>
+						<li><a href="javascript:;">特惠男装</a></li>
+						<li><a href="javascript:;">最新上架</a></li>
+					</ul>
+				</li>
+				<li class="clearfix con-nav-left-list-last">
+					<div class="clearfix">
+						<a href="javascript:;">丽人</a>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+		
+		<div class="con-nav-right clearfix">
+			<ul class="con-nav-right-nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="details.html">今日新单</a></li>
+				<li><a href="list.html">购物</a></li>
+				<li><a href="javascript:;">身边外卖</a></li>
+				<li><a href="javascript:;">名店抢购</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--区域-->
+	<div  class="area">
+		<div class="area-nav clearfix">
+			<div class="area-nav-all">全部</div><span class="area-nav-s"></span> 
+			<div class="area-nav-class" id="area-nav-class">区域：<a href="javascript:;" id="area-nav">海淀区</a> 
+				<span class="area-nav-san"></span>
+				<ul class="area-nav-class-ul" id="area-nav-class-ul">
+					<li><a href="javascript:;">全部</a> 
+						<a href="javascript:;">今日新单</a> 
+						<a href="javascript:;">美食</a> 
+						<a href="javascript:;">电影</a> 
+						<a href="javascript:;">KTV</a> 
+						<a href="javascript:;">足疗</a> 
+						<a href="javascript:;">游戏</a> 
+						<a href="javascript:;">购物</a> 
+						<a href="javascript:;">KTV</a> 
+						<a href="javascript:;">足疗</a> 
+						<a href="javascript:;">游戏</a> 
+						<a href="javascript:;">购物</a> 
+					</li>
+				</ul>
+			</div>		
+			<i class="area-nav-i"></i><span class="area-nav-s"></span> 
+			<div class="area-nav-class">区域：中关村 <span class="area-nav-san"></span></div>
+			<i class="area-nav-i"></i>
+		</div>
+		<div class="area-class clearfix">
+			<span class="area-class-span">区域 ：</span>
+			<ul class="area-class-ul clearfix" id="area-class">
+				<li><a href="javascript:;">全部</a></li>
+				<li><a href="javascript:;">东城区</a></li>
+				<li><a href="javascript:;">西城区</a></li>
+				<li><a href="javascript:;">顺义区</a></li>
+				<li><a href="javascript:;">大兴区</a></li>
+				<li><a href="javascript:;">海淀区</a></li>
+				<li><a href="javascript:;">朝阳区</a></li>
+				<li><a href="javascript:;">昌平区</a></li>
+				<li><a href="javascript:;">石景山区</a></li>
+				<li><a href="javascript:;">通州区</a></li>
+				<li><a href="javascript:;">房山区</a></li>
+				<li><a href="javascript:;">密云区</a></li>
+				<li><a href="javascript:;">朝阳区</a></li>
+				<li><a href="javascript:;">昌平区</a></li>
+				<li><a href="javascript:;">石景山区</a></li>
+				<li><a href="javascript:;">通州区</a></li>
+			</ul>
+		</div>
+	</div>	
+		
+	<div class="salse">
+			<ul class="salse-class clearfix">
+				<li class="salse-class-active">
+					<a href="javascript:;">全部</a>
+					
+				</li>
+				<li>
+					<a href="javascript:;">销量</a>
+					<i class="salse-class-i1"></i>
+				</li>
+				<li>
+					<a href="javascript:;">价格</a>
+					<i class="salse-class-i2"></i>
+				</li>
+				<li>
+					<a href="javascript:;">好评</a>
+					<i class="salse-class-i2"></i>
+				</li>
+				<li>
+					<a href="javascript:;">发布时间</a>
+					<i class="salse-class-i2"></i>
+				</li>
+			</ul>
+		</div>
+	 
+	<!--内容-->
+		<div class="list-con clearfix">
+		
+			<ul class="list-con-left clearfix" id="con-left">
+				<li class="list-con-left-li">
+					<i class="location1"></i>
+					<i class="location2"></i>
+					<img src="images/list-1.jpg" />
+					<h3>【7店通用】料理</h3>
+					<b class="clearfix">
+						<span class="favorable">￥58元</span>
+						<em class="reduce">立减5</em>
+						<em class="original">门店价99</em>
+					</b>
+					<div class="list-con-left-star clearfix">
+						<i class="print1">已售<span class="print2">9934</span></i>
+						<i class="print">9934评价</i>
+						<img src="images/star-1.jpg"/>
+					</div>
+				</li>
+				
+				<li class="list-con-left-li">
+					<i class="location1"></i>
+					<i class="location2"></i>
+					<img src="images/pic-27.jpg" />
+					<h3>【7店通用】松子日本料理</h3>
+					<b class="clearfix">
+						<span class="favorable">￥58元</span>
+						<em class="reduce">立减5</em>
+						<em class="original">门店价99</em>
+					</b>
+					<div class="list-con-left-star clearfix">
+						<i class="print1">已售<span class="print2">9934</span></i>
+						<i class="print">9934评价</i>
+						<img src="images/star-1.jpg"/>
+					</div>
+				</li>
+				
+				
+				<li class="list-con-left-li">
+					<i class="location1"></i>
+					<i class="location2"></i>
+					<img src="images/list-2.jpg" />
+					<h3>【7店通用】松子日本料理</h3>
+					<b class="clearfix">
+						<span class="favorable">￥58元</span>
+						<em class="reduce">立减5</em>
+						<em class="original">门店价99</em>
+					</b>
+					<div class="list-con-left-star clearfix">
+						<i class="print1">已售<span class="print2">9934</span></i>
+						<i class="print">9934评价</i>
+						<img src="images/star-1.jpg"/>
+					</div>
+				</li>
+				
+				<li class="list-con-left-li">
+					<i class="location1"></i>
+					<i class="location2"></i>
+					<img src="images/list-1.jpg" />
+					<h3>【7店通用】松子日本料理</h3>
+					<b class="clearfix">
+						<span class="favorable">￥58元</span>
+						<em class="reduce">立减5</em>
+						<em class="original">门店价99</em>
+					</b>
+					<div class="list-con-left-star clearfix">
+						<i class="print1">已售<span class="print2">9934</span></i>
+						<i class="print">9934评价</i>
+						<img src="images/star-1.jpg"/>
+					</div>
+				</li>
+				
+				
+				<li class="list-con-left-li">
+					<i class="location1"></i>
+					<i class="location2"></i>
+					<img src="images/list-1.jpg" />
+					<h3>【7店通用】松子日本料理</h3>
+					<b class="clearfix">
+						<span class="favorable">￥58元</span>
+						<em class="reduce">立减5</em>
+						<em class="original">门店价99</em>
+					</b>
+					<div class="list-con-left-star clearfix">
+						<i class="print1">已售<span class="print2">9934</span></i>
+						<i class="print">9934评价</i>
+						<img src="images/star-1.jpg"/>
+					</div>
+				</li>
+				
+				<li class="list-con-left-li">
+					<i class="location1"></i>
+					<i class="location2"></i>
+					<img src="images/list-2.jpg" />
+					<h3>【7店通用】松子日本料理</h3>
+					<b class="clearfix">
+						<span class="favorable">￥58元</span>
+						<em class="reduce">立减5</em>
+						<em class="original">门店价99</em>
+					</b>
+					<div class="list-con-left-star clearfix">
+						<i class="print1">已售<span class="print2">9934</span></i>
+						<i class="print">9934评价</i>
+						<img src="images/star-1.jpg"/>
+					</div>
+				</li>
+			</ul>
+			
+			<div class="list-con-right">
+				<div class="list-top">
+					<div class="list-top-shou">
+						<img src="images/list-4.jpg" />
+						<div>
+							<h4>美团手机版</h4>
+							<p>免费下载</p>
+						</div>
+					</div>
+					
+					<div class="list-top-shou list-top-t">
+						<img src="images/list-5.jpg" />
+						<div>
+							<h4>美团手机版</h4>
+							<span>上猫眼看电视</span>
+							<p>免费下载</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-con-middle">
+					<h5>热门专题</h5>
+					<img src="images/list-8.jpg" />
+				</div>
+			
+				<div class="list-con-guess">
+					<h5>猜你喜欢</h5>
+					<img src="images/pic-5.jpg" />
+					<h3>【7店通用】松子日本料理</h3>
+					<div class="clearfix">
+						<span class="favorable">￥58元</span>
+						<i class="print1">已售<span class="print2">9934</span></i>
+					</div>
+				</div>
+				<img src="images/list-pic.jpg" />
+			
+			
+			<div class="browse" id="browse">
+					<div class="browse-f clearfix">
+						<h4>最近浏览</h4>
+						<p><a href="javascrpt:;" id="empty">清空</a></p>
+					</div>
+					<ul class="browse-sth clearfix" id="browse-sth">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="footer-nav">
+		<ul class="footer-nav-add clearfix" id="footer-nav-add">
+			<li class="active"><a href="javascript:;">团购分类</a></li>
+			<li><a href="javascript:;">热门地标</a></li>
+			<li><a href="javascript:;">今日新单</a></li>
+			<li><a href="javascript:;">热门团购</a></li>
+			<li><a href="javascript:;">精品推荐</a></li>
+			<li><a href="javascript:;">历史团购</a></li>
+			<li><a href="javascript:;">热门城市</a></li>
+			<li><a href="javascript:;">周边城市</a></li>
+			<li><a href="javascript:;">美团推荐</a></li>
+			<li><a href="javascript:;">品牌推荐</a></li>
+			<li><a href="javascript:;">专题推荐</a></li>
+			<li><a href="javascript:;">品类推荐</a></li>
+		</ul>
+		
+		<div class="footer-nav-subadd clearfix" id="footer-nav-subadd">
+			<ul class="footer-classification clearfix active">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+		
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+				<li><a href="javascript:;">美团推荐</a></li>
+				<li><a href="javascript:;">品牌推荐</a></li>
+				<li><a href="javascript:;">专题推荐</a></li>
+				<li><a href="javascript:;">品类推荐</a></li>
+			</ul>
+			<ul class="footer-classification clearfix">
+				<li><a href="javascript:;">热门地标</a></li>
+				<li><a href="javascript:;">今日新单</a></li>
+				<li><a href="javascript:;">热门团购</a></li>
+				<li><a href="javascript:;">精品推荐</a></li>
+				<li><a href="javascript:;">历史团购</a></li>
+				<li><a href="javascript:;">热门城市</a></li>
+				<li><a href="javascript:;">周边城市</a></li>
+			</ul>
+		</div>
+	
+	</div>
+	
+	<div class="footer-line1"></div>
+	
+	<div class="footer-class clearfix">
+	
+		<dl>
+			<dt><a href="javascript:;">获取更新</a></dt>
+			<dd><a href="javascript:;">邮件订阅</a></dd>
+			<dd><a href="javascript:;">iPhone/Android</a></dd>
+			<dd><a href="javascript:;">美团QQ空间</a></dd>
+			<dd><a href="javascript:;">美团新浪微博</a></dd>
+			<dd><a href="javascript:;">sitemap</a></dd>
+			<dd><a href="javascript:;">RSS订阅</a></dd>
+		</dl>
+		
+		<dl>
+			<dt><a href="javascript:;">获取更新</a></dt>
+			<dd><a href="javascript:;">邮件订阅</a></dd>
+			<dd><a href="javascript:;">iPhone/Android</a></dd>
+			<dd><a href="javascript:;">美团QQ空间</a></dd>
+			<dd><a href="javascript:;">美团新浪微博</a></dd>
+			<dd><a href="javascript:;">sitemap</a></dd>
+			<dd><a href="javascript:;">RSS订阅</a></dd>
+		</dl>
+		
+		<dl>
+			<dt><a href="javascript:;">获取更新</a></dt>
+			<dd><a href="javascript:;">邮件订阅</a></dd>
+			<dd><a href="javascript:;">iPhone/Android</a></dd>
+			<dd><a href="javascript:;">美团QQ空间</a></dd>
+			<dd><a href="javascript:;">美团新浪微博</a></dd>
+			<dd><a href="javascript:;">sitemap</a></dd>
+			<dd><a href="javascript:;">RSS订阅</a></dd>
+		</dl>
+		
+		<dl >
+			<dt><a href="javascript:;">获取更新</a></dt>
+			<dd><a href="javascript:;">邮件订阅</a></dd>
+			<dd><a href="javascript:;">iPhone/Android</a></dd>
+			<dd><a href="javascript:;">美团QQ空间</a></dd>
+			<dd><a href="javascript:;">美团新浪微博</a></dd>
+			<dd><a href="javascript:;">sitemap</a></dd>
+			<dd><a href="javascript:;">RSS订阅</a></dd>
+		</dl>
+		<div class="footer-div">
+			<img src="images/list-9.jpg" />
+			<h4>客服电话</h4>
+			<i>400-4400-400</i><span>(09:10:22)</span>
+			<p class="footer-div-p">退款，退换货，查看美团劵</p>
+			<p class="footer-div-p1">参考教程，轻松搞定！！！</p>
+		</div>
+   </div>
+   
+   
+    <div class="footer-link">
+   		<div class="footer-link-read clearfix" >
+			<p>©2016美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则</p>
+			<div class="pic-d">
+				<img src="images/list-11.jpg" />
+				<img src="images/list-12.jpg" />
+				<img src="images/list-13.jpg" />
+				<img src="images/list-14.jpg" />
+				<img src="images/list-15.jpg" />
+			</div>
+		</div>
+   </div>
+	
+	
+</body>
+</html>
