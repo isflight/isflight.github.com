@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Licaijuan" />
+<title>瀑布流效果</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style>
+*{margin:0; padding:0;}
+li{list-style:none;}
+img{border:none;}
+a{text-decoration:none;color:#444444;}
+a:hover{color:#999999;}
+body{height:100%; background:#eee; font-family:"微软雅黑";}
+h1{background: #000; font-size: 16px; line-height: 40px; text-align: center; color: #fff;}
+.box{width: 1100px; height:auto; position:relative; margin:30px auto; box-shadow:4px 4px 6px #333333;}
+.box ul{width:240px; height:auto; border:none; float:left; margin-right:20px; _margin:0}
+.box ul li{width:240px; height:auto; padding:10px; border:none;}
+.box ul li .info{width:240px; height:auto; border-radius:3px; box-shadow:0 0 11px #666666; background:#fff;}
+.box ul li .info .pic{width:220px; height:auto; margin:0 auto; padding-top:10px;}
+.box ul li .info .pic img{width:220px; border-radius:3px; cursor:pointer;}
+.box ul li .info .desc{width:220px; height:40px; margin:0 auto; line-height:40px; text-align:left; color:#666666; font-size:14px;overflow:hidden;}
+.pro{font-size: 14px; font-weight: normal; width: 1000px; margin: 0 auto;}
+</style>
+<script>
+window.onload=function(){
+	var temp=[{'src':'0.jpg','title':'这是神马？'},
+			  {'src':'1.jpg','title':'爱神棍，爱生活'},
+			  {'src':'2.jpg','title':'饿了嚒？'},
+			  {'src':'3.jpg','title':'人狗情未了啊！@'},
+			  {'src':'4.jpg','title':'飞吧孩子，去咬死他！'},
+			  {'src':'5.jpg','title':'草地守望者'},
+			  {'src':'6.jpg','title':'好表情，给力。'},
+			  {'src':'7.jpg','title':'其实你很丑'},
+			  {'src':'8.jpg','title':'狗个性-够个性'},
+			  {'src':'9.jpg','title':'哎~~~~~~~~'},
+			  {'src':'10.jpg','title':'赶紧下雨吧'}];	
+	waterfall(temp.sort(function(){
+			return Math.random()-0.5;	
+	}));
+	function waterfall(data){
+		var aUl=document.getElementsByTagName('ul');
+		for(var i=0; i <data.length; i++){
+			(function(index){
+				var oImg=new Image();
+				oImg.onload=function (){
+					var oLi=document.createElement('li');
+					oLi.innerHTML='<div class="info"><div class="pic" ><img style="height:'+oImg.height*160/oImg.width+'px;" src="images/pubu_img/'+data[index].src+'"/></div><div class="desc"><a href="javascript:;">'+data[index].title+'</a></div></div>';
+					
+					var arr=[];
+					for(var j=0; j<aUl.length; j++){
+						arr[j]=aUl[j];
+					}
+					arr.sort(function (ul1, ul2){
+						return ul1.offsetHeight-ul2.offsetHeight;
+					});
+					
+					arr[0].appendChild(oLi);		
+				};
+				oImg.src='images/pubu_img/'+data[i].src;
+			})(i);
+		}		
+	}
+	var timer=null;
+	window.onscroll=window.onresize=function(){
+		clearTimeout(timer);
+		var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+		if(scrollTop>=document.body.scrollHeight-document.documentElement.clientHeight){
+			timer=setTimeout(function(){
+				waterfall(temp.sort(function(){
+					return Math.random()-0.5;	
+				}));
+			},30);
+			
+		}
+	};
+};
+
+</script>
+</head>
+
+<body>
+ <p class="pro">思路:<br>
+	1.滚动条给人第一感觉就是拉不到底，快到底时会有新的东西出现，其实滚动条的一切都要围绕这句俗话来做。这个效果只是模拟，完善的需要有服务器环境，从后台取数据来做，比如用nodejs+mysql来做。<br>
+	2.封一函数，创建li，li的内容是一图片，图片设宽不设高。<br>
+	3.开一定时器(setTimeout)，动态创建li，将四个UL从低到高排序，将li插到最矮的那个UL;创建个数到20(这个数随意)时，关定时器。
+	4.当滚动条的最底部大于等于body的高时，再次触发定时器。
+ </p>
+<div class="box">
+	<ul></ul>
+    <ul></ul>
+    <ul></ul>
+    <ul></ul>
+</div>
+</body>
+</html>
