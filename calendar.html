@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日历组件演示-孙永杰</title>
+<meta name="author" content="SunYongJie">
+<meta name="description" content="本组件由原生js书写完成。">
+<link rel="stylesheet" type="text/css" href="css/myCalendar.css">
+<script src="js/myCalendar.js"></script>
+<style>
+.datebox{width: 600px;position: absolute;left: 50%;top:10%;margin-left: -300px;}
+.datebox input{
+	width: 150px;height: 30px;font-size: 16px;border: 1px solid #999;outline: none;
+	-moz-border-radius:5px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-border-radius: 4px;
+	padding-left: 8px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.log{width:100%;position: fixed;left: 20%;bottom: 10%;line-height: 25px;font-size: 14px;}
+</style>
+<script>
+window.onload=function(){
+	calendar('setoff');
+	calendar('turnback');
+}
+</script>
+</head>
+
+<body>
+	<a href="index.html">返回主页</a>
+	<div class="datebox">
+		出发日期：<input type="text" id="setoff" >
+		返程日期：<input type="text" id="turnback" ><br>
+	</div>
+	<p class="log">
+可深度开发 <br>
+开发思路： <br>
+
+1.获取每月一号是周几，确定插入几个空li，（或者上个月的最后几天）<br>
+2.获取一个月有多少天，然后创建这么多个li插入<br>
+3.获取一个月最后一天是周几，确定剩余几个li位置，用下个月的前几号占位；<br>
+4.加样式：今日，过去的日子，周末，鼠标移入移出<br>
+5.翻月，定义一变量计数 iNow 当月为0，上月-- 下月++，setMonth的时候用<br>
+坑：<br>
+1.点击空白处（document）需要日历消失，而input onfocus的时候需要日历显示，这时候onclick事件会冒泡，注意阻止冒泡（注意兼容）;<br>
+2,两个文本框都加日历时，第二个日历的document加onclick日历消失事件会覆盖第一个，这时得用事件绑定防止覆盖。
+	</p>
+
+</body>
+</html>
