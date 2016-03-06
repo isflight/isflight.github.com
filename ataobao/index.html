@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<mwat name="viewport" content="width=device-width,initial-scale=1,wser-scalable=no">
+<title>淘宝移动端</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+html{ font-size:14px;}
+    @media screen and (min-width:320px){
+		html{ font-size:15px;}	
+	}
+	@media screen and (min-width:400px){
+		html{ font-size:16px;}	
+	}
+	@media screen and (min-width:450px){
+		html{ font-size:17px;}	
+	}
+	@media screen and (min-width:500px){
+		html{ font-size:18px;}	
+	}
+	@media screen and (min-width:550px){
+		html{ font-size:19px;}	
+	}
+	@media screen and (min-width:600px){
+		html{ font-size:20px;}	
+	}
+	@media screen and (min-width:620px){
+		html{ font-size:21px;}	
+	}
+	@media screen and (min-width:640px){
+		html{ font-size:22px;}	
+	}
+
+
+body{ background:#f5f5f5;}
+.big_box{ width:100%;               
+          min-width:320px;
+	      max-width:640px;
+		  margin:0 auto;}
+.big_box h1{ width:154px; 
+             height:50px;
+			 margin:0 auto;
+			 background:url(img/13.png) no-repeat;}
+.sousuo{ width:100%;
+         position:relative;
+         height:34px;
+		 margin-bottom:10px;}
+.sousuo input{ width:95%;
+               height:34px;
+			   margin-left:5%;
+			   padding-left:5%;
+			   border:none;
+			   box-sizing:border-box;
+			   border:1px solid #ccc;}
+.sousuo i{ width:15px;
+           height:15px;
+		   background:url(img/10.png) no-repeat;
+		   position:absolute; left:7%; top:10px;}
+.banner{ width:100%;}
+.banner img{ width:100%;}
+
+.banner_nr{ width:100%;
+            margin-bottom:10px;}
+.banner_nr ul{margin:0 auto;}
+.banner_nr li{ float:left; 
+			   width:25%;
+			   height:70px;
+			   margin-bottom:20px;
+			   text-align:center; 
+			   box-sizing:border-box;}
+.banner_nr li i{ margin:0 auto; 
+			     width:2.1875rem;          
+			     height:2.1875rem;  
+			     background:url(img/14.png); 
+			     background-size:100%; 
+			     display:block;
+			     margin-top:10px;
+			     margin-bottom:3px;}
+.pingpai_temai{ width:98%;
+                height:204px;
+				margin:0 auto;
+				margin-bottom:10px;
+				background:#ffffff;
+				box-sizing:border-box;
+                border:1px solid #e6e6e6;}
+.pinapai_tml{ width:20%;
+              float:left;
+              height:186px;
+			  margin-top:8px;
+			  margin-left:8px;
+			  box-sizing:border-box;
+			  border-right:1px solid #e6e6e6;
+			  border-bottom:1px solid #e6e6e6;}
+.pinapai_tml h2{ font-size:18px;
+                 color:#e72900;
+				 padding-top:8px;}
+.pinapai_tml p{ margin-top:12px;
+                margin-bottom:12px;}
+.pingpai_tu{ width:50%;}
+.pingpai_tu img{ width:100%;}
+
+.pinapai_tmr{ width:77%;
+              float:left;
+			  margin-top:8px;
+              height:186px;}
+.pingp_top{ height:92px;
+            border-bottom:1px solid #e6e6e6;}
+.pingp_top1{ margin-top:28px;
+             margin-bottom:10px;}
+.pingp_top img{ float:left;
+                margin-top:12px;
+				margin-left:24px;
+				margin-right:32px;}
+.pingp_nr{ float:left;}
+
+.renmen_cp{ width:98%;
+			height:150px;
+			margin:0 auto;
+			margin-bottom:10px;
+			background:#ffffff;
+			box-sizing:border-box;
+			border:1px solid #e6e6e6;}
+.renmen_cp h3{ height:36px;
+               line-height:36px;
+			   padding-left:12px;
+			   color:#333333;}
+.renmen_cp ul li{ float:left; 
+				   width:25%;
+				   height:40px;
+				   margin-bottom:15px;
+				   text-align:center; 
+				   box-sizing:border-box;}
+.renmen_cp ul p{ margin-top:8px;}
+
+.chaolv_nz{ width:98%;
+			height:260px;
+			margin:0 auto;
+			margin-bottom:10px;
+			background:#ffffff;
+			box-sizing:border-box;
+			border:1px solid #e6e6e6;}
+.chaolv_nz h3{ height:42px; 
+               line-height:23px;
+			   border-bottom:1px solid #f0f1f2;}
+.chaolv_nz h3 span{ height:22px;
+                    margin-top:9px;
+					font-size:16px;
+					padding-left:8px;
+					padding-right:17px;
+                    display:inline-block; 
+					border-left:3px solid #b84789;}	
+			
+.chaolv_nz_top{ height:106px;
+                padding-top:8px;
+				border-bottom:1px solid #f0f1f2;}
+.clnz_l{ width:55%;
+         height:98px;
+		 float:left;
+		 box-sizing:border-box;
+		 border-right:1px solid #f0f1f2;}
+.clnz_l_tu{ float:left;  
+            width:15%;
+            margin-left:30px;}
+.clnz_l_tu img{ width:100%;}
+.clnz_l_nr{ width:45%; float:right;
+            margin-right:12px;
+			margin-top:15px;}
+.clnz_waitao{ margin-top:6px; color:#999999;}
+.clnz_r{ width:45%;
+         float:left;}
+.clnz_rfd{ height:47px; width:90%;
+           margin-left:12px;
+		   margin-right:12px; 
+		   border-bottom:1px solid #f0f1f2;}
+.clnz_rfd_p1{ float:left;}
+.clnz_rfd_p2{ float:right;
+              margin-top:7px;}
+.clnz_qbk{ border:none;
+           margin-top:8px;}
+.fz_daohang li{ width:25%;
+                float:left;
+				height:16px;
+				margin-top:14px;
+				box-sizing:border-box;
+				text-align:center;
+				line-height:16px;
+				border-right:1px solid #f0f1f2;}
+.footer{ width:100%;
+         height:32px;line-height:32px;
+         background:#e6e6e6;}
+.footer p{ width:96%;
+           margin:0 auto;}
+.footer_a1{ margin-left:10px;
+            margin-right:40px;}
+.footer_a2{ float:right;
+            margin-right:10px;}
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="big_box">
+        <h1></h1>
+        
+        <div class="sousuo">
+            <input type="text" placeholder="搜索" />
+            <i></i>
+        </div>
+        
+        <div class="banner">
+            <img src="img/5.jpg" />
+        </div>
+        
+        <div class="banner_nr">
+            <ul class="clearfix">
+                <li>
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li>
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li>
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li class="qc_qbk">
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li>
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li>
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li>
+                    <i></i>
+                    我的淘宝
+                </li>
+                <li class="qc_qbk">
+                    <i></i>
+                    我的淘宝
+                </li>
+            </ul>
+        </div>
+        
+        <div class="pingpai_temai clearfix">
+            <div class="pinapai_tml">
+                <h2>品牌特卖</h2>
+                <p>春款一折起主会场&gt;</p>
+                <p class="pingpai_tu"><img src="img/15.png" /></p>
+            </div>
+            <div class="pinapai_tmr">
+                <div class="pingp_top clearfix">
+                    <img src="img/6.jpg" />
+                    <div class="pingp_nr">
+                        <p class="pingp_top1">超级卷</p>
+                        <p>有卷还能在优惠</p>
+                    </div>
+                </div>
+                <div class="pingp_top clearfix">
+                    <img src="img/6.jpg" />
+                    <div class="pingp_nr">
+                        <p class="pingp_top1">超级卷</p>
+                        <p>有卷还能在优惠</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="renmen_cp">
+            <h3>热门市场</h3>
+            <ul class="clearfix">
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li>
+                <li>
+                    <img src="img/16.png" />
+                    <p>女装</p>
+                </li> 
+            </ul>
+        </div>
+        
+        <div class="pingpai_temai clearfix">
+            <div class="pinapai_tml">
+                <h2>品牌特卖</h2>
+                <p>春款一折起主会场&gt;</p>
+                <p class="pingpai_tu"><img src="img/15.png" /></p>
+            </div>
+            <div class="pinapai_tmr">
+                <div class="pingp_top clearfix">
+                    <img src="img/6.jpg" />
+                    <div class="pingp_nr">
+                        <p class="pingp_top1">超级卷</p>
+                        <p>有卷还能在优惠</p>
+                    </div>
+                </div>
+                <div class="pingp_top clearfix">
+                    <img src="img/6.jpg" />
+                    <div class="pingp_nr">
+                        <p class="pingp_top1">超级卷</p>
+                        <p>有卷还能在优惠</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chaolv_nz">
+            <h3>
+                <span>潮流女装算</span>2015女装流行趋势
+            </h3>
+            <div class="chaolv_nz_top clearfix">
+                <div class="clnz_l clearfix">
+                    <p class="clnz_l_tu"><img src="img/17.png" /></p>
+                    <div class="clnz_l_nr">
+                        <p>春款外套</p>
+                        <p class="clnz_waitao">2015热门单品</p>
+                    </div>
+                </div>
+                <div class="clnz_r">
+                    <div class="clnz_rfd clearfix">
+                        <p class="clnz_rfd_p1"><img src="img/18.png" /></p>
+                        <p class="clnz_rfd_p2">棒球服</p>
+                    </div>
+                    <div class="clnz_rfd clnz_qbk clearfix">
+                        <p class="clnz_rfd_p1"><img src="img/18.png" /></p>
+                        <p class="clnz_rfd_p2">棒球服</p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="fz_daohang clearfix">
+                <li>婚纱</li>
+                <li>文胸</li>
+                <li>打底裤</li>
+                <li>套裙</li>
+                <li>婚纱</li>
+                <li>文胸</li>
+                <li>打底裤</li>
+                <li>套裙</li>
+                <li>婚纱</li>
+                <li>文胸</li>
+                <li>打底裤</li>
+                <li>套裙</li>
+            </ul>
+        </div>
+        
+        <div class="chaolv_nz">
+            <h3>
+                <span>潮流女装算</span>2015女装流行趋势
+            </h3>
+            <div class="chaolv_nz_top clearfix">
+                <div class="clnz_l clearfix">
+                    <p class="clnz_l_tu"><img src="img/17.png" /></p>
+                    <div class="clnz_l_nr">
+                        <p>春款外套</p>
+                        <p class="clnz_waitao">2015热门单品</p>
+                    </div>
+                </div>
+                <div class="clnz_r">
+                    <div class="clnz_rfd clearfix">
+                        <p class="clnz_rfd_p1"><img src="img/18.png" /></p>
+                        <p class="clnz_rfd_p2">棒球服</p>
+                    </div>
+                    <div class="clnz_rfd clnz_qbk clearfix">
+                        <p class="clnz_rfd_p1"><img src="img/18.png" /></p>
+                        <p class="clnz_rfd_p2">棒球服</p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="fz_daohang clearfix">
+                <li>婚纱</li>
+                <li>文胸</li>
+                <li>打底裤</li>
+                <li>套裙</li>
+                <li>婚纱</li>
+                <li>文胸</li>
+                <li>打底裤</li>
+                <li>套裙</li>
+                <li>婚纱</li>
+                <li>文胸</li>
+                <li>打底裤</li>
+                <li>套裙</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <a href="#" class="footer_a1">登录</a>
+                <a href="#">注册</a>
+                <a href="#" class="footer_a2">返回顶部</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
