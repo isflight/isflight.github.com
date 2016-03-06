@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>旺香婷</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style>
+body{ 
+	background:#f6f6f6;}
+html{
+	font-size: 20px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a img{ border:none;}
+img{ display:block;}
+.clearfix:after{ display:block; content:''; clear:both;} 
+.header{ 
+	width:16rem;
+	background:url(img/1.png) repeat-x;
+	height:2.25rem;
+	border-radius:0.2rem 0.2rem 0 0; }
+.header-title{
+	font-size:0.75rem;
+	color:#fff;
+	line-height:2.25rem;
+	text-shadow:-0.05rem -0.05rem  0.1rem #d20001,-0.05rem -0.05rem 0.1rem #e72234;
+	float:left;
+	margin-left:4.8rem;}
+
+.header-right{
+	float:right;
+	border:1px solid #000;
+	background:url(img/bg.png) repeat-x;
+	width:2.25rem;
+	height:1.5rem;
+	border-radius:0.2rem;
+	margin-right:0.4rem;
+	margin-top:0.4rem;
+	}
+.search{
+	width:0.95rem;
+	height:0.95rem;
+	background:url(img/3.png) no-repeat;
+	display:inline-block;
+	background-size:contain;
+	text-align:center;
+	margin-left:0.725rem;
+	margin-top:0.3rem;
+}
+.bg{ position:relative;
+	width:16rem;
+	overflow: hidden;
+	}
+.bg img{
+	width:16rem;
+	height:6.25rem;
+	background-size:100%;
+	float:left;}
+.bg .show{
+	display:block;}
+.btn{
+	position:absolute;
+	bottom:0.25rem;
+	left:6.75rem;}
+.btn li{
+	width:0.5rem;
+	height:0.5rem;
+	border-radius:50%;
+	background: rgba(114,114,114,0.7);
+	
+	float:left;
+	margin-left:0.25rem;}
+.btn .active{ background:#FFF;}	
+
+.cont{
+	width:16rem;
+	overflow:hidden;}
+.cont-list{
+	width:15.1rem;
+	margin:0.175rem auto 0rem;}
+	
+.cont-list li{
+	width:7.375rem;
+	height:3.75rem;
+	float:left;
+}
+.cont-list>li:nth-child(odd){
+	margin-right:0.35rem;
+	margin-bottom:0.35rem;
+}
+.vert{ 
+	width: 1.1rem;
+	height:100%;
+	background:-webkit-linear-gradient(top,#fe3c00,#ff0100);
+	float:left;
+	font-size:0.6rem;
+	text-align:center;
+	position:relative;
+	overflow:hidden;}
+	
+.vert a{
+	color:#fff;
+	text-decoration:none;
+	margin:0.625rem auto;
+	display:inline-block;}
+.triangle{
+	width:0.375rem;
+	height:0.4rem;
+	background:url(img/san1.png) no-repeat;
+	position:absolute;
+	top:1px;
+	left:1px;}
+.cont-list img{
+	width:6.25rem;
+	height:100%;
+	float:left;}
+.line{
+	width:15.25rem;
+	margin:0 auto;
+	height:0.05rem;
+	background:#d3d3d3;
+	margin-top:0.2rem;}	
+	
+	
+	
+.nav-list{
+	width:15.1rem;
+	margin:0.45rem auto 0;}
+	
+.nav-list-box{ display:-webkit-box;}
+	
+.nav-list-box li{-webkit-box-flex:1}
+
+.list-box{ width:1.65rem;
+	height:1.65rem;
+	background:#ca0b1a;
+	border-radius:0.2rem;
+	float:left;
+	text-align:center;
+	line-height:1.65rem;
+	color:#fff;
+	font-size:0.45rem;}	
+.list-p{
+	font-size:0.45rem;
+	float:left;
+	height:1.65rem;
+	margin-left:0.4rem;
+	line-height:1.65rem;}
+.box-left { margin-left:0.75rem;}
+.box-top{ margin-top:0.7rem;}
+.mar-top{ margin-top:0.5rem;}
+
+
+
+
+.content-box li{ margin:0.5rem;}
+.content-left{
+	position:relative;
+	margin-right:0.5rem;
+	float:left;} 
+.content-left img{
+	width:5.675rem;
+	height:4.75rem;
+	box-shadow:0.05rem 0.05rem 0.1rem #ccc; }
+.pos{ width:2.625rem;
+	height:2.625rem;
+	background:url(img/te.png) no-repeat;
+	background-size:100%;
+	position:absolute;
+	top:0;
+	left:0;}
+	
+.content-right{ float:left;
+	width:8rem;}
+
+.explain{ font-size:0.5rem;
+ font-weight:normal;
+ height:1.75rem;
+ line-height:0.85rem;
+ margin-bottom:0.5rem;} 
+  
+.pic{ 
+	font-size:0.7rem;
+	color:#fe0000;
+    font-weight:bold;}
+.cost{
+	font-size:0.3rem;
+	color:#ccc;
+	text-decoration:line-through;}
+.agio{
+	width:1rem;
+	height:0.4rem;
+	background:#b80000;
+	text-align:center;
+	line-height:0.4rem;
+	color:#fff;
+	font-size:0.4rem;
+	display:inline-block;
+	padding:0.125rem;}
+.buycar{
+	display:inline-block;
+	width:2.15rem;
+	height:1rem;
+	background:url(img/5.jpg) no-repeat;
+	background-size:100%;
+	margin-top:0.2rem;
+	border-radius:0.2rem;}
+.buy{
+	font-size:0.35rem;
+	color:#a9a9a9;
+	}
+.detailed {
+	width:0.5rem;
+	height:0.625rem;
+	background:url(img/4.jpg) no-repeat;
+	background-size:100%;
+	margin-top:2.225rem;
+	margin-right:0.2rem;
+	float:right;}
+
+.nav-n{ 
+	width:16rem;
+	height:2.4rem;
+	border-bottom:0.025rem solid #000;
+	border-top:0.025rem solid #000;
+	background:-webkit-linear-gradient(top,#ef1a2e,#9d020a);
+	line-height:2.4rem;
+	color:#fff;}	
+.nav-e{
+	display:-webkit-box;
+	margin:0 auto;
+	width:14.25rem;
+}
+.nav-e li{
+	-webkit-box-flex:1;
+	position:relative;
+	margin-top:0.375rem;
+}
+.nav-e li img{ 
+	width:1rem;
+	height:1rem;
+	background-size:100%;
+	text-align:center;
+	}
+.nav-e li div{ 
+	font-size:0.5rem;
+	margin-top:-0.75rem;
+	}
+.posi-d{
+	width:2.9rem;
+	height:2.325rem;
+	position:absolute;
+	top:-0.45rem;
+	left:-0.45rem;
+	background:url(img/p-l1.png) no-repeat;
+	background-size:100%;
+}
+
+
+.box-d{
+	width:96rem;
+	height:100%;
+	overflow: hidden;
+	-webkit-transform:translate3d(-16rem,0,0);
+}
+</style>
+<script>
+function change(){
+	document.documentElement.style.fontSize=document.documentElement.clientWidth/16+'px';
+}
+ document.addEventListener('DOMContentLoaded',function(){
+	var oUl=document.querySelector('#bg .box-d');
+	
+	var oBtn=document.querySelector('#btn');
+	var aBtn=oBtn.querySelectorAll('li');
+	
+
+	var aLi=oUl.children;
+
+	var iNow=1; //现在是第几张
+	var x=-iNow*aLi[0].offsetWidth;
+
+
+	var bReady=true;
+	oUl.addEventListener('touchstart',function(ev){
+		if(bReady==false)return;
+		bReady=false;
+
+		oUl.style.WebkitTransition='none';
+		var downX=ev.targetTouches[0].pageX;
+		var disX=downX-x;
+
+		function fnMove(ev){
+			x=ev.targetTouches[0].pageX-disX;
+
+			oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+		
+		}
+		function fnEnd(ev){
+			document.removeEventListener('touchmove',fnMove,false);
+			document.removeEventListener('touchend',fnEnd,false);
+
+			//代码
+			var upX=ev.changedTouches[0].pageX;
+
+			oUl.style.WebkitTransition='.5s all ease';
+
+			if(Math.abs(upX-downX)>50){
+				//切换
+				if(upX<downX){ //左 ++
+					iNow++;
+
+					if(iNow==aLi.length)iNow=aLi.length-1;
+				}else{ //右 --
+					iNow--;
+					if(iNow==-1)iNow=0;
+				}
+
+			}
+			x=-iNow*aLi[0].offsetWidth;
+			oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+
+			//运动完了
+			function tEnd(){
+				bReady=true;
+				oUl.removeEventListener('webkitTransitionEnd',tEnd,false);
+
+				if(iNow==aLi.length-1){
+					iNow=1;
+					oUl.style.WebkitTransition='none';
+					x=-iNow*aLi[0].offsetWidth;
+					oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+				}
+
+				if(iNow==0){
+					iNow=aLi.length-2;
+					oUl.style.WebkitTransition='none';
+					x=-iNow*aLi[0].offsetWidth;
+					oUl.style.WebkitTransform='translate3d('+x+'px,0px,0px)';
+				}
+				
+				for(var i=0;i<aBtn.length;i++)
+				{
+					aBtn[i].className='';
+				}
+					
+				aBtn[iNow-1].className='active';
+			}
+			oUl.addEventListener('webkitTransitionEnd',tEnd,false);
+			
+			
+			
+		}
+
+		document.addEventListener('touchmove',fnMove,false);
+		document.addEventListener('touchend',fnEnd,false);
+
+		ev.preventDefault();
+		
+	},false);
+	
+	
+},false);
+window.addEventListener('load',change,false);
+window.addEventListener('resize',change,false);
+
+</script>
+</head>
+
+<body>
+<header class="header">
+	<div class="header-title">化妆品网站</div>
+	<span class="header-right">
+		<span class="search"></span>
+	</span>
+</header>
+<div class="bg" id="bg">
+	<div class="box-d">
+		<img src="img/p-33.jpg" />
+		
+		<img src="img/1.jpg"/>
+		<img src="img/p-44.jpg"/>
+		<img src="img/1.jpg" />
+		<img src="img/p-33.jpg" />
+		
+		<img src="img/1.jpg"/>
+	</div>
+	<ul class="btn clearfix" id="btn">
+		<li class="active"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+<div class="cont">
+	<ul class="cont-list clearfix">
+		<li class="clearfix">
+			<div class="vert"> <a href="javascript:;">品牌特卖</a>
+				<i class="triangle"></i>
+			</div>
+			<img src="img/p-1.jpg" />
+		</li>
+		<li class="clearfix">
+			<div class="vert"><a href="javascript:;">时尚生活</a>
+				<i class="triangle"></i>
+			</div>
+			<img src="img/p-331.jpg"/>
+		</li>
+		<li class="clearfix">
+			<div class="vert"><a href="javascript:;">夏季特惠</a>
+				<i class="triangle"></i>
+			</div>
+			<img src="img/p-221.jpg" />
+		</li>
+		<li class="clearfix">
+			<div class="vert"><a href="javascript:;">生活专区</a>
+				<i class="triangle"></i>
+			</div>
+			<img src="img/p-141.jpg" />
+		</li>
+		<li class="clearfix">
+			<div class="vert"><a href="javascript:;">品牌特卖</a>
+				<i class="triangle"></i>
+			</div>
+			<img src="img/p-44.jpg" />
+		</li>
+		<li class="clearfix">
+			<div class="vert"><a href="javascript:;">品牌特卖</a>
+				<i class="triangle"></i>
+			</div>
+			<img src="img/3.jpg" />
+		</li>
+	</ul>
+</div>
+<div class="line"></div>
+
+<section class="nav-list">
+	<ul class="nav-list-box clearfix">
+		<li class="clearfix">
+			<div class="list-box">face</div>
+			<p class="list-p">面部护理</p>
+		</li>
+		
+		<li class="clearfix box-left">
+			<div class="list-box">face</div>
+			<p class="list-p">面膜专区</p>
+		</li>
+		
+		<li class="clearfix  box-left">
+			<div class="list-box">face</div>
+			<p class="list-p">彩妆护理</p>
+		</li>
+	</ul>
+	<ul class="nav-list-box clearfix">	
+		<li class="clearfix  box-top">
+			<div class="list-box">face</div>
+			<p class="list-p">头发护理</p>
+		</li>
+		
+		<li class="clearfix box-left box-top">
+			<div class="list-box">face</div>
+			<p class="list-p">食品保健</p>
+		</li>
+		
+		<li class="clearfix  box-left box-top">
+			<div class="list-box">face</div>
+			<p class="list-p">美容SPA</p>
+		</li>
+	</ul>
+</section>
+
+<div class="line mar-top"></div>
+<section>
+	<ul class="content-box">
+		<li class="clearfix">
+			<div class="clearfix">
+				<div class="content-left">
+					<img src="img/chanpin-2.png"  />
+					<span class="pos"></span>
+				</div>
+				<div class="content-right">
+					<h2 class="explain">his的技术的时间的话的速见好看火车查询的速度...</h2>
+					<span class="pic">￥323.00</span>
+					<em class="cost">￥455.00</em>
+					<b class="agio">7折</b>
+					<span class="buycar"></span>
+					<em class="buy">已有3333人购买</em>
+				</div>
+				<div class="detailed"></div>
+				</div>
+			<div class="line mar-top"></div>
+		</li>
+		<li class="clearfix">
+			<div class="clearfix">
+				<div class="content-left">
+					<img src="img/p-21.jpg"  />
+					<span class="pos"></span>
+				</div>
+				<div class="content-right">
+					<h2 class="explain">his的技术的时间的话的速见好看火车查询的速度...</h2>
+					<span class="pic">￥323.00</span>
+					<em class="cost">￥455.00</em>
+					<b class="agio">7折</b>
+					<span class="buycar"></span>
+					<em class="buy">已有3333人购买</em>
+				</div>
+				<div class="detailed"></div>
+				</div>
+			<div class="line mar-top"></div>
+		</li>
+		
+		<li class="clearfix">
+			<div class="clearfix">
+				<div class="content-left">
+					<img src="img/p-141.jpg"  />
+					<span class="pos"></span>
+				</div>
+				<div class="content-right">
+					<h2 class="explain">his的技术的时间的话的速见好看火车查询的速度...</h2>
+					<span class="pic">￥323.00</span>
+					<em class="cost">￥455.00</em>
+					<b class="agio">7折</b>
+					<span class="buycar"></span>
+					<em class="buy">已有3333人购买</em>
+				</div>
+				<div class="detailed"></div>
+				</div>
+			<div class="line mar-top"></div>
+		</li>
+		
+		<li class="clearfix">
+			<div class="clearfix">
+					<div class="content-left">
+						<img src="img/p-221.jpg" />
+						<span class="pos"></span>
+					</div>
+					<div class="content-right">
+						<h2 class="explain">his的技术的时间的话的速见好看火车查询的速度...</h2>
+						<span class="pic">￥323.00</span>
+						<em class="cost">￥455.00</em>
+						<b class="agio">7折</b>
+						<span class="buycar"></span>
+						<em class="buy">已有3333人购买</em>
+					</div>
+					<div class="detailed"></div>
+				</div>
+		</li>
+	</ul>
+</section>
+
+<nav class="nav-n">
+	<ul class="nav-e">
+		<li><img src="img/p-logo.png" /><span class="posi-d"></span><div>首页</div></li>
+		<li><img src="img/p-logo.png" /><div>产品</div></li>
+		<li><img src="img/p-logo.png" /><div>购物</div></li>
+		<li><img src="img/p-logo.png" /><div>我们</div></li>
+	</ul>
+</nav>
+
+</body>
+</html>
