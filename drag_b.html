@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="SunYongJie" />
+<title>视差拖拽</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/drag_com.css" rel="stylesheet" type="text/css" />
+
+<style>
+* { padding: 0; margin: 0; list-style: none; }
+body { background: #d99; }
+ul { overflow: hidden; position: relative; width: 800px; height: 500px; border: 1px solid #333; background: #05090e; margin: 50px auto 0; }
+li { position: absolute;}
+#pic1 { top: 200px; left: 550px; }
+#pic2 { top: 290px; left: 430px; }
+#pic3 { top: 215px; left: 220px; }
+#pic4 { top: 150px; left: 100px; }
+#pic6 { top: 290px; left: 80px;  }
+#pic7 { top: 120px; left: 480px; }
+#pic8 { top: 60px; left: 380px;  }
+#pic5 { top: -40px; left: -50px; width: 1422px; height: 1000px; background: url(images/drag_b_img/bg.jpg) no-repeat; }
+</style>
+<script>
+window.onload=function(){
+	var aLi=document.getElementsByTagName('li');
+	
+	var x=0;
+	var y=0;
+	document.onmousedown=function(ev){
+		var oEvent=ev || event;
+		var disX=oEvent.clientX-x;
+		var disY=oEvent.clientY-y;
+		document.body.style.cursor='move';
+		document.onmousemove=function(ev){
+			var oEvent=ev || event;
+			
+			x=oEvent.clientX-disX;
+			y=oEvent.clientY-disY;
+						
+			for(var i=0; i<aLi.length; i++){
+				aLi[i].style.marginLeft=x*aLi[i].style.zIndex/18+'px';
+				aLi[i].style.marginTop=y*aLi[i].style.zIndex/18+'px';
+			}
+		}
+		document.onmouseup=function(){
+			document.body.style.cursor='default';
+			document.onmousemove=null;
+			document.onmouseup=null;	
+		}
+		return false;	
+	}	
+}
+</script>
+</head>
+
+<body>
+	<p>拖动图片看效果<a href="index.html" style="color:blue;"> 回到主页</a></p>
+	<ul id="ul_container">
+		<li id="pic1" style="z-index: 3;"><img src="images/drag_b_img/1.jpg" alt="" /></li>
+		<li id="pic2" style="z-index: 4;"><img src="images/drag_b_img/2.jpg" alt="" /></li>
+		<li id="pic3" style="z-index: 9;"><img src="images/drag_b_img/3.jpg" alt="" /></li>
+		<li id="pic4" style="z-index: 4;"><img src="images/drag_b_img/4.jpg" alt="" /></li>
+		<li id="pic6" style="z-index: 6;"><img src="images/drag_b_img/5.jpg" alt="" /></li>
+		<li id="pic7" style="z-index: 7;"><img src="images/drag_b_img/6.jpg" alt="" /></li>
+		<li id="pic8" style="z-index: 5;"><img src="images/drag_b_img/7.jpg" alt="" /></li>
+		<li id="pic5" style="z-index: 0;"></li>
+	</ul>
+
+	
+</body>
+</html>
