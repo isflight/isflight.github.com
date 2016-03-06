@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors dongjiulong (djlweb@126.com)
+ * @date    2014-06-23 13:28:16
+ * @version $Id$
+ */
+/* LESS Document */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+body {
+  font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif;
+  background-color: #B0DCFD;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.calendar {
+  width: 260px; 
+  background-color: #FFF;
+  position: absolute;
+ display: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #000000;
+  -moz-box-shadow: 0 0 3px #000000;
+  box-shadow: 0 0 3px #000000;
+  overflow: hidden;
+}
+.title {
+  height: 30px;
+  background-color: #E9EAF0;
+  border-bottom: #DBDCE2 solid 1px;
+  position: relative;
+}
+.title h3 {
+  font: 17px/33px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4C5373;
+  padding-left: 34px;
+}
+.title .prev,
+.title .next {
+  width: 12px;
+  height: 20px;
+  position: absolute;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.title .prev {
+  background-image: url(../images/myCalendar_img/prev.png);
+  top: 50%;
+  margin-top: -10px;
+  right: 50px;
+}
+.title .next {
+  background-image: url(../images/myCalendar_img/next.png);
+  top: 50%;
+  margin-top: -10px;
+  right: 20px;
+}
+.title .off {
+  opacity: .7;
+}
+.date {
+  zoom: 1;
+  padding-left: 15px;
+}
+.date:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.date li {
+  float: left;
+  width: 26px;
+  margin-right: 8px;
+  font: 14px/30px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #00ACED;
+  text-align: center;
+}
+.day li {
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 8px;
+  line-height: 25px;
+  color: #575757;
+  cursor: pointer;
+}
+
+.day li.nobd{border: none;cursor:text;}
+.day li.weekend{color: #B81F24;}
+.day li.pass{color: #ccc;cursor:default;}
+.day .old {
+  border: 1px solid #f3f4f7;
+  color: #B6BACC;
+}
+.day .affair {
+  background-color: #CDD0DD;
+}
+.day li.today {
+  background-color: #FF8263;
+  color: #FFF;
+  border: 1px solid #ffe6c7;
+  cursor: pointer;
+}
+
+.day .clickDay {
+  background-color: #B9BECF;
+  -webkit-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
