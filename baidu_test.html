@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+*{margin:0; padding:0;}
+input{outline:none; border:none;}
+html{overflow-y:scroll;}
+#div1 {width:430px; margin:50px auto;}
+#txt1 {width:418px; height:14px; font-size:14px; padding:9px 5px; border:#999 solid 1px; box-shadow:inset 0 0 6px #CCC;}
+#ul1 {width:428px; border:1px solid #817F82; display:none; margin-top:-1px;}
+#ul1 li {font-size:14px; padding:6px 8px; list-style:none;}
+#ul1 li:active{background-color: rgb(238, 238, 238);}
+</style>
+<title>百度jsonp接口测试</title>
+<script>
+var iNow;
+var oS;
+function show(json){
+	var oUl=document.getElementById('ul1');
+	oUl.innerHTML='';
+	if(json.s.length){
+		oUl.style.display='block';	
+	}else{
+		oUl.style.display='none';	
+	}
+	
+	for(var i=0; i<json.s.length; i++){
+		var oLi=document.createElement('li');
+		oLi.innerHTML=json.s[i];
+		oUl.appendChild(oLi);
+	}
+	
+	//删除
+	oS.parentNode.removeChild(oS);
+	
+	
+	//给li加事件
+	for(var i=0; i<oUl.children.length; i++){
+		(function(index){
+			oUl.children[i].onmouseover=function(){
+				for(var i=0; i<oUl.children.length; i++){
+					oUl.children[i].style.background='';			
+				}
+				this.style.background='rgb(238, 238, 238)';	
+				iNow=index;
+			}
+		})(i);
+	}
+}
+function jsonp(url){
+	//创建script
+	oS=document.createElement('script');
+	oS.src=url;
+	var oHead=document.getElementsByTagName('head')[0];
+	oHead.appendChild(oS);	
+}
+window.onload=function(){
+	var oT=document.getElementById('txt1');
+	var oUl=document.getElementById('ul1');
+	var aLi=oUl.children;
+	
+	iNow=-1;
+	
+	var oldValue='';
+	
+	oT.onkeyup=function(ev){
+		var oEvent=ev || event;
+		if(oEvent.keyCode==40 || oEvent.keyCode==38){
+			return;	
+		}
+		if(oEvent.keyCode==13){
+			window.open('http://www.baidu.com/s?wd='+oT.value,'_self');	
+		}
+		jsonp('http://suggestion.baidu.com/su?wd='+oT.value+'&cb=show');
+		
+		oldValue=oT.value;
+	};
+	
+	oT.onkeydown=function(ev){
+		var oEvent=ev || event;
+		if(oEvent.keyCode==40){  //按下
+			iNow++;
+			
+			if(iNow==aLi.length){
+				iNow=-1;	
+			}
+			
+			for(var i=0; i<aLi.length; i++){
+				aLi[i].style.background='';
+			}
+			if(iNow==-1){
+				oT.value=oldValue;
+			}else{
+				aLi[iNow].style.background='rgb(238, 238, 238)';
+				oT.value=aLi[iNow].innerHTML;	
+			}
+			
+			document.title=iNow;
+		}
+		if(oEvent.keyCode==38){
+			iNow--;
+			if(iNow==-2){
+				iNow=aLi.length-1;	
+			}
+			for(var i=0; i<aLi.length; i++){
+				aLi[i].style.background='';
+			}
+			if(iNow==-1){
+				oT.value=oldValue;
+			}else{
+				aLi[iNow].style.background='rgb(238, 238, 238)';	
+				oT.value=aLi[iNow].innerHTML;
+			}
+			return false;
+		}
+	};
+};
+</script>
+</head>
+
+<body>
+<div id="div1">
+	<span style="text-align:center; display:inline-block; padding:20px 0; margin-right:20px;">请在输入框中输入想要查找的内容</span>
+    <p style="display:inline-block"><a href="index.html" style="text-decoration:none; color:blue; text-align:center;">回到主页</a></p>
+	<input id="txt1" type="text" />
+    <ul id="ul1"></ul>
+</div>
+</body>
+</html>
