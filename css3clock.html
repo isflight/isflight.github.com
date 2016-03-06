@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="SunYongJie" />
+<title>css3时钟</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<style>
+	html,body{
+		height:100%;
+	}
+	body{
+		overflow:hidden;
+		background:-webkit-linear-gradient(#6CF,#39F);
+		font-family:'Microsoft yahei';
+		font-family:"Courier New", Courier, monospace;
+		}
+	.box{
+		width:300px;
+		height:300px;
+		background: #ccc;
+
+		border: 1px solid #000;
+		position: absolute;
+		left:200px;
+		top:200px;
+
+		border-radius: 50%;
+
+		padding: 3px;
+		box-shadow: inset 0 0 10px #000;
+	}
+	.cap{
+		width:20px;
+		height:20px;
+		background: -webkit-radial-gradient(#eee,#000);
+		border-radius: 50%;
+		position: absolute;
+		left:50%;
+		top:50%;
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+	.box div{
+		transform-origin:center bottom;
+	}
+	.hour{
+		width:10px;
+		height:80px;
+		background: #000;
+		position: absolute;
+		left:50%;
+		margin-left: -5px;
+		top:50%;
+		margin-top: -80px;
+
+		border-radius: 50% 50% 0 0;
+	}
+	.min{
+		width:6px;
+		height:100px;
+		background: #000;
+		position: absolute;
+		left:50%;
+		top:50%;
+		margin-left: -3px;
+		margin-top: -100px;
+		border-radius: 50% 50% 0 0;
+	}
+	.sec{
+		width:2px;
+		height:120px;
+		background: #f00;
+		position: absolute;
+		left:50%;
+		top:50%;
+		margin-left: -1px;
+		margin-top: -120px;
+		border-radius: 50% 50% 0 0;
+	}
+	.scale{
+		position: absolute;
+		left: 50%;
+		margin-left: -1px;
+		width:2px;
+		height:8px;
+		background: #000;
+		transform-origin: center 150px;
+	}
+	.bS{
+		position: absolute;
+		left: 50%;
+		margin-left: -2px;
+		width:4px;
+		height:10px;
+		background: #000;
+		transform-origin: center 150px;
+	}
+	.box span strong{
+		margin-top: 20px;
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+		width:100px;
+		text-align: center;
+		font-size: 26px;
+	}
+	.sl{ 
+		width:1000px; 
+		margin:0 auto; 
+		font-size: 14px; 
+		line-height: 24px;
+	}
+	
+	.copyright{
+		position: absolute; 
+		width: 400px; 
+		left: 50%; 
+		margin-left: -200px; 
+		bottom: 20px;
+	}
+	.tip{
+		color: red;
+	}
+
+</style>
+    <script>
+        window.onload=function(){
+            var oDiv=document.querySelector('.box');
+            var oH=document.querySelector('.hour');
+            var oM=document.querySelector('.min');
+            var oS=document.querySelector('.sec');
+
+            var iSpeedX=0;
+            var iSpeedY=0;
+
+            var lastX=0;
+            var lastY=0;
+            var timer=null;
+
+            //画表盘
+            var N=60;
+            for(var i=0; i<N; i++){
+                var oSpan=document.createElement('span');
+                if(i%5==0){
+                    oSpan.className='bS';
+
+                    var n=i/5==0?12:i/5;
+                    oSpan.innerHTML='<strong>'+n+'</strong>';
+
+                    oSpan.children[0].style.transform='rotate('+-i*6+'deg)';
+                }else{
+                    oSpan.className='scale';
+                }
+                oSpan.style.transform='rotate('+i*6+'deg)';
+                oDiv.appendChild(oSpan);
+				
+            }
+
+            function tick(){
+                var oDate=new Date();
+                var h=oDate.getHours();
+                var m=oDate.getMinutes();
+                var s=oDate.getSeconds();
+                var ms=oDate.getMilliseconds();
+
+                oH.style.transform='rotate('+(h*30+m/60*30)+'deg)';
+                oM.style.transform='rotate('+(6*m+s/60*6)+'deg)';
+                oS.style.transform='rotate('+(6*s+ms/1000*6)+'deg)';
+            }
+            tick();
+            setInterval(tick,30);
+
+            oDiv.onmousedown=function(ev){
+                var oEvent=ev || event;
+                var disX=oEvent.clientX-oDiv.offsetLeft;
+                var disY=oEvent.clientY-oDiv.offsetTop;
+
+                clearInterval(timer);
+
+                document.onmousemove=function(ev){
+                    var oEvent=ev || event;
+
+                    oDiv.style.left=oEvent.clientX-disX+'px';
+                    oDiv.style.top=oEvent.clientY-disY+'px';
+
+
+                    iSpeedX=oEvent.clientX-lastX;
+                    iSpeedY=oEvent.clientY-lastY;
+
+                    lastX=oEvent.clientX;
+                    lastY=oEvent.clientY;
+                };
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+
+                    bMove();
+                };
+                return false;
+            };
+
+            function bMove(){
+                timer=setInterval(function(){
+                    iSpeedY+=3;
+
+                    var l=oDiv.offsetLeft+iSpeedX;
+                    var t=oDiv.offsetTop+iSpeedY;
+
+                    if(t>document.documentElement.clientHeight-oDiv.offsetHeight){
+                        t=document.documentElement.clientHeight-oDiv.offsetHeight;
+                        iSpeedY*=-0.8;
+                        iSpeedX*=0.8;
+                    }
+                    if(l>=document.documentElement.clientWidth-oDiv.offsetWidth){
+                        l=document.documentElement.clientWidth-oDiv.offsetWidth;
+                        iSpeedX*=-0.8;
+                        iSpeedY*=0.8;
+                    }
+                    if(t<=0){
+                        t=0;
+                        iSpeedY*=-0.8;
+                        iSpeedX*=0.8;
+                    }
+                    if(l<=0){
+                        l=0;
+                        iSpeedX*=-0.8;
+                        iSpeedY*=0.8;
+                    }
+
+                    oDiv.style.left=l+'px';
+                    oDiv.style.top=t+'px';
+
+                    if(Math.abs(iSpeedX)<1)iSpeedX=0;
+                    if(Math.abs(iSpeedY)<1)iSpeedY=0;
+
+                    if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight){
+                        clearInterval(timer);
+                    }
+                },30);
+            }
+			
+        };
+    </script>
+</head>
+
+<body>
+<a href="index.html"><input type="button" value="回到主页"/></a>
+<p class="sl">
+	css3时钟的效果,原理是transform:rotate效果，我称这个效果为：css3时钟.<br>
+	思路:<br>
+	1.根据时钟的原理，循环创建出表盘的每个刻度。<br>
+	2.封一个tick函数，创建出每个指针的运动度数。<br>
+	3.加上重力检测效果，就是一个运动的时钟了。<br>
+	<span class="tip">*：整个效果的难点在于那个小函数，时针，分针，秒针的分配等。</span>
+</p>
+<div class="box">
+	<div class="hour"></div>
+	<div class="min"></div>
+	<div class="sec"></div>
+	<div class="cap"></div>
+</div>
+<br>
+</body>
+</html>
