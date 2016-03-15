@@ -1,0 +1,4213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美团</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+/*--头部开始--*/
+.header {
+	height: 30px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #dddddd;
+	background: #f9f9f9;
+}
+.header-link {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header-link-left {
+	float: left;
+}
+.header-link-left>a {
+	float: left;
+	margin-right: 18px;
+	height: 28px;
+	line-height: 30px;
+	color: #666666;
+}
+.header-link-left>i {
+	float: left;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat 0 0;
+	width: 12px;
+	height: 13px;
+	margin-right: 5px;
+	margin-top: 8px;
+}
+.header-link-left .header-login {
+	color: red;
+}
+
+
+
+.mobile-box{
+	width:86px;
+	position:relative;
+	float: left;
+	margin-right: 18px;
+	height: 28px;
+	line-height: 30px;
+	color: #666666;
+}
+
+.header-mobile {
+	display:inline-block;
+	text-align:center;
+	width:86px;
+	height:28px;
+	border:1px solid #fafafa;
+	position: relative;
+	z-index:10;
+}
+.mobile-box:hover .header-mobile{
+	width:86px;
+	height:30px;
+	background:#fafafa;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+.mobile-p{
+	position:absolute; left:0px; top:30px;
+	display:none;
+	width:164px;
+	height:261px;
+	border:1px solid #ccc;
+	z-index:9;
+}
+.mobile-box:hover .mobile-p{
+	display:block;
+}
+
+.header-mobile .i-left {
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat -13px -5px;
+	width: 9px;
+	height: 12px;
+}
+.header-mobile .i-right {
+	position: absolute;
+	right: 5px;
+	top: 13px;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat -13px 0px;
+	width: 6px;
+	height: 3px;
+}
+.header-link-right {
+	float: right;
+	margin-right: 5px;
+}
+.header-link-right-ul{
+	position:relative;
+	z-index:1;
+}
+.header-link-right-ul>li{
+	float:left;
+	border: 1px solid #f9f9f9;
+	position: relative;
+	line-height: 30px;
+	height: 28px;
+	background:#fafafa;
+}
+.header-link-mymt {
+	position: relative;
+	float: left;
+	line-height: 30px;
+	height: 28px;
+	background:#fafafa;
+}
+.header-link-mymt>a {
+	-display: inline-block;
+	border-right: 1px solid #dddddd;
+	color: #666666;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.header-link-mymt>img {
+	margin-top: 9px;
+}
+.header-link-mymt>i {
+	position: absolute;
+	right: 7px;
+	top: 13px;
+	display: inline-block;
+	width: 6px;
+	height: 3px;
+	background: url(images/sprites.png) no-repeat -13px 0;
+}
+.header-cart>span {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat -22px 0;
+	width: 11px;
+	height: 10px;
+}
+.header-link-right .header-cart {
+	padding-left: 20px;
+}
+
+.heaser-ad {
+	position: relative;
+	width: 1170px;
+	height: 60px;
+	margin: 0 auto;
+}
+.heaser-ad-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	width: 12px;
+	height: 10px;
+	background: url(images/sprites.png) no-repeat -33px 0;
+	cursor: pointer;
+}
+.heaser-ad-btn:hover{
+	background: url(images/sprites.png) no-repeat -33px -14px;
+}
+/*--头部结束--*/
+
+/*--logo部分开始--*/
+.logo {
+	width: 1170px;
+	height: 83px;
+	margin: 0 auto;
+	padding-top: 22px;
+}
+.logo-left {
+	float: left;
+}
+.logo-left>h1 {
+	float: left;
+	width: 82px;
+	height: 54px;
+	background: url(images/logo.png) no-repeat;
+	margin-right: 10px;
+}
+.logo-left>h1>a {
+	text-indent: -888em;
+	display: inline-block;
+	width: 82px;
+	height: 54px;
+}
+.logo-city {
+	float: left;
+	margin-top: 5px;
+}
+.logo-city>h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 5px;
+}
+.logo-city>span {
+	display: inline-block;
+	width: 58px;
+	height: 20px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 20px;
+	color: #a79999;
+	cursor: pointer;
+}
+.logo-center {
+	position: relative;
+	float: left;
+	width: 484px;
+	height: 38px;
+	margin-left: 182px;
+}
+.logo-center>input {
+	width: 416px;
+	height: 38px;
+	border: 2px solid #2db8ad;
+	padding-left: 68px;
+}
+.logo-group {
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	display: inline-block;
+	width: 48px;
+	height: 38px;
+	border-right: 1px solid #ccc;
+	line-height: 38px;
+	padding-left: 14px;
+	background: url(images/proup-jiao.png) no-repeat 46px center;
+	cursor: pointer;
+}
+.logo-subling {
+	position: absolute;
+	right: -2px;
+	top: 2px;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	width: 62px;
+	height: 38px;
+	color: #fff;
+	background: #2bb8aa;
+	cursor: pointer;
+}
+.logo-right {
+	float: right;
+}
+.logo-right-fw>li {
+	float: left;
+	margin-left: 20px;
+}
+.logo-right-pic {
+	display: inline-block;
+	text-align: center;
+	background: url(images/sprites.png) no-repeat -49px 0;
+	width: 23px;
+	height: 23px;
+	margin-left: 4px;
+	margin-bottom: 5px;
+}
+.logo-right-pic1 {
+	display: inline-block;
+	text-align: center;
+	background: url(images/sprites.png) no-repeat -75px 0;
+	width: 23px;
+	height: 23px;
+	margin-left: 18px;
+	margin-bottom: 5px;
+}
+.logo-right-pic2 {
+	display: inline-block;
+	text-align: center;
+	background: url(images/sprites.png) no-repeat -101px 0;
+	width: 23px;
+	height: 23px;
+	margin-left: 4px;
+	margin-bottom: 5px;
+}
+/*--logo部分结束--*/
+
+/*--主题部分开始--*/
+.content{
+	width:1170px;
+	height:518px;
+	margin:0 auto;
+}
+.content-left{
+	position:relative;
+	float:left;
+	width:246px;
+	height:518px;
+}
+.content-left>h3{
+	width:232px;
+	height:40px;
+	font-size:16px;
+	color:#edfff0;
+	padding-left:14px;
+	line-height:40px;
+	font-weight:bold;
+	background:url(images/sprites.png) no-repeat 0 -61px;
+}
+.content-list{
+	width:244px;
+	border:1px solid #eeeeee;
+	border-top:none;
+	background:#fafafa;
+	position:relative;
+}
+.list-bt{
+	width:224px;
+	height:52px;
+	margin:0 auto;
+	border-bottom:1px solid #f4f4f4;
+}
+
+
+.list-bt>h4{
+	height:52px;
+	line-height:52px;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#333333;
+	margin-left:5px;
+}
+.liast-right{
+	position:relative;
+	height:52px;
+	line-height:52px;
+	float:right;
+	margin-right:18px;
+}
+.liast-right>a{
+	font-size:14px;
+	color:#999999;
+}
+.triangle{
+	position:absolute; right:-16px; top:22px;
+	display:inline-table;
+	width:5px;
+	height:9px;
+	background:url(images/sprites.png) no-repeat 0 -30px;
+}
+
+
+.content-right{
+	float:left;
+	width:924px;
+	height:518px;
+}
+.content-right-nr{
+	float:left;
+	width:725px;
+}
+.content-nav{
+	width:924px;
+	height:40px;
+	background:#2bb8aa;
+}
+.content-nav>li{
+	float:left;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	font-weight:bold;
+	
+	cursor:pointer;
+}
+.content-nav li a{
+	display:block;
+	padding:0 20px;
+	color:#ffffff;
+}
+.content-dl{
+	position:relative;
+	width:688px;
+	height:52px;
+	margin:0 auto;
+	border-bottom:1px solid #eeeeee;
+}
+.content-dt1{
+	float:left;
+	padding:0 20px;
+	height:52px;
+	line-height:52px;
+	color:#999999;
+	background:url(images/fixer.png) no-repeat 0 16px;
+}
+.content-dt2{
+	float:left;
+	padding:0 20px;
+	height:52px;
+	line-height:52px;
+	color:#999999;
+	background:url(images/dinwei.png) no-repeat 0 16px;
+}
+.content-more{
+	width:38px;
+	height:20px;
+	border:1px solid #eeeeee;
+	position:absolute; right:0; top:15px;
+	line-height:20px;
+	padding-left:4px;
+	background:url(images/remov-jiao.png) no-repeat 33px center;
+}
+.content-more:hover{
+	color:#2bb8aa;
+	cursor:pointer;
+	background:url(images/proup-jiao2.png) no-repeat 33px center
+}
+.content-dt3{
+	float:left;
+	padding:0 20px;
+	height:52px;
+	line-height:52px;
+	color:#999999;
+	background:url(images/fwq.png) no-repeat 0 17px;
+}
+.content-dl>dd{
+	float:left;
+	height:52px;
+	line-height:52px;
+	margin-right:20px;
+	color:#666666;
+}
+.content-dl>dd:hover{
+	color:#2bb8aa;
+	cursor:pointer;
+}
+.content-dl .content-dd-remove{
+	margin:0;
+}
+.content-dl>dd>span{
+	color:#f76120;
+}
+.content-dl>dd>span:hover{
+	color:#2bb8aa;
+}
+.content-botm-left>img{
+	width:333px;
+	height:232px;
+	margin-top:10px;
+}
+.content-botm{
+	width:688px;
+	height:318px;
+	border-bottom:1px solid #eeeeee;
+}
+.content-botm-left{
+	position:relative;
+	float:left;
+	width:343px;
+	height:318px;
+	border-right:1px solid #eeeeee;
+}
+.dazhe-dw{
+	position:absolute; top:9px; right:20px;
+	display:inline-block;
+	width:61px;
+	height:27px;
+	font-weight:bold;
+	color:#fff;
+	font-size:14px;
+	padding-left:15px;
+	padding-top:24px;
+	background:url(images/sprites.png) no-repeat 0 -859px;
+}
+.botm-right{
+	float:right;
+	border:none;
+	width:333px;
+	padding-left:10px;
+}
+.content-botm-p{
+	float:left;
+	width:226px;
+	height:44px;
+	margin-top:24px;
+	border-right:1px dashed #ccc;
+}
+.content-notm-p1{
+	margin-bottom:8px;
+	line-height:16px;
+}
+.content-notm-p2{
+	line-height:16px;
+	overflow:hidden;
+	color:#999999;
+	white-space:nowrap; 
+	text-overflow:ellipsis;
+}
+.content-notm-p1>a{
+	font-weight:bold;
+	color:#666666;
+}
+.content-qfd>span{
+	float:left;
+	display:inline-block;
+	margin-left:35px;
+	margin-top:28px;
+	font-size:22px;
+	font-weight:bold;
+	color:#f76120;
+}
+.conter-guangg{
+	float:left;
+	height:478px;
+	width:197px;
+	border:1px solid #eeeeee;
+	border-top:none;
+}
+/*--主题部分结束--*/
+
+/*--抢购部分开始--*/
+.shoping{
+	position:relative;
+	width:1170px;
+	height:262px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.snap-up{
+	margin:0 auto;
+	width:1170px;
+	height:48px;
+	padding-top:30px;
+}
+.snap-up>h2{
+	float:left;
+	padding-left:40px;
+	margin-right:6px;
+	line-height:38px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/naozhong.png) no-repeat;
+}
+.snap-up-time{
+	float:left;
+	width:231px;
+	height:43px;
+	background:url(images/time-bg.png) no-repeat;
+}
+.snap-up-ks{
+	float:left;
+	display:inline-block;
+	width:49px;
+	height:28px;
+	margin-top:8px;
+	margin-left:10px;
+	margin-right:10px;
+	background:url(images/sprites.png) no-repeat -62px -520px;
+}
+.snap-up-hours{
+	float:left;
+	margin-top:8px;
+	margin-right:2px;
+	display:inline-block;
+	width:20px;
+	height:25px;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	padding-top:3px;
+	background:url(images/sprites.png) no-repeat -62px -226px;
+}
+.snap-up-time>img{
+	float:left;
+	margin-top:8px;
+}
+.snap-up-nr{
+	float:left;
+	width:1168px;
+	height:260px;
+	border:1px solid #eeeeee;
+}
+.snap-up-nr>li{
+	float:left;
+	width:232px;
+	height:260px;
+	border-right:1px solid #eeeeee;
+}
+.snap-up-xq>a>img{
+	width:205px;
+	height:124px;
+}
+.snap-up-xq{
+	position:relative;
+	width:205px;
+	margin:0 auto;
+	margin-top:15px;
+}
+.snap-up-il{
+	position:absolute; top:-4px; left:10px;
+	display:inline-block;
+	width:43px;
+	height:40px;
+	background:url(images/sprites.png) no-repeat 0 -649px;
+}
+.snap-up-ir{
+	position:absolute; top:-4px; left:50px;
+	display:inline-block;
+	width:43px;
+	height:40px;
+	background:url(images/sprites.png) no-repeat 0 -481px;
+}
+.snap-up-xq>h4{
+	font-size:14px;
+	font-weight:bold;
+	margin-top:20px;
+	margin-bottom:16px;
+}
+.snap-up-xq>h4>a{
+	color:#666666;
+}
+.snap-up-jiage{
+	width:205px;
+	padding-bottom:12px;
+	border-bottom:1px dashed #ccc;
+}
+.snap-up-span-l{
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	color:#f76120;
+}
+.snap-up-span-r{
+	float:right;
+	color:#999999;
+}
+.snap-up-xq>strong{
+	width:96px;
+	height:18px;
+	display:inline-block;
+	background:#f76120;
+	color:#fff;
+	text-align:center;
+	line-height:18px;
+	margin-top:12px;
+}
+.snap-up-nr .snap-up-rmbk{
+	border:none;
+}
+/*--抢购部分结束--*/
+
+/*--美食部分开始--*/
+.fouter{
+	margin:0 auto;
+	width:1170px;
+	height:48px;
+	padding-top:30px;
+}
+.fouter-qroup{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/meishi.png) no-repeat;
+}
+.fouter-r-list{
+	float:right;
+	margin-top:10px;
+}
+.fouter-r-list>li{
+	float:left;
+	height:18px;
+	padding-left:10px;
+	padding-right:10px;
+	border-right:1px solid #dddddd;
+}
+.fouter-r-list>li>a{
+	display:inline-block;
+	color:#666666;
+	padding-top:3px;
+}
+.fouter-content{
+	width:1168px;
+	height:1560px;
+	margin:0 auto;
+	border:1px solid #dddddd;
+	border-right:none;
+	border-bottom:none;
+}
+.fouter-nr-list{
+	width:1168px;
+	height:311px;
+}
+.fouter-nr-list>li{
+	float:left;
+	width:291px;
+	height:311px;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+.fouter-xq-list{
+	position:relative;
+	width:260px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.fouter-xq-list>img{
+	width:260px;
+	height:154px;
+}
+.fouter-xq-list>h6{
+	font-size:14px;
+	font-weight:bold;
+	margin-top:16px;
+	margin-bottom:10px;
+}
+.fouter-xq-list>h6>a{
+	color:#666666;
+}
+.fouter-xq-p1{
+	font-size:14px;
+	color:#999;
+	margin-bottom:17px;
+}
+.xq-span-l{
+	float:left;
+	font-size:16px;
+	font-weight:bold;
+	color:#f76120;
+}
+.xq-span-l>i{
+	font-size:14px;
+	color:#999;
+	font-weight:normal;
+}
+.xq-span-l>i>em{
+	text-decoration:line-through;
+}
+.xq-span-2{
+	float:right;
+	color:#999;
+}
+.fouter-xq-p2{
+	padding-bottom:11px;
+	border-bottom:1px dashed #ccc;
+}
+.fouter-xq-p3{
+	margin-top:12px;
+	float:right;
+}
+.fouter-xq-p3>span{
+	color:#999;
+}
+.xq-list-il{
+	position:absolute; left:0; top:-4px;
+	width:43px;
+	height:40px;
+	display:inline-block;
+	background:url(images/sprites.png) no-repeat 0 -481px;
+}
+.xq-list-ir{
+	position:absolute; left:40px; top:-4px;
+	width:43px;
+	height:40px;
+	display:inline-block;
+	background:url(images/sprites.png) no-repeat 0 -607px;
+}
+.fouter-more{
+	width:1170px;
+	height:48px;
+	margin:0 auto;
+	background:#f6f6f6;
+	text-align:center;
+	line-height:48px;
+}
+.fouter-more>a{
+	color:#666666;
+	font-size:16px;
+	font-weight:bold;
+}
+/*--美食部分结束--*/
+
+/*--休闲娱乐部分开始--*/
+.entertainment{
+	height:936px;
+}
+.entertainment-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/xiuxian.png) no-repeat;
+}
+/*--休闲娱乐部分结束--*/
+
+/*--电影部分开始--*/
+.film{
+	height:624px;
+}
+.film-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/dianying.png) no-repeat;
+}
+/*--电影部分结束--*/
+
+/*--酒店部分开始--*/
+.hotel-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/jiudian.png) no-repeat;
+}
+/*--酒店部分结束--*/
+
+/*--生活部分开始--*/
+.live-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/shenghuo.png) no-repeat;
+}
+/*--生活部分结束--*/
+
+/*--购物部分开始--*/
+.shoping-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/gouwu.png) no-repeat;
+}
+/*--购物部分结束--*/
+
+/*--丽人部分开始--*/
+.beauty-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/liren.png) no-repeat;
+}
+/*--丽人部分结束--*/
+
+/*--旅游部分开始--*/
+.tour-bt{
+	float:left;
+	padding-left:45px;
+	margin-right:6px;
+	line-height:32px;
+	font-size:20px;
+	color:#666666;
+	background:url(images/lvyou.png) no-repeat;
+}
+/*--旅游部分结束--*/
+
+/*--尾部开始--*/
+.end{
+	width:1170px;
+	height:80px;
+	margin:0 auto;
+	margin-top:40px;
+}
+.end-link{
+	width:1001px;
+	border-right:1px solid #ccc;
+}
+.end-link>li{
+	float:left;
+	width:90px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc
+}
+.end-link>li:hover{
+	-background:#ccc;
+}
+.end-link>li>a{
+	color:#666;
+}
+.active{
+	background:#ccc;
+}
+.end-yqlink{
+	padding-left:10px;
+	height:50px;
+	line-height:50px;
+	border:1px solid #ccc;
+}
+.end-yqlink>a{
+	color:#666;
+	float:left;
+	margin-right:50px;
+}
+.end-yqlink>a:hover{
+	text-decoration:underline;
+}
+.dabou{
+	width:1170px;
+	margin:0 auto;
+	margin-top:1px;
+	border-top:1px solid #ccc;
+}
+.end-fuwu{
+	border-top:1px solid #ccc;
+	width:1170px;
+	height:236px;
+	margin:0 auto;
+	margin-top:45px;
+}
+.end-dl{
+	float:left;
+	width:224px;
+	padding-left:10px;
+}
+.end-dl dt{
+	font-size:14px;
+	font-weight:bold;
+	margin:20px 0;
+}
+.end-dl dd{
+	color:#666;
+	line-height:20px;
+}
+.end-right-dd{
+	width:200px;
+}
+.end-dl dd a{
+	color:#666;
+}
+.end-right{
+	float:left;
+	border-left:1px solid #ccc;
+	height:180px;
+	margin-top:20px;
+	padding-left:30px;
+}
+.end-p1{
+	color:#666;
+	font-size:14px;
+	margin-top:30px;
+}
+.end-p2{
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:30px;
+}
+.end-p2 span{
+	font-size:12px;
+	font-weight:normal;
+}
+.end-p3{
+	color:#666;
+	font-size:12px;
+	margin-bottom:5px;
+}
+.end-p4{
+	color:#2bb8aa;
+	font-size:12px;
+}
+.end-beian{
+	border-top:1px solid #ccc;
+}
+.end-beian p{
+	width:1170px;
+	margin:0 auto;
+	line-height:50px;
+	text-align:center;
+	color:#666;
+	margin-bottom:80px;
+}
+.xuanfu-ad{
+	width:-100%;
+	height:157px;
+	background:url(images/clock-nr.png) no-repeat center rgba( 14, 16, 18, 0.5);
+	position:fixed; left:0; bottom:0;
+	z-index:888;
+}
+.clock-gd-ad{
+	width:1000px;
+	height:180px;
+}
+.end-ad-a{
+	position:fixed; left:0; bottom:20px;
+	z-index:18;
+	display:inline-block;
+	width:115px;
+	height:115px;
+	background:url(images/clock.png) no-repeat;
+}
+.end-ad-btn{
+	position:absolute; top:20px; right:15px;
+	display:inline-block;
+	width:25px;
+	height:25px;
+	cursor:pointer;
+	background:url(images/sprites.png) no-repeat -196px 0;
+}
+/*--尾部结束--*/
+
+/*--右按钮部分开始--*/
+.right-btn{
+	position:fixed; right:0; bottom:30px;
+	width:41px;
+	height:168px;
+	border:1px solid #ccc;
+	border-top:none;
+}
+.right-btn p{
+	width:41px;
+	height:34px;
+	border-top:1px solid #ccc;
+	text-align:center;
+	color:#fff;
+	cursor:pointer;
+	padding-top:7px;
+}
+.right-btn-p1{
+	background:url(images/up.png) no-repeat 0 0;
+}
+.right-btn-p2{
+	background:url(images/up.png) no-repeat 0 -44px;
+}
+.right-btn-p3{
+	background:url(images/up.png) no-repeat 0 -88px;
+}
+.right-btn-p4{
+	background:url(images/up.png) no-repeat 0 -132px;
+}
+/*--右按钮部分结束--*/
+
+
+
+
+
+/*--js代码开始--*/
+		/*--头部下拉开始--*/
+.mymeituan{
+	display:none;
+	position:absolute; right:-1px; top:29px;
+	width:130px;
+	text-align:center;
+	border:1px solid #ccc;
+	background:#fafafa;
+	z-index:-1;
+}
+.header-link-right-ul .link-active{
+	height:30px;
+	border:1px solid #ccc;
+	border-bottom:none;
+	background:#fafafa;
+	position:relative;
+}	
+.link-active>b{
+	position:absolute; left:-4px; top:6px;
+	height:20px;
+	width:2px;
+	background:#fafafa;
+}
+		/*--头部下拉结束--*/
+		
+
+		/*--主题导航开始--*/
+.content-nav .nav-active{
+	background:#00c3b0;
+}		
+		/*--主题导航结束--*/
+		
+		
+		/*--主题左导航开始--*/
+.list-content{
+	position:absolute; left:245px; top:0px;
+	width:280px;
+	height:475px;
+	border:1px solid #eeeeee;
+	border-left:none;
+	background:#f4f4f4;
+	z-index:4;
+	padding-left:20px;
+	display:none;
+}
+.show.content-list{
+	border-left:1px solid #666;
+	border-bottom:1px solid #666;
+}
+.lsit-content-ct li{
+	line-height:50px;
+}
+.active.list-bt{
+	width:224px;
+	background:#f4f4f4;
+	height:52px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.active.list-content{
+	display:block;
+	border-bottom:1px solid #666;
+	border-right:1px solid #666;
+}
+		/*--主题左导航结束--*/
+
+
+		/*--主题选项卡开始--*/
+.content-tab{
+	position:relative;
+	margin-left:19px;
+}
+.content-tab ul{
+	position:absolute; left:0; top:0;
+	-display:none;
+}
+.content-tab .tab-active{
+	-display:block;
+}
+.tab-btn-l{
+	position:absolute; left:0; top:110px;
+	display:inline-block;
+	width:30px;
+	height:39px;
+	z-index:3;
+	display:none;
+	background:url(images/jiao.png) no-repeat 0 -150px;
+}
+.tab-btn-r{
+	position:absolute; left:628px; top:110px;
+	display:inline-block;
+	width:55px;
+	height:39px;
+	z-index:3;
+	display:none;
+	padding-left:5px;
+	line-height:39px;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	background:url(images/jiao.png) no-repeat 0 -228px;
+}
+		/*--主题选项卡结束--*/
+		
+		
+		/*--抢购开始--*/
+.shoping-snap{
+	position:absolute; left:0; top:0;
+	
+}
+.sp-prev{
+	position:absolute; left:0; top:114px;
+	z-index:2;
+	display:inline-block;
+	width:30px;
+	height:39px;
+	background:url(images/jiao.png) no-repeat 0 -150px;
+}	
+.sp-next{
+	position:absolute; right:0; top:114px;
+	z-index:2;
+	display:inline-block;
+	width:60px;
+	height:39px;
+	background:url(images/jiao.png) no-repeat 0 -228px;
+}	
+		/*--抢购结束--*/
+		
+		
+		/*--尾部开始--*/
+.end-tab-list div{
+	display:none;
+}	
+.end-tab-list .end-active{
+	display:block;
+}	
+		/*--尾部结束--*/
+		
+		
+		
+/*--js代码结束--*/
+
+
+</style>
+<script src="js/public.js"></script>
+<script src="js/index.js"></script>
+<script src="js/move.js"></script>
+<script>
+window.onload=function(){
+	
+	meituan.public.Header(); //头部下拉部分
+	meituan.public.Ad(); //头部广告部分
+	meituan.public.Vav(); //公共导航
+	meituan.public.RightList(); //主题左导航
+	meituan.index.contTab(); //主题选项卡
+	meituan.index.SnapTime(); //抢购倒计时
+	meituan.public.EndTab(); //尾部选项卡
+	meituan.index.Ad(); //底部悬浮广告
+	meituan.public.RigthBtn(); //右边固定按钮
+	meituan.index.Shoping(); //抢购选项卡
+	
+	
+}
+</script>
+</head>
+
+<body>
+<!--头部开始-->
+<div class="header">
+	<div class="header-link clearfix">
+    	<div class="header-link-left clearfix">
+        	<i></i>
+            <a href="javascript:;">
+                收藏美团
+            </a>
+            <a href="javascript:;" class="header-login">
+            	登录
+            </a>
+            <a href="javascript:;" class="header-enroll">
+            	注册 |
+            </a>
+            <div class="mobile-box">
+                <a href="javascript:;" class="header-mobile">
+                    <i class="i-left"></i>
+                    <i class="i-right"></i>
+                    手机美图
+                </a>
+                <p class="mobile-p">
+                    <img src="images/erweima.png" />
+                </p>
+            </div>
+        </div>
+        <div class="header-link-right"> 
+        	<ul class="header-link-right-ul">
+            	<li class="header-link-mymt">
+              		<a href="javascript:;">
+                    	我的订单
+                    </a>
+                </li>
+                <li class="mymt-huoqu">
+                    <div  class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            我的美团
+                        </a>
+                        <i></i> 
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            最近浏览
+                        </a>
+                        <i></i>
+                    </div>  
+                    <b></b> 
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt header-cart">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <span></span>
+                        <a href="javascript:;" class="mymt-linka">
+                            购物车0件
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            练习客服
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            我是商家
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            更多
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="heaser-ad" id="ad">
+	<img src="images/top-ad.jpg" />
+    <span class="heaser-ad-btn"></span>
+</div>
+<!--头部结束-->
+
+
+<!--logo部分开始-->
+<div class="logo clearfix">
+	<div class="logo-left clearfix">
+    	<h1>
+        	<a href="javascript:;">美团</a>
+        </h1>
+        <div class="logo-city">
+        	<h2>北京</h2>
+            <span>切换城市</span>
+        </div>
+    </div>
+    <div class="logo-center">
+        <input type="text" placeholder="请输入商品名称,地址等" />
+        <span class="logo-group">团购</span>
+        <i class="logo-subling">搜索</i>
+    </div>
+    <div class="logo-right">
+    	<ul class="logo-right-fw clearfix">
+        	<li>
+            	<p class="logo-right-pic"></p>
+                <p logo-right-text>随时退</p>
+            </li>
+            <li>
+            	<p class="logo-right-pic1"></p>
+                <p logo-right-text>不满意免单</p>
+            </li>
+            <li>
+            	<p class="logo-right-pic2"></p>
+                <p logo-right-text>过期退</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--logo部分结束-->
+
+
+<!--主题部分开始-->
+<div class="content clearfix">
+	<div class="content-left">
+    	<h3>全部分类</h3>
+        <ul class="content-list" id="list-ul">
+        	<li class="list-bt clearfix ct-list">
+            	<h4>美食</h4>
+                <div class="liast-right">
+                	<a href="javascript:;">经济型酒店</a>
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>东坡肘子</li>
+                        <li>眉州东坡酒</li>
+                        <li>东坡肘子</li>
+                        <li>东坡肘子</li>
+                        <li>眉州东坡酒</li>
+                        <li>东坡肘子</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix ct-list">
+            	<h4>酒店/客栈</h4>
+                <div class="liast-right">
+                	<a href="javascript:;">经济型酒店</a>
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>眉州东坡酒</li>
+                        <li>眉州东坡酒</li>
+                        <li>眉州东坡酒</li>
+                        <li>眉州东坡酒</li>
+                        <li>眉州东坡酒</li>
+                        <li>眉州东坡酒</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix ct-list">
+            	<h4>电影/在线选座</h4>
+                <div class="liast-right">
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>【23店通用】张老坎轻火锅</li>
+                        <li>【23店通用】张老坎轻火锅</li>
+                        <li>【23店通用】张老坎轻火锅</li>
+                        <li>【23店通用】张老坎轻火锅</li>
+                        <li>【23店通用】张老坎轻火锅</li>
+                        <li>【23店通用】张老坎轻火锅</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix">
+            	<h4>KTV/在线预定</h4>
+            </li>
+            <li class="list-bt clearfix ct-list">
+            	<h4>休闲娱乐</h4>
+                <div class="liast-right">
+                	<a href="javascript:;">足疗按摩</a>
+                    <a href="javascript:;">温泉</a>
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>【通州北苑】汉釜宫</li>
+                        <li>【通州北苑】汉釜宫</li>
+                        <li>【通州北苑】汉釜宫</li>
+                        <li>【通州北苑】汉釜宫</li>
+                        <li>【通州北苑】汉釜宫</li>
+                        <li>【通州北苑】汉釜宫</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix ct-list">
+            	<h4>周边旅游</h4>
+                <div class="liast-right">
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>【31店通用】汉堡王</li>
+                        <li>【31店通用】汉堡王</li>
+                        <li>【31店通用】汉堡王</li>
+                        <li>【31店通用】汉堡王</li>
+                        <li>【31店通用】汉堡王</li>
+                        <li>【31店通用】汉堡王</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix ct-list">
+            	<h4>生活服务</h4>
+                <div class="liast-right">
+                	<a href="javascript:;">家具</a>
+                    <a href="javascript:;">生活</a>
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>【31店通用】全聚德烤鸭</li>
+                        <li>【31店通用】汉拿山烤肉</li>
+                        <li>【31店通用】辣子鸡</li>
+                        <li>【31店通用】烤全羊</li>
+                        <li>【31店通用】风干羊肉</li>
+                        <li>【31店通用】碳烤羊腿</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix ct-list">
+            	<h4>购物</h4>
+                <div class="liast-right">
+                	<a href="javascript:;">男装</a>
+                    <a href="javascript:;">女装</a>
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>【19店通用】悠唐购物中心</li>
+                        <li>【19店通用】悠唐购物中心</li>
+                        <li>【19店通用】悠唐购物中心</li>
+                        <li>【19店通用】悠唐购物中心</li>
+                        <li>【19店通用】悠唐购物中心</li>
+                        <li>【19店通用】悠唐购物中心</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list-bt clearfix ct-list" style="border-bottom:none">
+            	<h4>丽人</h4>
+                <div class="liast-right">
+                    <i class="triangle"></i>
+                </div>
+                <div class="list-content ct-content">
+                    <ul class="lsit-content-ct">
+                        <li>甘露素食主义</li>
+                        <li>甘露素食主义</li>
+                        <li>甘露素食主义</li>
+                        <li>甘露素食主义</li>
+                        <li>甘露素食主义</li>
+                        <li>甘露素食主义</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>    
+    </div>
+    <div class="content-right clearfix">
+    	<ul class="content-nav clearfix" id="nav">
+            <li>
+            	<a href="index.html">首页</a>
+            </li>
+            <li>
+            	<a href="list.html">今日新单</a>
+            </li>
+            <li>
+            	<a href="details.html">购物</a>
+            </li>
+            <li>
+            	<a href="list.html">身边外卖</a>
+            </li>
+            <li>
+            	<a href="list.html">名店抢购</a>
+            </li>
+        </ul>
+        <div class="content-right-nr">
+            <dl class="content-dl clearfix">
+                <dt class="content-dt1">热门团购</dt> 
+                <dd><span>代金卷</span></dd>
+                <dd><span>经济型酒店</span></dd>
+                <dd><span>电影</span></dd>
+                <dd>身边外卖</dd>
+                <dd>婚纱摄影</dd>
+                <dd>美发</dd>
+                <dd>足疗按摩</dd>
+                <dd>蛋糕甜点</dd>
+                <dd><span>火锅</span></dd>
+                <dd class="content-dd-remove">儿童摄影</dd>
+            </dl>
+            <dl class="content-dl clearfix">
+                <dt class="content-dt2">全部区域</dt> 
+                <dd>朝阳区</dd>
+                <dd>海淀区</dd>
+                <dd>丰台区</dd>
+                <dd>西城区</dd>
+                <dd>东城区</dd>
+                <dd>昌平区</dd>
+                <dd>石景山区</dd>
+                <dd>通州区</dd>
+                <dd class="content-dd-remove">大兴区</dd>
+                <i class="content-more">更多</i>
+            </dl>
+            <dl class="content-dl clearfix">
+                <dt class="content-dt3">热门商圈</dt> 
+                <dd><span>望京</span></dd>
+                <dd><span>昌平镇</span></dd>
+                <dd><span>亦庄</span></dd>
+                <dd>中关村</dd>
+                <dd>西红门</dd>
+                <dd>美发</dd>
+                <dd>双井</dd>
+                <dd>大望路</dd>
+                <dd><span>黄村</span></dd>
+                <dd class="content-dd-remove">牡丹园/北太平庄</dd>
+            </dl>
+            
+            <div class="content-tab" id="tab">
+            	<a href="javascript:;" class="tab-btn-l" id="pren"></a>
+                <a href="javascript:;" class="tab-btn-r" id="next"></a>
+                <ul class="content-botm clearfix" style="opacity:1;">
+                    <li class="content-botm-left">
+                        <img src="images/haixian.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">眉州东坡酒楼</a>
+                                </p>
+                                <p class="content-notm-p2">100元代金券1张，全场通用，仅售87元！价值100元的代金券1张</p>
+                            </div>
+                            <span>￥688</span>
+                        </div>
+                        <i class="dazhe-dw">8.6</i>
+                    </li>
+                    <li class="content-botm-left botm-right">
+                        <img src="images/danta.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">甘露素食主义</a>
+                                </p>
+                                <p class="content-notm-p2">仅售9元！价值68元的麻辣香锅1份，提供免费WiFi。</p>
+                            </div>
+                            <span>￥288</span>
+                        </div>
+                        <i class="dazhe-dw">8.8</i>
+                    </li>
+                </ul>
+                
+                <ul class="content-botm clearfix" style="opacity:0;">
+                    <li class="content-botm-left">
+                        <img src="images/pic88.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">啤酒烤鸭</a>
+                                </p>
+                                <p class="content-notm-p2">100元代金券1张，价值100元的代金券1张</p>
+                            </div>
+                            <span>￥198</span>
+                        </div>
+                        <i class="dazhe-dw">8.6</i>
+                    </li>
+                    <li class="content-botm-left botm-right">
+                        <img src="images/pic85.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">传统川菜</a>
+                                </p>
+                                <p class="content-notm-p2">麻辣香锅1份，提供免费WiFi。</p>
+                            </div>
+                            <span>￥108</span>
+                        </div>
+                        <i class="dazhe-dw">8.8</i>
+                    </li>
+                </ul>
+                
+                <ul class="content-botm clearfix" style="opacity:0;">
+                    <li class="content-botm-left">
+                        <img src="images/pic81.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">鱼恋虾火锅</a>
+                                </p>
+                                <p class="content-notm-p2">送代金券1张，全场通用，仅售87元！</p>
+                            </div>
+                            <span>￥118</span>
+                        </div>
+                        <i class="dazhe-dw">8.6</i>
+                    </li>
+                    <li class="content-botm-left botm-right">
+                        <img src="images/pic82.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">紫光园</a>
+                                </p>
+                                <p class="content-notm-p2">送精美礼品一份。</p>
+                            </div>
+                            <span>￥98</span>
+                        </div>
+                        <i class="dazhe-dw">8.8</i>
+                    </li>
+                </ul>
+                
+                <ul class="content-botm clearfix" style="opacity:0;">
+                    <li class="content-botm-left">
+                        <img src="images/pic83.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">蝎王府羊蝎子</a>
+                                </p>
+                                <p class="content-notm-p2">仅售87元！预购从速！</p>
+                            </div>
+                            <span>￥268</span>
+                        </div>
+                        <i class="dazhe-dw">8.6</i>
+                    </li>
+                    <li class="content-botm-left botm-right">
+                        <img src="images/pic84.jpg" />
+                        <div class="content-qfd clearfix">
+                            <div class="content-botm-p">
+                                <p class="content-notm-p1">
+                                    <a href="javascript:;">【15店通用】将太无二</a>
+                                </p>
+                                <p class="content-notm-p2">代金卷可叠加使用。</p>
+                            </div>
+                            <span>￥188</span>
+                        </div>
+                        <i class="dazhe-dw">8.8</i>
+                    </li>
+                </ul>   
+            </div>  
+        </div>   	
+        <div class="conter-guangg">
+        	<img src="images/chige.png" />
+            <img src="images/xingp.jpg" />
+        </div>
+    </div>
+</div>
+<!--主题部分结束-->
+
+
+<!--抢购部分开始-->
+<div class="snap-up clearfix">
+	<h2>名店抢购</h2>
+    <div class="snap-up-time" id="time">
+    	<i class="snap-up-ks"></i>
+        <span class="snap-up-hours">0</span>
+        <span class="snap-up-hours">0</span>
+        <img src="images/dian.png" />
+        <span class="snap-up-hours">2</span>
+        <span class="snap-up-hours">2</span>
+        <img src="images/dian.png" />
+        <span class="snap-up-hours">5</span>
+        <span class="snap-up-hours">8</span>
+    </div>
+</div>
+<div class="shoping">
+	<a href="javascript:;" class="sp-prev" id="snap-prev"></a>
+    <a href="javascript:;" class="sp-next" id="snap-next"></a>
+    <div class="shoping-snap clearfix" id="shoping-snap">
+        <ul class="snap-up-nr">
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic17.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【25店通用】木屋烧烤</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥95</span>
+                        <span class="snap-up-span-r">已售2828</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic18.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【连锁通用】碳烤牛排</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥168</span>
+                        <span class="snap-up-span-r">已售3678</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic19.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【精品推荐】巴西烤肉</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥268</span>
+                        <span class="snap-up-span-r">已售8954</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic20.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【店长推荐】烤全鱼</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥98</span>
+                        <span class="snap-up-span-r">已售3567</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li class="snap-up-rmbk">
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic21.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【美食精品】全聚德烤鸭</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥388</span>
+                        <span class="snap-up-span-r">已售34678</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li> 
+        </ul>
+        
+        <ul class="snap-up-nr">
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic78.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【15店通用】木屋烧烤</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥95</span>
+                        <span class="snap-up-span-r">已售2828</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic79.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【连锁通用】碳烤羊腿</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥168</span>
+                        <span class="snap-up-span-r">已售3678</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic80.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【精品推荐】巴西烤肉</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥268</span>
+                        <span class="snap-up-span-r">已售8954</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li>
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic81.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【店长推荐】烤全鱼</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥98</span>
+                        <span class="snap-up-span-r">已售3567</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li>
+            <li class="snap-up-rmbk">
+                <div class="snap-up-xq">
+                    <a href="javascript:;">
+                        <img src="images/pic88.jpg" />
+                    </a>
+                    <h4><a href="javascript:;">【美食精品】全聚德烤鸭</a></h4>
+                    <p class="snap-up-jiage clearfix">
+                        <span class="snap-up-span-l">￥388</span>
+                        <span class="snap-up-span-r">已售34678</span>
+                    </p>
+                    <strong>手机购买立减￥5</strong>
+                    <i class="snap-up-il"></i>
+                    <i class="snap-up-ir"></i>
+                </div>
+            </li> 
+        </ul>
+    </div>
+</div>
+<!--抢购部分结束-->
+
+
+<!--美食部分开始-->
+<div class="fouter clearfix">
+	<h2 class="fouter-qroup">名店抢购</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">美食</a>
+        </li>
+        <li>
+        	<a href="javascript:;">代金卷</a>
+        </li>
+        <li>
+        	<a href="javascript:;">火锅</a>
+        </li>
+        <li>
+        	<a href="javascript:;">自助餐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">烧烤烤肉</a>
+        </li>
+        <li>
+        	<a href="javascript:;">香锅烤鱼</a>
+        </li>
+        <li>
+        	<a href="javascript:;">西餐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">更多</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/kaoji.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/taocan1.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/zizhu.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/tuandui.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic1.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic2.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic3.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic4.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic5.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic6.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic7.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic8.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic9.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic10.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic11.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic12.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic13.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic14.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic15.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic16.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多美食团购，请点击查看>></a>
+</div>
+<!--美食部分结束-->
+
+
+<!--休闲娱乐部分开始-->
+<div class="fouter clearfix">
+	<h2 class="entertainment-bt">休闲娱乐</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">休闲娱乐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">运动健身</a>
+        </li>
+        <li>
+        	<a href="javascript:;">足疗按摩</a>
+        </li>
+        <li>
+        	<a href="javascript:;">全部</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content entertainment">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic22.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic23.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic24.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic90.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic26.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic27.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic28.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic29.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic30.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic31.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic32.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic33.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多休闲娱乐，请点击查看>></a>
+</div>
+<!--休闲娱乐部分结束-->
+
+
+<!--电影部分开始-->
+<div class="fouter clearfix">
+	<h2 class="film-bt">电影</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">电影</a>
+        </li>
+        <li>
+        	<a href="javascript:;">电影团购</a>
+        </li>
+        <li>
+        	<a href="javascript:;">电影院</a>
+        </li>
+        <li>
+        	<a href="javascript:;">在线选座</a>
+        </li>
+        <li>
+        	<a href="javascript:;">最新电影</a>
+        </li>
+        <li>
+        	<a href="javascript:;">更多</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content film">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic37.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic34.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic35.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic36.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic38.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic39.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic40.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic41.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多电影，请点击查看>></a>
+</div>  
+<!--电影部分结束-->
+
+
+<!--酒店部分开始-->
+<div class="fouter clearfix">
+	<h2 class="hotel-bt">酒店</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">酒店</a>
+        </li>
+        <li>
+        	<a href="javascript:;">经济型酒店</a>
+        </li>
+        <li>
+        	<a href="javascript:;">主题酒店</a>
+        </li>
+        <li>
+        	<a href="javascript:;">豪华酒店</a>
+        </li>
+        <li>
+        	<a href="javascript:;">全部</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content film">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic42.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic43.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic44.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic45.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic46.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic47.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic48.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic49.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多酒店，请点击查看>></a>
+</div> 
+<!--酒店部分结束-->
+
+
+<!--生活部分开始-->
+<div class="fouter clearfix">
+	<h2 class="live-bt">生活服务</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">生活服务</a>
+        </li>
+        <li>
+        	<a href="javascript:;">培训课程</a>
+        </li>
+        <li>
+        	<a href="javascript:;">母婴亲子</a>
+        </li>
+        <li>
+        	<a href="javascript:;">其他摄影</a>
+        </li>
+        <li>
+        	<a href="javascript:;">汽车服务</a>
+        </li>
+        <li>
+        	<a href="javascript:;">体育保险</a>
+        </li>
+        <li>
+        	<a href="javascript:;">全部</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content film">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic89.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic51.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic52.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic53.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic54.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic55.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic56.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic57.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多生活团购，请点击查看>></a>
+</div> 
+<!--生活部分结束-->
+
+
+<!--购物部分开始-->
+<div class="fouter clearfix">
+	<h2 class="shoping-bt">购物</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">女装</a>
+        </li>
+        <li>
+        	<a href="javascript:;">男装</a>
+        </li>
+        <li>
+        	<a href="javascript:;">内衣</a>
+        </li>
+        <li>
+        	<a href="javascript:;">女士鞋包</a>
+        </li>
+        <li>
+        	<a href="javascript:;">家居日用</a>
+        </li>
+        <li>
+        	<a href="javascript:;">食品</a>
+        </li>
+        <li>
+        	<a href="javascript:;">全部</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content film">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic58.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic59.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic60.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic61.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic91.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic63.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic64.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic65.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多购物团购，请点击查看>></a>
+</div>
+<!--购物部分结束-->
+
+
+<!--丽人部分开始-->
+<div class="fouter clearfix">
+	<h2 class="beauty-bt">丽人</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">丽人</a>
+        </li>
+        <li>
+        	<a href="javascript:;">美发</a>
+        </li>
+        <li>
+        	<a href="javascript:;">美容美体</a>
+        </li>
+        <li>
+        	<a href="javascript:;">美甲</a>
+        </li>
+        <li>
+        	<a href="javascript:;">瑜伽</a>
+        </li>
+        <li>
+        	<a href="javascript:;">舞蹈</a>
+        </li>
+        <li>
+        	<a href="javascript:;">全部</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content film">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic66.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic67.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic68.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic69.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic70.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic71.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic72.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic73.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多丽人团购，请点击查看>></a>
+</div>
+<!--丽人部分结束-->
+
+
+<!--旅游部分开始-->
+<div class="fouter clearfix">
+	<h2 class="tour-bt">旅游</h2>
+    <ul class="fouter-r-list clearfix">
+    	<li>
+        	<a href="javascript:;">旅游</a>
+        </li>
+        <li>
+        	<a href="javascript:;">景点门票</a>
+        </li>
+        <li>
+        	<a href="javascript:;">国内游</a>
+        </li>
+        <li>
+        	<a href="javascript:;">国外游</a>
+        </li>
+        <li>
+        	<a href="javascript:;">全部</a>
+        </li>
+    </ul>
+</div>
+<div class="fouter-content film">
+	<ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic74.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic75.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic76.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic77.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+    
+    <ul class="fouter-nr-list clearfix">
+    	<li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic78.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic79.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic80.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+        <li>
+        	<div class="fouter-xq-list">
+            	<img src="images/pic81.jpg" />
+                <h6><a href="javascript:;">【23店通用】张老坎轻火锅</a></h6>
+                <p class="fouter-xq-p1">
+                	100元代金券1张，除酒水饮料外全场通用
+                </p>
+                <p class="fouter-xq-p2 clearfix">
+                	<span class="xq-span-l">
+                    	￥88
+                    	<i>门店价<em>￥98</em></i>
+                    </span>
+                    <span class="xq-span-2">已售13201</span>
+                </p>
+                <p class="fouter-xq-p3 clearfix">
+                	<img src="images/star.png" />
+                    <span>1888人评价</span>
+                </p>
+                <i class="xq-list-il"></i>
+                <i class="xq-list-ir"></i>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="fouter-more">
+	<a href="javascript:;">更多旅游团购，请点击查看>></a>
+</div>
+<!--旅游部分结束-->
+
+
+<!--尾部开始-->
+<div class="end" id="end">
+	<ul class="end-link clearfix">
+    	<li class="active">
+        	<a href="javascript:;">团购分类</a>
+        </li>
+        <li>
+        	<a href="javascript:;">热门地标</a>
+        </li>
+        <li>
+        	<a href="javascript:;">热门团购</a>
+        </li>
+        <li>
+        	<a href="javascript:;">精品推荐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">热门城市</a>
+        </li>
+        <li>
+        	<a href="javascript:;">历史团购</a>
+        </li>
+        <li>
+        	<a href="javascript:;">周边城市</a>
+        </li>
+        <li>
+        	<a href="javascript:;">美团推荐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">品牌推荐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">专题推荐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">品类推荐</a>
+        </li>
+    </ul>
+    <div class="end-tab-list" id="end-tab">
+        <div class="end-yqlink end-active clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">电影团购</a>
+            <a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+        </div>
+        <div class="end-yqlink clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+        </div>
+        <div class="end-yqlink clearfix">
+         	<a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+        	<a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">购物团购</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+        </div>
+        <div class="end-yqlink clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+        </div>
+    </div>
+</div>
+
+<div class="end-fuwu clearfix">
+	<div class="dabou"></div>
+	<dl class="end-dl">
+    	<dt>获取更新</dt>
+        <dd><a href="javascript:;">邮件订阅</a></dd>
+        <dd><a href="javascript:;">iPhone/Android</a></dd>
+        <dd><a href="javascript:;">美团QQ空间</a></dd>
+        <dd><a href="javascript:;">美团新浪微博</a></dd>
+        <dd><a href="javascript:;">sitemap</a></dd>
+        <dd><a href="javascript:;">RSS订阅</a></dd>
+    </dl>
+    <dl class="end-dl">
+    	<dt>商务合作</dt>
+        <dd><a href="javascript:;">商家合作</a></dd>
+        <dd><a href="javascript:;">美团商家营销平台</a></dd>
+        <dd><a href="javascript:;">市场合作</a></dd>
+        <dd><a href="javascript:;">美团联盟</a></dd>
+        <dd><a href="javascript:;">美团云</a></dd>
+        <dd><a href="javascript:;">廉正邮箱</a></dd>
+    </dl>
+    <dl class="end-dl">
+    	<dt>公司信息</dt>
+        <dd><a href="javascript:;">公司信息</a></dd>
+        <dd><a href="javascript:;">关于美团</a></dd>
+        <dd><a href="javascript:;">美团承诺</a></dd>
+        <dd><a href="javascript:;">媒体报道</a></dd>
+        <dd><a href="javascript:;">加入我们</a></dd>
+        <dd><a href="javascript:;">法律声明</a></dd>
+    </dl>
+    <dl class="end-dl end-right-dd">
+    	<dt>用户帮助</dt>
+        <dd><a href="javascript:;">用户帮助</a></dd>
+        <dd><a href="javascript:;">申请退款</a></dd>
+        <dd><a href="javascript:;">查看美团券密码</a></dd>
+        <dd><a href="javascript:;">常见问题</a></dd>
+        <dd><a href="javascript:;">反诈骗公告</a></dd>
+    </dl>
+    <div class="end-right">
+    	<p class="end-p1">客服电话</p>
+        <p class="end-p2">400-660-5335 <span>(9:00-23:00)</span></p>
+        <p class="end-p3">退款、退换货、查看美团券</p>
+        <p class="end-p4">参考教程，轻松搞定!</p>
+    </div>
+</div>
+
+<div class="end-beian">
+	<p>©2015美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则</p>
+</div>
+<div class="xuanfu-ad" id="xuanfu-ad">  
+    <i class="end-ad-btn" id="ad-clod"></i>
+</div>
+<a href="javascript:;" class="end-ad-a" id="ad-open"></a>
+<!--尾部结束-->
+
+
+<!--右按钮部分开始-->
+<div class="right-btn">
+	<p class="right-btn-p1" id="btn-p1"></p>
+    <p class="right-btn-p2" id="btn-p2"></p>
+    <p class="right-btn-p3" id="btn-p3"></p>
+    <p class="right-btn-p4" id="btn-p4"></p>
+</div>
+<!--右按钮部分结束-->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
