@@ -1,0 +1,1606 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css"/>
+<style>
+body{ height:3000px;}
+.shou{ width:100%; height:30px; background:#f7f7f7; border-bottom:1px solid #eeeeee;}
+.shou-a{ width:1210px; margin:0 auto;}
+.shou-l{ width:340px; float:left;}
+.shou-guanzhi i{ width:14px; height:14px; background:url(img/wuxing.jpg) no-repeat; float:left; margin-top:8px; margin-right:5px;}
+.shou-guanzhi p{ font-size:14px; color:#666666; float:left; line-height:30px;padding-right:35px;}
+.denglu{ float:right; width:780px;}
+.qing{ width:150px; float:left;border-right:1px solid #ccc; padding-right:10px; margin-top:4px;}
+.denglu a{ font-size:14px; color:#666666; float:left;}
+.dingdan{ width:60px; float:left; padding-left:10px; margin-top:4px;border-right:1px solid #ccc; padding-right:10px;}
+.huiyuan{ width:25px; height:12px; background:#F00; color:#fff; line-height:12px; text-align:center;}
+.julebu{ width:105px; float:left; padding-right:5px;}
+.shouji{ width:17px; height:25px; background:url(img/shouji.jpg) no-repeat; display:block; float:left;}
+.shouji1{ width:74px;border-right:1px solid #ccc; margin-top:4px; float:left; padding:0 5px;}
+
+.daohang{ width:1210px; margin:0 auto;}
+.daohang1{ width:270px; height:85px; background:url(img/daohang.png) no-repeat; float:left; text-indent:-999em; margin-top:20px;}
+.chong{ width:500px; float:left; margin-top:35px; margin-left:10px;}
+.chong input{ width:417px; height:30px; border:2px solid #F00; color:#ccc;}
+.temen{ float:left;}
+.suo{ width:79px; height:34px; background:#F00; color:#fff; line-height:34px; text-align:center; float:right;}
+.temen a{ color:#999; float:left;}
+.temen span{ color:#F00;}
+.jing{ width:105px; height:30px; background:#f7f7f7; float:left; border:1px solid #efefef; position:relative;margin-top:35px; margin-left:20px;}
+.rentou{ width:26px; height:28px; background:url(img/rentou.jpg) no-repeat; position:absolute; top:0; left:0;}
+.jing p{ color:#666666; font-size:14px; line-height:30px; text-align:center;}
+.sanjiao{ width:22px; height:28px; background:url(img/sanjian.jpg) no-repeat; position:absolute; top:0; right:0;}
+.qu{ width:130px; height:30px; background:#f7f7f7; float:left; border:1px solid #efefef; position:relative;margin-top:35px; margin-left:15px;}
+.gou{ width:29px; height:28px; background:url(img/gou.jpg) no-repeat; position:absolute; top:0; left:0px;}
+.wu{width:29px; height:28px; background:url(img/jiao.jpg) no-repeat; position:absolute; top:10px; right:-20px;}
+.qu p{ color:#666666; font-size:14px; line-height:30px; text-align:center; padding-left:20px;}
+
+
+.hua{ width:4px; height:19px; background:url(img/l.jpg) no-repeat; position:absolute; top:0px; left:0px; }
+.menr{ width:4px; height:19px; background:url(img/r.jpg) no-repeat; position:absolute; top:0px; right:0px;}
+.dong{height:19px; background:url(img/z.jpg) repeat-x; position:relative; display:inline-block; padding:0 10px; text-align:center; line-height:19px; }
+.ling{position:absolute; top:-17px; left:20px; color:#fff; }
+.er{ width:137px; height:65px; border:1px solid #efefef; float:right; margin-top:15px; position:relative;}
+.wei{ width:62px; height:62px; background:url(img/er.jpg) no-repeat; float:left;margin:2px;}
+.ke p{ color:#000; line-height:16px;}
+.ke{ width:64px; float:left; margin:8px 0 5px 3px;}
+.ke .man{ color:#F00;}
+.cha{ width:14px; height:14px; border:1px solid #efefef; line-height:14px; text-align:center; position:absolute; top:0; right:0;}
+.quan{ width:1210px; height:40px; background:#e4393c; margin:0 auto; position:relative;}
+.pin a{ color:#fff; line-height:40px; display:block; margin-right:44px;}
+.pin li{ float:left;}
+.fen{ margin-right:104px; margin-left:20px;}
+.pin .lei{ float:right;}
+.nv{ width:40px; height:26px; background:url(img/nvren.jpg) no-repeat; position:absolute;top:-7px; left:346px;}
+.content{ width:1210px; margin:0 auto;}
+.content-l{ width:198px; height:455px; border:1px solid #e4393c; float:left;}
+.tu a{ font-size:16px; color:#333; float:left; line-height:30px; padding-left:15px;}
+.tu i{font-size:16px; color:#ccc; float:right; padding-left:20px;}
+.content-z{ width:670px; height:242px; float:left; margin:10px; position:relative;}
+ .ping{position:relative;}
+.yincang li{position:absolute; top:0; left:0;}
+
+
+.content-z img{ width:670px; height:292px; }
+.annv{ width:180px; height:32px; position:absolute; bottom:-260px; right:10px;}
+.annv li{ width:20px; height:20px; border-radius:50%; background:#999999; color:#fff; line-height:20px; text-align:center; float:left; margin-right:10px; margin-top:10px; cursor:pointer;}
+.annv .active{background:#F00;}
+.content-r{ width:312px; float:right; margin-top:10px;}
+
+.kuai{ width:312px; margin-top:20px;}
+.kuai h3{ font-size:14px; color:#666666; float:left;}
+.kuai a{ color:#005ea7; float:right;}
+.zong{ width:310px; height:110px; border:1px solid #aaaaaa;border-top:2px solid #aaaaaa; margin-top:10px; }
+.sui{ width:155px; height:105px; border-right:1px solid #aaaaaa; margin-top:5px; float:left;}
+.sui li{ color:#666; line-height:24px; text-align:center;}
+.suir{ width:152px; height:105px; margin-top:5px; float:right;}
+.suir li{ color:#666; line-height:24px; text-align:center;}
+.huafei{ width:310px; height:166px; float:right; margin-top:36px;}
+.jipiao{ width:75px; height:85px; border:1px solid #eeeeee; float:left;}
+.waike{ width:22px; height:32px; background:url(img/shoujia.jpg) no-repeat; display:block; margin:10px auto 0;}
+.jipiao p{ color:#666666; text-align:center;}
+.xia{ width:8px; height:5px; background:url(img/xia.jpg) no-repeat center; display:block; margin:5px auto 0;}
+
+.xie img{width:200px; height:155px;}
+ .xie{ width:230px; height:155px; border-right:1px solid #eee; float:left;}
+.diannao{ width:669px; height:155px;border:1px solid #eee; border-top:none;position:absolute; bottom:-205px; left:0; }
+.xiezh{width:205px; height:155px; border-right:none; float:left;}
+.xiezh img{width:200px; height:155px;}
+.ift{ width:20px; height:25px; background:url(img/le.png) no-repeat; position:absolute;bottom:70px; left:5px; }
+.rft{width:20px; height:25px; background:url(img/ri.png) no-repeat; position:absolute;bottom:70px; right:5px;}
+
+.shenghuo{ width:1210px; margin:10px auto;}
+.chugui h3{ font-size:24px; font-weight:bold; color:#666666; float:left;}
+.chugui p{font-size:14px; color:#b4b4b4; float:left; font-style:italic; margin-left:10px;}
+.pinpai li{ width:300px; float:left; margin-right:3px; margin-top:10px;}
+.pinpai .lipin{ margin-right:0;}
+.xiyi li{width:400px; float:left; margin-right:3px; margin-top:10px;}
+.lzr{ width:1210px; margin:0 auto; margin-top:10px;}
+.jiadian{ width:210px; float:left;}
+.tongxun i{ width:30px; height:40px; background:url(img/1f.jpg) no-repeat; float:left;}
+.tongxun h4{ font-size:22px; font-weight:bold; color:#666666; float:left; margin-top:10px; margin-left:30px;}
+.butie{width:210px; border-top:2px solid #aaaaaa;}
+.peijian{ float:left; margin-top:10px; margin-right:50px;}
+.peijian dt{ color:#666666; line-height:24px;}
+.peijian dd{ color:#666666; line-height:24px;}
+.zhenpin{ width:210px; border-bottom: 1px solid #aaaaaa; }
+.zhenpin img{ margin-left:66px; margin-top:12px;margin-bottom:5px;}
+.tejia{ width:635px; height:404px;  float:left;}
+.mansu{border:1px solid #aaaaaa; height:365px;}
+.dajiadian li{ width:158px; float:left; font-size:14px; color:#666; margin-top:10px; padding-bottom:6px; position:relative;border-bottom:2px solid #aaaaaa; text-align:center; cursor:pointer;}
+.dajiadian{ width:635px;}
+.dajiadian .tejiashangpin{width:158px;border-bottom:2px solid #e4393c; color:#e4393c;}
+.dajiadian i{ width:10px; height:7px; background:url(img/hongse.jpg) no-repeat; position:absolute; bottom:0;left:75px; display:none;}
+.dajiadian .xian{ display:block;}
+
+.zhong ul{ display:none;}
+.zhong .guo{ display:block;}
+
+.tu11{ width:1892px; overflow:hidden;}
+
+.tu11 img{ float:left;}
+.kuang{ width:260px; position:absolute; bottom:0; right:0; height:20px;}
+.kuang i{ width:50px; height:10px; background:#ccc; float:left; border:1px solid #999; margin-left:10px;}
+.kuang .active{ background:#900;}
+
+
+.zhi{ width:145px; height:178px; margin-left:5px; float:left;}
+.zhi i{ margin-left:30px; margin-top:5px;}
+.zhi p{ color:#666666;}
+.zhi span{ color:#e43978;}
+.js{ width:475px;height:180px; float:right; overflow:hidden; position:relative;}
+.shang{ width:155px;height:185px; border-top:1px solid #aaa; border-right:1px solid #aaa;}
+.you{border-right:1px solid #aaa;width:153px;}
+.yisheng{ width:365px; height:404px;float:right; margin-top:10px;}
+.qiche{ width:365px; border-bottom:2px solid #aaa; height:30px;}
+.qiche li{ font-size:14px;color:#666; float:left; margin-left:50px;}
+.qiche a{ color:#009;font-size:14px;}
+.bie{ width:155px;height:165px; border:1px solid #aaa;height:182px;border-top:none; border-left:none;}
+.bie i{margin-left:30px; margin-top:5px;}
+.bie p{ color:#666666; line-height:20px;}
+.bie span{ color:#e43978;}
+.hong{ float:left;}
+.huren{float:left; width:200px;}
+
+.shuma{ width:1210px; margin:0 auto; margin-top:20px;}
+.xianka{ width:210px; height:400px; float:left; }
+
+.xian-l i{ width:30px; height:40px; background:url(img/2f.jpg) no-repeat; float:left;}
+.xian-l h3{ font-size:22px; font-weight:bold; color:#666; line-height:42px; margin-left:10px; float:left;}
+.youxi{ width:210px; height:359px; border:1px solid #aaa; border-left:none; border-top:2px solid #aaa;}
+.biji{ width:60px; float:left; margin-top:10px; margin-right:40px;}
+.ben a{ font-size:12px; color:#666; line-height:24px;}
+.erji{ width:110px; height:145px; float:left; margin-left:50px; margin-top:5px;}
+
+.yingyi{ width:790px; float:left;}
+.benzi li{ width:158px; height:40px; color:#666; text-align:center; float:left; line-height:40px;border-bottom:2px solid #aaa; margin-top:2px; position:relative;}
+.benzi .wang{border-bottom:2px solid #F00; color:#F00;}
+.benzi i{ width:10px; height:10px; background:url(img/hongse.jpg) no-repeat; position:absolute;bottom:-3px; left:79px; display:none;}
+.wang i{ display:block;}
+.gu{ width:790px; height:360px;}
+.xiang{ width:159px; height:179px; float:left; border-bottom:1px solid #aaa;}
+.xiang img{ margin-left:20px; margin-top:10px;}
+.xiang p{ color:#666;line-height:18px; margin-left:10px;}
+.xiang span{ color:#F00; margin-left:10px; }
+.js2{width:473px; float:left; overflow:hidden; position:relative;}
+.dayinji{width:157px; height:179px; float:left; border:1px solid #aaa; border-left:none; border-top:none;}
+.erci{width:1892px;}
+.erci img{ float:left;}
+.kuang2{ position:absolute; bottom:10px; right:50px;}
+.kuang2 i{ width:50px; height:10px; background:#ccc; margin-left:10px; float:left;}
+.kuang2 .hongse{ background:#F00;}
+.gu ul{ display:none;}
+.gu .yueqiu{ display:block;}
+.gans{ width:204px; height:400px;float:left;}
+.ri-a{ float:right; line-height:40px; margin-left:30px;}
+.ri-a a{ color:#005ea7;}
+.ri-a span{ color:#666; font-weight:bold;}
+.jh{ width:204px; border-top:2px solid #aaa; margin-top:2px;}
+.ri-ab{ width:204px; height:40px;}
+.has{ width:204px; height:178px; margin-top:3px;}
+
+.dibu{ width:1210px; margin:0 auto; margin-top:30px;}
+.dibu-l{ width:888px; height:200px; border:1px solid #aaa; border-top:2px solid #aaa; float:left;border-right:none;}
+.dibu-l h4{ font-size:14px; font-weight:bold; color:#666; margin-left:10px; padding-top:10px;}
+.huodong{ width:443px; height:200px; border-right:1px solid #aaa; float:left;}
+.shai{ width:426px; height:70px; border-bottom:1px dashed #aaa; margin:0 auto; margin-top:8px;}
+.jia{ float:left; margin-left:20px;}
+.duo{ color:#005ea7; font-size:14px; margin-left:10px;}
+.goum{color:#665; font-size:14px; margin-left:10px;}
+.dui{ width:26px; height:18px; background:url(img/dui.jpg) no-repeat; position:absolute; bottom:30px; right:0;}
+.jd{ float:left; position:relative;}
+.shandian{border-bottom:none;}
+.rsa{ width:310px; height:200px; float:right;}
+.sas{width:310px; height:137px; border:1px solid #aaa;border-top:2px solid #aaa;}
+.zai{ margin-top:5px; margin-left:10px;}
+.zai h3{ color:#666; font-weight:bold; float:left;}
+.zai a{ color:#005ea7; float:right; margin-right:10px;}
+.yao{ float:left; margin-left:5px;}
+.weiba{ float:left; margin-left:5px;}
+.weiba i{ width:3px; height:3px; background:#005ea7; display:inline-block;}
+.weiba a{ color:#005ea7;}
+.xin{ margin-top:5px;position:relative;}
+.xin h4{ font-size:14px; font-weight:bold; color:#666;}
+.xin input{ width:198px; height:25px; border:1px solid #aaa; border-top:1px solid #000; border-left:1px solid #000; margin-top:6px; text-align:left; padding-left:40px; color:#ccc; background:#fff; float:left;}
+.xin i{ width:20px; height:15px; background:url(img/xin.jpg) no-repeat; position:absolute; top:35px; left:5px; display:block;}
+.sou{ width:65px; height:25px; background:#F00; border-radius:5px; color:#fff; line-height:25px; text-align:center; float:left; margin-top:6px; margin-left:5px;}
+
+
+.zhinan{ width:1210px; height:170px; border-top:1px solid #aaa;border-bottom:1px solid #aaa; margin:0 auto; margin-top:20px;}
+.dingwei{ width:140px; height:170px; float:left; margin-top:10px; margin-right:55px;}
+.biao{ width:40px; height:40px; background:url(img/che.jpg) no-repeat; float:left;}
+.fa{ float:left;}
+dt{ color:#666; font-weight:bold; line-height:24px;}
+dd{ color:#666; line-height:22px;}
+.shouhuo{ width:220px; height:170px; float:left;margin-top:10px;}
+.shouhuo h5{ color:#666; font-weight:bold;}
+.shouhuo p{color:#666; line-height:22px;}
+.shouhuo a{ color:#009; margin-left:150px; margin-top:20px;}
+
+.zuidi{ width:1210px; margin:0 auto;}
+.aa{ margin-left:270px;}
+.guanyu a{ color:#666; border-right:1px solid #666; padding-right:10px; padding-left:10px;}
+.ss{border-right:none;}
+.nansheng{ margin-left:280px;}
+.nansheng p{ color:#666; line-height:24px;}
+.zhu{ margin-left:150px;}
+.wan{ margin-left:330px; margin-top:10px;}
+ .wan li{ margin-left:10px; float:left;}
+</style>
+<script src="js/jquery-1.7.2.js"></script>
+
+
+<script>
+	$(function(){
+		$('.annv>li').mouseover(function(){
+			$('.annv>li').removeClass('active');
+				$(this).addClass('active');
+			$('.yincang>li').stop().animate({'opacity':0})
+			var a=$(this).index();
+			$('.yincang>li').eq(a).stop().animate({'opacity':1})
+		});
+		
+		
+		var aLi=$('.dajiadian li');
+		var oI=$('.dajiadian i');
+		
+		aLi.mouseover(function(){
+		$('.zhong ul').hide();
+		aLi.removeClass('tejiashangpin');
+		$(this).addClass('tejiashangpin');
+			 oI.hide();
+			 $('.zhong ul').eq($(this).index()).show();
+			 oI.eq($(this).index()).show();
+		})
+		
+		var aLi1=$('.benzi li');
+		var oI1=$('.wang i');
+		
+		aLi1.mouseover(function(){
+			$('.gu ul').hide();
+			oI1.hide();
+			aLi1.removeClass('wang');
+			
+			$(this).addClass('wang');
+			$('.gu ul').eq($(this).index()).show();
+			oI1.eq($(this).index()).show();
+		});
+		
+	});
+	
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var oBox2=document.getElementById('box2');
+		bta(oBox,oBox2);
+		var oBtn3=document.getElementById('btn3');
+		var oBox3=document.getElementById('box3');
+		bta(oBtn3,oBox3);
+		var oBtn4=document.getElementById('btn4');
+		var oBox4=document.getElementById('box4');
+		bta(oBtn4,oBox4);
+		var oBtn5=document.getElementById('btn5');
+		var oBox5=document.getElementById('box5');
+		bta(oBtn5,oBox5);
+		function bta(obj1,obj2){
+			var ai=obj2.getElementsByTagName('i');	
+			for(var j=0;j<ai.length;j++){
+				ai[j].index=j;
+				ai[j].onmouseover=function(){
+					for(var j=0;j<ai.length;j++){
+						ai[j].className='';
+						
+						
+					};
+					this.className='active';
+					
+					$(obj1).animate({'margin-left':-473*this.index},500,'linear');
+				
+				};
+			
+			};
+		}
+	
+	
+	
+		var oBoos1=document.getElementById('boos1');
+		var oBas1=document.getElementById('bas1');
+			ab1(oBoos1,oBas1)
+		var oBoos2=document.getElementById('boos2');
+		var oBas2=document.getElementById('bas2');
+			ab1(oBoos2,oBas2)
+		var oBoos3=document.getElementById('boos3');
+		var oBas3=document.getElementById('bas3');
+			ab1(oBoos3,oBas3)
+		var oBoos4=document.getElementById('boos4');
+		var oBas4=document.getElementById('bas4');
+			ab1(oBoos4,oBas4)
+		var oBoos5=document.getElementById('boos5');
+		var oBas5=document.getElementById('bas5');
+			ab1(oBoos5,oBas5)
+		function ab1(aa1,bb1){
+		var aAi=bb1.getElementsByTagName('i');
+				for(var l=0;l<aAi.length;l++){
+				aAi[l].index=l;
+				aAi[l].onmouseover=function(){
+				for(var l=0;l<aAi.length;l++){
+					aAi[l].className='';
+				
+				}
+				
+				this.className='hongse';	
+				//oBoos1.style.marginLeft=-473*this.index+'px';
+				$(aa1).animate({'margin-left':-473*this.index},500,'linear');
+			};	
+				
+				
+	
+		};
+		};
+	
+	}; 
+</script>
+</head>
+
+<body>
+	<div class="shou">
+    	<div class="shou-a clearfix">
+        	<ul class="shou-l">
+            	<li class="shou-guanzhi">
+                	<i></i>
+                    <p>收藏京东</p>
+                </li>
+                <li class="shou-guanzhi">
+                	<i></i>
+                    <p>收藏京东</p>
+                </li>
+                <li class="shou-guanzhi">
+                	<i></i>
+                    <p>收藏京东</p>
+                </li>
+            </ul>
+            <ul class="denglu">
+            	<li class="qing">
+                	<a href="#">你好，请登录 免费注册</a>
+                </li>
+                <li class="dingdan">
+                	<a href="#">我的订单</a>
+                    
+                </li>
+                 <li class="qing dingdan julebu">
+                	<a href="#">
+                    	<i class="huiyuan">VIP</i>
+                        会员俱乐部
+                    </a>
+                    
+                </li>
+                <li class="qing dingdan julebu">
+                	<a href="#">
+                    	<i class="huiyuan">VIP</i>
+                        会员俱乐部
+                    </a>
+                   
+                </li>
+                 <li class="shouji1">
+                	<a href="#">
+                    	<i class="shouji"></i>
+                        我的手机
+                    </a>
+                    
+                </li>
+                 <li class="dingdan">
+                	<a href="#">客户服务</a>
+                    
+                </li>
+                 <li class="dingdan">
+                	<a href="#">网站导航</a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <div class="daohang clearfix">
+    	<h1 class="daohang1">导航</h1>
+        <div class="chong">
+        	<input type="text" value="流量充值" />
+          <a href="#" class="suo">搜索</a>
+        
+          <div class="temen clearfix">
+                <a href="#">
+                    热门搜索:<span class="shng"> 商城满减 </span>潮流换新 4K电视 母婴节 美翻了 手机特惠 程序员 领100
+                </a>
+            </div>
+      </div>
+      <div class="jing">
+            	<i class="rentou"></i>
+                <p>我的京东</p>
+                <i class="sanjiao"></i>
+            </div>
+             <div class="qu">
+            	<i class="gou"></i>
+            	<p>去购物车结算</p>
+                 <i class="wu"></i>
+    <div class="ling clearfix">
+ 			               <i class="dong">099
+                                <i class="hua"></i>
+                                <i class="menr"></i>
+                            </i>
+                        </div> 
+                    </div>
+                     <div class="er clearfix">
+                            <div class="wei"></div>
+                            <div class="ke">
+                                <p>客户端</p>
+                                <p>首次下单</p>
+                                <p class="man">满59送59</p>
+                            </div>
+                            <div class="cha">X</div>
+                        </div>
+       				 </div>
+     <div class="quan">
+     	<ul class="pin clearfix">
+        	<li class="fen">
+            	<a hidden="#">全部商品分类</a>	
+            </li>
+            <li>
+            	<a hidden="#">首页</a>	
+            </li>
+            <li>
+            	<a hidden="#">全部类</a>	
+                <i class="nv"></i>
+            </li>
+            <li>
+            	<a hidden="#">全类</a>	
+            </li>
+            <li>
+            	<a hidden="#">全部类</a>	
+            </li>
+            <li>
+            	<a hidden="#">全类</a>	
+            </li>
+            <li>
+            	<a hidden="#">全类</a>	
+            </li>
+             <li>
+            	<a hidden="#">全类</a>	
+            </li>
+             <li class="lei">
+            	<a hidden="#">全人类</a>	
+            </li>
+        </ul>
+     </div>       
+     
+     <div class="content">
+     	<div class="content-l">
+        	<ul>
+            	<li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+                 <li class="tu clearfix">
+                	<a href="#">图书,影像,数码商品
+                    	<i>></i>
+                    </a>
+                </li>
+               
+            </ul>
+        
+        </div>
+        <div class="content-z">
+       		 	<div class="ping">
+                    <ul class="yincang clearfix">
+                        <li class="chulai">
+                            <img src="img/21.jpg"/>
+                        </li>
+                        <li>
+                            <img src="img/22.jpg"/>
+                        </li>
+                        <li>
+                            <img src="img/23.jpg"/>
+                        </li>
+                        <li>
+                            <img src="img/24.jpg"/>
+                        </li>
+                        <li>
+                            <img src="img/25.jpg"/>
+                        </li>
+                        <li>
+                            <img src="img/26.jpg"/>
+                        </li>
+                    </ul>
+                    <ul class="annv clearfix">
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+           		 </div>
+            <div class="diannao">
+            	<ul class=" dwd clearfix">
+                	<li class="xie">
+                    	<img src="img/xie.jpg"/>
+                    </li>
+                   
+                    <li class="xie">
+                    	<img src="img/xie.jpg"/>
+                    </li>
+                     <li class="xiezh">
+                    	<img src="img/xie.jpg"/>
+                    </li>
+                </ul>
+                <div class="ift"></div>
+                <div class="rft"></div>
+            </div>
+        
+        </div>
+        <div class="content-r">
+        	<div>
+            	<img src="img/rs.jpg" />
+            </div>
+            <div class="kuai clearfix">
+            	<h3>京东快报</h3>
+                <a href="#">更多快报</a>
+            </div>
+            <div class="zong clearfix"> 
+            	<ul class="sui">
+                	<li>京东快报京东快报</li>
+                    <li>京东快报京东快报</li>
+                    <li>京东快报京东快报</li>
+                    <li>京东快报京东快报</li>
+                </ul>
+                <ul class="suir">
+                	<li>京东快报京东快报</li>
+                    <li>京东快报京东快报</li>
+                    <li>京东快报京东快报</li>
+                    <li>京东快报京东快报</li>
+                </ul>
+            </div>
+        </div>
+     	<div class="huafei">
+        	<ul class="clearfix">
+            	<li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+                <li class="jipiao">
+                	<i class="waike"></i>
+                    <p>话费</p>
+                    <i class="xia"></i>
+                </li>
+            </ul>
+        </div>
+        
+        
+     </div>
+     <div style="clear:both"></div>
+     
+     <div class="shenghuo">
+     	<div class="chugui clearfix">
+        	<h3>生活的橱柜</h3>
+            <p>每一天展示精彩</p>
+        </div>
+        <ul class="clearfix pinpai">
+        	<li>
+            	<img src="img/pin.jpg" />
+            </li>
+            <li>
+            	<img src="img/pin.jpg" />
+            </li>
+            <li>
+            	<img src="img/pin.jpg" />
+            </li>
+            <li class="lipin">
+            	<img src="img/pin.jpg" />
+            </li>
+            <li>
+            	<img src="img/ds.jpg" />
+            </li>
+            <li>
+            	<img src="img/ds.jpg" />
+            </li>
+            <li>
+            	<img src="img/ds.jpg" />
+            </li>
+            <li class="lipin">
+            	<img src="img/ds.jpg" />
+            </li>
+        </ul>
+        <ul class="clearfix xiyi">
+        	<li>
+            	<img src="img/xiyi.jpg"/>
+            </li>
+            <li>
+            	<img src="img/xiyi.jpg"/>
+            </li>
+            <li class="lipin">
+            	<img src="img/xiyi.jpg"/>
+            </li>
+        </ul>
+     
+     </div>
+     
+     <div class="lzr">
+         <div class="jiadian">
+         	<div class="tongxun clearfix">
+            	<i></i>
+                <h4>家电通讯</h4>
+            </div>
+            <div class="butie clearfix">
+                <dl class="peijian">
+                    <dt>手机</dt>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                </dl>
+                 <dl class="peijian">
+                    <dt>空调</dt>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                    <dd>手机配件</dd>
+                </dl>
+             </div>
+             <div class="zhenpin">
+             	<img src="img/jipin.jpg"/>
+             </div>
+         </div>
+         
+         <div class="tejia">
+         	<ul class="dajiadian clearfix">
+            	<li class="tejiashangpin">特价商品
+                	<i class="xian"></i>
+                </li>
+                
+                <li>大家电
+                	<i></i>
+                </li>
+                <li>小家电
+                	<i></i>
+                </li>
+                <li>手机通讯
+                	<i></i>
+                </li>
+            </ul>
+          <div>
+          <div class="zhong">
+         	<ul class="mansu guo">
+            	<li class="zhi">
+                	<i><img src="img/ping2.jpg"/ ></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="js">
+                	
+                        <div class="tu11 clearfix" id="box"> 
+                            <img src="img/1 (1).jpg"/ >
+                            <img src="img/1 (2).jpg"/ >
+                			<img src="img/1 (3).jpg"/ >
+                            <img src="img/1 (4).jpg"/ >
+                       </div>
+                       <div class="kuang" id="box2">
+                       		<i class="active"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                       </div>
+                            
+                </li>
+                <li class="zhi shang">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                
+                
+            </ul>
+            <ul class="mansu">
+            	<li class="zhi">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="js">
+                	<div class="tu11 clearfix" id="btn3"> 
+                            <img src="img/1 (2).jpg"/ >
+                            <img src="img/1 (1).jpg"/ >
+                			<img src="img/1 (3).jpg"/ >
+                            <img src="img/1 (4).jpg"/ >
+                       </div>
+                       <div class="kuang" id="box3">
+                       		<i class="active"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                       </div>
+                </li>
+                <li class="zhi shang">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                
+                
+            </ul>
+            <ul class="mansu">
+            	<li class="zhi">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="js">
+                	<div class="tu11 clearfix" id="btn4"> 
+                            <img src="img/1 (3).jpg"/ >
+                            <img src="img/1 (2).jpg"/ >
+                			<img src="img/1 (1).jpg"/ >
+                            <img src="img/1 (4).jpg"/ >
+                       </div>
+                       <div class="kuang" id="box4">
+                       		<i class="active"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                       </div>
+                </li>
+                <li class="zhi shang">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                
+                
+            </ul>
+            <ul class="mansu">
+            	<li class="zhi">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="js">
+                	<div class="tu11 clearfix" id="btn5"> 
+                            <img src="img/1 (1).jpg"/ >
+                            <img src="img/1 (2).jpg"/ >
+                			<img src="img/1 (3).jpg"/ >
+                            <img src="img/1 (4).jpg"/ >
+                       </div>
+                       <div class="kuang" id="box5">
+                       		<i class="active"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                       </div>
+                </li>
+                <li class="zhi shang">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi you">
+                	<i><img src="img/ping2.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                <li class="zhi">
+                	<i><img src="img/ping.jpg"/></i>
+                    <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                    <span>￥450.00</span>
+                    
+                </li>
+                
+                
+            </ul>
+          </div>
+         </div>
+         </div>
+         
+        <div class="yisheng">
+        	<div class="ming"> 
+            	<ul class="qiche">
+                	<li>汽车五金</li>
+                    <li>
+                    	<a href="#">大家电配送</a>>
+                    </li>
+                    <li>
+                    	<a href="#">大家电配送</a>>
+                    </li>
+                </ul>
+                <div class="clearfix">
+                    <ul class="hong">
+                        <li class="bie">
+                            <i><img src="img/ping.jpg"/></i>
+                            <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                            <span>￥450.00</span>
+                        
+                   		 </li>
+                    	<li class="bie">
+                            <i><img src="img/ping.jpg"/></i>
+                            <p>SKH2025立式原汁机慢速榨汁机中国红</p>
+                            <span>￥450.00</span>
+                    	</li>
+               		 </ul>
+                     <ul class="huren">
+                     	<li>
+                        	<img src="img/kong.jpg"/>
+                        </li>
+                        <li>
+                        	<img src="img/kong.jpg"/>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+         
+     </div>
+     
+     
+     <div style="clear:both"></div>
+    
+     
+     
+    <div class="shuma clearfix">
+    	<div class="xianka">
+        	<div class="xian-l clearfix">
+            	<i></i>
+            	<h3>电脑数码</h3>
+            </div>
+            <div class="youxi">
+            	<ul class="biji">
+                	<li class="ben">
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                    <li>
+                    	<a href="#">笔记本</a>
+                    </li>
+                </ul>
+                <ul class="biji">
+                	<li class="ben">
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                    <li>
+                    	<a href="#">数码相机</a>
+                    </li>
+                </ul>
+                <div class="erji">
+                	<img src="img/erji.jpg"/>
+                </div>
+                
+            </div>
+        </div>	
+        
+        <div class="yingyi">
+        	<div>
+            	<ul class="benzi clearfix">
+                	<li class="wang">特价商品
+                    	<i></i>
+                    </li>
+                    <li>笔记本
+                    	<i></i>
+                    </li> 
+                    <li>数码影音
+                    	<i></i>
+                    </li>
+                    <li>特价商品
+                    	<i></i>
+                    </li>
+                    <li>特价商品
+                    	<i></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="gu">
+            	<ul class="clearfix yueqiu">
+                	<li class="xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                    <li class="js2">
+                    	<div class="erci" id="boos1">
+                    		<img src="img/1 (1).jpg"/>
+                            <img src="img/1 (2).jpg"/>
+                            <img src="img/1 (3).jpg"/>
+                            <img src="img/1 (4).jpg"/>
+                        <div>
+                        <div class="kuang2" id="bas1">
+                        	<i class="hongse"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                </ul>
+                
+                  <ul class="clearfix">
+                	<li class="xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                    <li class="js2">
+                    	<div class="erci" id="boos2">
+                    		<img src="img/1 (3).jpg"/>
+                            <img src="img/1 (2).jpg"/>
+                            <img src="img/1 (1).jpg"/>
+                            <img src="img/1 (4).jpg"/>
+                        <div>
+                        <div class="kuang2" id="bas2">
+                        	<i class="hongse"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                </ul>
+                
+                
+                <ul class="clearfix">
+                	<li class="xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                    <li class="js2">
+                    	<div class="erci" id="boos3">
+                    		<img src="img/1 (1).jpg"/>
+                            <img src="img/1 (2).jpg"/>
+                            <img src="img/1 (3).jpg"/>
+                            <img src="img/1 (4).jpg"/>
+                        <div>
+                        <div class="kuang2" id="bas3">
+                        	<i class="hongse"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                </ul>
+                
+                <ul class="clearfix">
+                	<li class="xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                    <li class="js2">
+                    	<div class="erci" id="boos4">
+                    		<img src="img/1 (1).jpg"/>
+                            <img src="img/1 (2).jpg"/>
+                            <img src="img/1 (3).jpg"/>
+                            <img src="img/1 (4).jpg"/>
+                        <div>
+                        <div class="kuang2" id="bas4">
+                        	<i class="hongse"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                </ul>
+                
+                <ul class="clearfix">
+                	<li class="xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                    <li class="js2">
+                    	<div class="erci" id="boos5">
+                    		<img src="img/1 (1).jpg"/>
+                            <img src="img/1 (2).jpg"/>
+                            <img src="img/1 (3).jpg"/>
+                            <img src="img/1 (4).jpg"/>
+                        <div>
+                        <div class="kuang2" id="bas5">
+                        	<i class="hongse"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </li>
+                    <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/xiangji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                     <li class="dayinji xiang">
+                    	<img src="img/dayinji.jpg"/>
+                        <p>月球神器-尼康JFJGDKHHF超长焦数码相机</p>
+                        <span>￥3695.00</span>
+                    </li>
+                </ul>
+            
+            </div>
+        </div>.
+        
+        <div class="gans">
+        	<div class="ri-ab">
+            	<ul class="clearfix">
+                	<li class="ri-a">
+                    	<a href="#">游戏大师</a>
+                        <span>></span>
+                    </li>
+                    <li class="ri-a">
+                    	<a href="#">游戏大师</a>
+                        <span>></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="jh">
+            	<ul>
+                	<li class="has">
+                    	<img src="img/has.jpg"/>
+                    </li>
+                </ul>
+                <ul>
+                	<li>
+                    	<img src="img/has1.jpg"/>
+                    </li>
+                </ul>
+            </div>	
+        </div>
+        
+    </div>
+    
+    
+    
+    
+   <div class="dibu clearfix">
+  		 <div class="dibu-l clearfix">
+         	<div class="huodong">
+                <h4>热门活动</h4>
+                <ul class="shai clearfix">
+                    <li class="jia">
+                    	<img src="img/tong.jpg" />
+                    </li>
+                    <li class="jd">
+                    	<p class="duo">嘉多实（jghdfhs）刺虎5w-43 4L启程保全机油润滑油</p>
+                        <p class="goum">京东购买嘉多实机油和三滤 不用再去4S点花冤枉<br/>钱了</p>
+                        <i class="dui"></i>
+                    </li>
+                </ul>
+                <ul class="shai clearfix shandian">
+                    <li class="jia">
+                    	<img src="img/tong.jpg" />
+                    </li>
+                    <li class="jd">
+                    	<p class="duo">嘉多实（jghdfhs）刺虎5w-43 4L启程保全机油润滑油</p>
+                        <p class="goum">京东购买嘉多实机油和三滤 不用再去4S点花冤枉<br/>钱了</p>
+                        <i class="dui"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="huodong">
+                <h4>热门活动</h4>
+                <ul class="shai clearfix">
+                    <li class="jia">
+                    	<img src="img/tong.jpg" />
+                    </li>
+                    <li class="jd">
+                    	<p class="duo">嘉多实（jghdfhs）刺虎5w-43 4L启程保全机油润滑油</p>
+                        <p class="goum">京东购买嘉多实机油和三滤 不用再去4S点花冤枉<br/>钱了</p>
+                        <i class="dui"></i>
+                    </li>
+                </ul>
+                <ul class="shai clearfix shandian">
+                    <li class="jia">
+                    	<img src="img/tong.jpg" />
+                    </li>
+                    <li class="jd">
+                    	<p class="duo">嘉多实（jghdfhs）刺虎5w-43 4L启程保全机油润滑油</p>
+                        <p class="goum">京东购买嘉多实机油和三滤 不用再去4S点花冤枉<br/>钱了</p>
+                        <i class="dui"></i>
+                    </li>
+                </ul>
+            </div>
+        
+    	</div>
+         <div class="rsa">
+         		
+         	<ol class="sas clearfix">
+            	
+                    <li class="zai clearfix">
+                        <h3>在线读书</h3>
+                        <a href="#">更多在线读书></a>
+                   
+                 </li>
+                <li class="yao">
+                	<img src="img/duo.jpg"/>
+                </li>
+                <li class="weiba clearfix">
+                	<i></i>
+                    <a href="#">从0到1开启商业与未来的秘密</a>
+                </li>
+                 <li class="weiba clearfix">
+                	<i></i>
+                    <a href="#">从0到1开启商业与未来的秘密</a>
+                </li>
+                 <li class="weiba clearfix">
+                	<i></i>
+                    <a href="#">从0到1开启商业与未来的秘密</a>
+                </li>
+                 <li class="weiba clearfix">
+                	<i></i>
+                    <a href="#">从0到1开启商业与未来的秘密</a>
+                </li>
+            </ol>	
+            <div class="xin">
+            	<h4>订阅促销信息</h4>
+                <div>
+                    <input type="text" placeholder="请输入正确的邮箱地址"/>
+                    <i></i>
+                    <div class="sou">搜索</div>
+                </div>
+            </div>
+         </div>
+   </div>
+   
+   
+   
+  <div class="zhinan clearfix">
+  		<div class="dingwei clearfix">
+            <i class="biao"></i>
+            <dl class="fa">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+            </dl>
+        </div>
+        <div class="dingwei clearfix">
+            <i class="biao"></i>
+            <dl class="fa">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+            </dl>
+        </div>
+        <div class="dingwei clearfix">
+            <i class="biao"></i>
+            <dl class="fa">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+            </dl>
+        </div>
+        <div class="dingwei clearfix">
+            <i class="biao"></i>
+            <dl class="fa">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+            </dl>
+        </div>
+        <div class="dingwei clearfix">
+            <i class="biao"></i>
+            <dl class="fa">
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+                <dd>购物流程</dd>
+            </dl>
+        </div>
+        <div class="shouhuo">
+        	<h5>京东自营覆盖的区县</h5>
+            <p>京东已经向全国114个区县提供自营配<be/>送服务，支持货到付款，POS机刷卡<br/>和售后上门服务。</p>
+            <a href="#">更多详情></a>
+        </div>
+  </div>
+  
+<div class="zuidi">
+  	<ul class="aa">
+    	<li class="guanyu">
+        	<a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#">关于我们</a>
+            <a href="#" class="ss">关于我们</a>
+        </li>
+      </ul>  
+        <div class="nansheng">
+        	<p>女生给男友庆生做烛光晚餐 蜡烛引火灾致4人遇难女生给男友庆生做烛光晚餐 蜡烛引火灾致4人遇难</p>
+            <p>女生给男友庆生做烛光晚餐 蜡烛引火灾致4人遇难女生给男友庆生做烛光晚餐 蜡烛引火灾致4人遇难</p>
+            <p>女生给男友庆生做烛光晚餐 蜡烛引火灾致4人遇难女生给男友庆生做烛光晚餐 蜡烛引火灾致4人遇难</p>
+            <p class="zhu">女生给男友庆生做烛光晚餐 蜡烛引火灾致</p>
+        </div>
+        <ul class="wan clearfix">
+        	<li>
+            	<img src="img/mei.jpg"/>
+            </li>
+            <li>
+            	<img src="img/mei.jpg"/>
+            </li>
+            <li>
+            	<img src="img/mei.jpg"/>
+            </li>
+        </ul>
+    
+    
+  </div>
+     
+     
+     
+    
+     
+    
+     
+     
+     
+       
+</body>					
+</html>
