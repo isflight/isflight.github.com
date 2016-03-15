@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.meituan.com/xsstorage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function addEvent(target, event, cb) {
+            if (target.addEventListener) {
+                target.addEventListener(event, cb, false);
+            } else if (target.attachEvent) {
+                target.attachEvent('on' + event, cb);
+            }
+        }
+
+        var currHost = location.hostname.replace(/^www/, ''),
+            allowMethods = {
+                setItem: function (data) {
+                    localStorage.setItem(data.key, data.value);
+                },
+                removeItem: function (data) {
+                    localStorage.removeItem(data.key);
+                },
+                clear: function () {
+                    localStorage.clear();
+                },
+                appendItem: function (data) {
+                    var oldVal = localStorage.getItem(data.key) || '';
+                    localStorage.setItem(data.key, oldVal + data.value)
+                },
+                getItem: function (data) {
+                    var value = localStorage.getItem(data.key);
+                    return {
+                        rid: data.rid,
+                        value: value
+                    };
+                },
+                getAndRemove: function (data) {
+                    var rv = allowMethods.getItem(data);
+                    if (data.key) {
+                      localStorage.removeItem(data.key);
+                    }
+                    return rv;
+                }
+            };
+
+        function initEventlog() {
+            try {
+                addEvent(window, 'message', function (e) {
+                    var origin = e.origin,
+                        contains = origin.indexOf(currHost);
+
+                    if (contains === -1 || contains !== origin.length - currHost.length) {
+                        return;
+                    }
+
+                    var data = JSON.parse(e.data),
+                        methodName = data.method,
+                        argsObj = data.args,
+                        method,
+                        rv = {};
+
+                    if (!methodName || !(method = allowMethods[methodName])) {
+                        return;
+                    }
+
+                    rv = method(argsObj) || rv;
+                    e.source.postMessage(JSON.stringify(rv), origin);
+                });
+            } catch (e) {
+            }
+        }
+
+    </script>
+    </head>
+    <body onload="initEventlog()">
+    <script type="text/javascript" id="1qa2ws" src="./【美团】北京团购_北京团购网_北京美团网_files/scg.js" mtid="4" mcid="2" ptid="4" pcid="2"></script>
+
+</body></html>

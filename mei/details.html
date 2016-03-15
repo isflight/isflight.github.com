@@ -1,0 +1,2014 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美团详情页</title>
+<link rel="stylesheet" href="css/base.css" />
+<style>
+/*--头部开始--*/
+.header {
+	height: 30px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #dddddd;
+	background: #f9f9f9;
+}
+.header-link {
+	width: 980px;
+	margin: 0 auto;
+}
+.header-link-left {
+	float: left;
+}
+.header-link-left>a {
+	float: left;
+	margin-right: 18px;
+	height: 28px;
+	line-height: 30px;
+	color: #666666;
+}
+.header-link-left>i {
+	float: left;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat 0 0;
+	width: 12px;
+	height: 13px;
+	margin-right: 5px;
+	margin-top: 8px;
+}
+.header-link-left .header-login {
+	color: red;
+}
+
+.mobile-box{
+	width:86px;
+	position:relative;
+	float: left;
+	margin-right: 18px;
+	height: 28px;
+	line-height: 30px;
+	color: #666666;
+}
+
+.header-mobile {
+	display:inline-block;
+	text-align:center;
+	width:86px;
+	height:28px;
+	border:1px solid #fafafa;
+	position: relative;
+	z-index:10;
+}
+.mobile-box:hover .header-mobile{
+	width:86px;
+	height:30px;
+	background:#fafafa;
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+.mobile-p{
+	position:absolute; left:0px; top:30px;
+	display:none;
+	width:164px;
+	height:261px;
+	border:1px solid #ccc;
+	z-index:9;
+}
+.mobile-box:hover .mobile-p{
+	display:block;
+}
+
+.header-mobile .i-left {
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat -13px -5px;
+	width: 9px;
+	height: 12px;
+}
+.header-mobile .i-right {
+	position: absolute;
+	right: 5px;
+	top: 13px;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat -13px 0px;
+	width: 6px;
+	height: 3px;
+}
+.header-link-right {
+	float: right;
+	margin-right: 5px;
+}
+.header-link-right-ul{
+	position:relative;
+	z-index:1;
+}
+.header-link-right-ul>li{
+	float:left;
+	border: 1px solid #f9f9f9;
+	position: relative;
+	line-height: 30px;
+	height: 28px;
+	background:#fafafa;
+}
+.header-link-mymt {
+	position: relative;
+	float: left;
+	line-height: 30px;
+	height: 28px;
+	background:#fafafa;
+}
+.header-link-mymt>a {
+	-display: inline-block;
+	border-right: 1px solid #dddddd;
+	color: #666666;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+.header-link-mymt>img {
+	margin-top: 9px;
+}
+.header-link-mymt>i {
+	position: absolute;
+	right: 7px;
+	top: 13px;
+	display: inline-block;
+	width: 6px;
+	height: 3px;
+	background: url(images/sprites.png) no-repeat -13px 0;
+}
+.header-cart>span {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+	display: inline-block;
+	background: url(images/sprites.png) no-repeat -22px 0;
+	width: 11px;
+	height: 10px;
+}
+.header-link-right .header-cart {
+	padding-left: 20px;
+}
+
+.heaser-ad {
+	position: relative;
+	width: 980px;
+	height: 60px;
+	margin: 0 auto;
+}
+.heaser-ad img{
+	width:980px;
+	height:60px;
+}
+.heaser-ad-btn {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	width: 12px;
+	height: 10px;
+	background: url(images/sprites.png) no-repeat -33px 0;
+	cursor: pointer;
+}
+.heaser-ad-btn:hover{
+	background: url(images/sprites.png) no-repeat -33px -14px;
+}
+/*--头部结束--*/
+
+
+/*--logo部分开始--*/
+.logo {
+	width: 980px;
+	height: 83px;
+	margin: 0 auto;
+	padding-top: 22px;
+}
+.logo-left {
+	float: left;
+}
+.logo-left>h1 {
+	float: left;
+	width: 82px;
+	height: 54px;
+	background: url(images/logo.png) no-repeat;
+	margin-right: 10px;
+}
+.logo-left>h1>a {
+	text-indent: -888em;
+	display: inline-block;
+	width: 82px;
+	height: 54px;
+}
+.logo-city {
+	float: left;
+	margin-top: 5px;
+}
+.logo-city>h2 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 5px;
+}
+.logo-city>span {
+	display: inline-block;
+	width: 58px;
+	height: 20px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 20px;
+	color: #a79999;
+	cursor: pointer;
+}
+.logo-center {
+	position: relative;
+	float: left;
+	width: 484px;
+	height: 38px;
+	margin-left: 98px;
+}
+.logo-center>input {
+	width: 416px;
+	height: 38px;
+	border: 2px solid #2db8ad;
+	padding-left: 68px;
+}
+.logo-group {
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	display: inline-block;
+	width: 48px;
+	height: 38px;
+	border-right: 1px solid #ccc;
+	line-height: 38px;
+	padding-left: 14px;
+	background: url(images/proup-jiao.png) no-repeat 46px center;
+	cursor: pointer;
+}
+.logo-subling {
+	position: absolute;
+	right: -2px;
+	top: 2px;
+	display: inline-block;
+	text-align: center;
+	line-height: 38px;
+	width: 62px;
+	height: 38px;
+	color: #fff;
+	background: #2bb8aa;
+	cursor: pointer;
+}
+.logo-right {
+	float: right;
+}
+.logo-right-fw>li {
+	float: left;
+	margin-left: 20px;
+}
+.logo-right-pic {
+	display: inline-block;
+	text-align: center;
+	background: url(images/sprites.png) no-repeat -49px 0;
+	width: 23px;
+	height: 23px;
+	margin-left: 4px;
+	margin-bottom: 5px;
+}
+.logo-right-pic1 {
+	display: inline-block;
+	text-align: center;
+	background: url(images/sprites.png) no-repeat -75px 0;
+	width: 23px;
+	height: 23px;
+	margin-left: 18px;
+	margin-bottom: 5px;
+}
+.logo-right-pic2 {
+	display: inline-block;
+	text-align: center;
+	background: url(images/sprites.png) no-repeat -101px 0;
+	width: 23px;
+	height: 23px;
+	margin-left: 4px;
+	margin-bottom: 5px;
+}
+/*--logo部分结束--*/
+
+
+/*--导航部分开始--*/
+.content{
+	position:relative; 
+	left:0; top:0;
+	z-index:2;
+	width:980px;
+	height:40px;
+	margin:0 auto;
+}
+.content-left{
+	position:relative;
+	float:left;
+	width:232px;
+	height:40px;
+	font-size:16px;
+	color:#edfff0;
+	padding-left:14px;
+	line-height:40px;
+	font-weight:bold;
+	background:url(images/sprites.png) no-repeat 0 -61px;
+}
+.cont-jiao-span{
+	position:absolute; top:15px; right:20px;
+	display:inline-block;
+	width:17px;
+	height:11px;
+	background:url(images/fanzhuan.png) no-repeat;
+}
+.content-left:hover .cont-jiao-span{
+	position:absolute; top:15px; right:20px;
+	display:inline-block;
+	width:17px;
+	height:11px;
+	background:url(images/fanzhuan1.png) no-repeat;
+}
+.content-left:hover .cont-list-dw{
+	display:block;
+}
+.cont-list-dw{
+	position:absolute; left:0; top:40px;
+	z-index:2;
+	display:none;
+}
+.content-list{
+	width:244px;
+	border:1px solid #eeeeee;
+	border-top:none;
+	background:#fafafa;
+	position:relative;
+}
+.list-bt{
+	width:224px;
+	height:52px;
+	margin:0 auto;
+	border-bottom:1px solid #f4f4f4;
+}
+.lsit-content-ct li{
+	color:#C3C;
+}
+.list-bt h4{
+	height:52px;
+	line-height:52px;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#333333;
+	margin-left:5px;
+}
+.liast-right{
+	position:relative;
+	height:52px;
+	line-height:52px;
+	float:right;
+	margin-right:18px;
+}
+.liast-right a{
+	font-size:14px;
+	color:#999999;
+}
+.triangle{
+	position:absolute; right:-16px; top:22px;
+	display:inline-table;
+	width:5px;
+	height:9px;
+	background:url(images/sprites.png) no-repeat 0 -30px;
+}
+
+.content-right{
+	float:left;
+	width:734px;
+	height:40px;
+}
+.content-right-nr{
+	float:left;
+	width:725px;
+}
+.content-nav{
+	width:734px;
+	height:40px;
+	background:#2bb8aa;
+}
+.content-nav a{
+	display:block;
+	padding:0 20px;
+	color:#fff;
+}
+.cont-yc{
+	height:40px;
+	background:#fff;
+	display:none;
+}
+.content-nav>li{
+	float:left;
+	height:40px;
+	line-height:40px;
+	font-size:16px;
+	font-weight:bold;
+	cursor:pointer;
+}
+/*--导航部分结束--*/
+
+
+/*--内容开始--*/
+.detail-cont{
+	width:980px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.detail-header{
+	width:980px;
+	height:39px;
+	border-bottom:1px solid #ccc;
+	line-height:39px;
+}
+.detail-tip{
+	width:980px;
+	height:86px;
+}
+.detail-tip h2{
+	font-size:27px;
+	font-weight:bold;
+	color:#333333;
+	margin:13px 0;
+}
+.detail-tip p{
+	color:#666666;
+	font-size:16px;
+	padding-left:10px;
+	margin-bottom:15px;
+}
+.detail-xq{
+	width:980px;
+	height:390px;
+}
+.detail-left{
+	float:left;
+	width:460px;
+}
+.detail-pic{
+	margin-top:15px;
+	margin-right:-7px;
+}
+.xb-bg{
+	border:1px solid #ccc;
+	padding:3px;
+	margin-right:7px;
+}
+.detail-pic .xb-active{
+	border:1px solid #2bb8aa;
+}
+.xb-qc{
+	margin:0;
+}
+.detail-btnb img{
+	display:none;
+}
+.detail-btnb .img-active{
+	display:block;
+}
+.detail-pic img{
+	float:left;
+}
+
+
+.detail-right{
+	float:right;
+	width:500px;
+	height:390px;
+}
+.de-r-p1{
+	padding-top:12px;           
+	height:44px;
+	padding-left:10px;
+}
+.de-r-p1 span{
+	float:left;
+	display:inline-block;
+}
+.de-r-span1{
+	margin-right:25px;
+	color:#999999;
+	padding-top:8px;
+}
+.de-r-span2{
+	font-size:26px;
+	color:#f76120;
+	font-weight:bold;
+	margin-right:15px;
+}
+.de-r-span3{
+	color:#999999;
+	padding-top:12px;
+	margin-right:5px;
+}
+.de-r-span4{
+	color:#999999;
+	padding-top:12px;
+	text-decoration:line-through;
+}
+.de-r-p2{
+	height:27px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding-top:13px;
+}
+.de-r-p2 span{
+	float:left;
+}
+.de-r-p2-span1{
+	color:#999;
+	padding-left:52px;
+}
+.de-r-p2-span2{
+	color:#f76120;
+	padding-right:52px;
+	border-right:1px solid #ccc;
+}
+.de-r-p2-span3{
+	color:#f76120;
+	padding-left:64px;
+}
+.de-r-p2-span4{
+	color:#999;
+	padding-right:64px;
+	border-right:1px solid #ccc;
+}
+.de-r-p2-span5{
+	padding-left:62px;
+	color:#f76120;
+}
+.de-r-p2-span6{
+	color:#999;
+}
+.detail-cent{
+	width:500px;
+	height:166px;
+	border-bottom:1px solid #ccc;
+}
+.detail-cent-p1{
+	padding:18px 0 22px 10px;
+}
+.detail-cent-p1 span{
+	float:left;
+}
+.cent-span1{
+	color:#999;
+}
+.cent-span2{
+	padding-left:24px;
+	padding-right:5px;
+	color:#666666;
+}
+.cent-span3{
+	color:#f76120;
+}
+.detail-cent-p2{
+	margin-bottom:20px;
+}
+.detail-p-left{
+	color:#999999;
+	padding-top:10px;
+}
+.detail-p-cent{
+	margin-left:40px;
+	margin-right:10px;
+}
+.detail-cent-p2 p{
+	float:left;
+	padding-left:10px;
+}
+.detail-cent-p2 .detail-p-cent{
+	width:107px;
+	height:32px;
+	padding:0;
+	border:1px solid #ccc;
+}
+.detail-p-cent span{
+	float:left;
+}
+.span-next{
+	display:inline-block;
+	height:32px;
+	width:32px;
+	color:#666666;
+	font-size:20px;
+	text-align:center;
+	line-height:32px;
+	font-weight:bold;
+	background:#eeeeee;
+	border-right:1px dashed #ccc;
+	cursor:pointer;
+}
+.span-content{
+	width:41px;
+	height:32px;
+	display:inline-block;
+	text-align:center;
+	line-height:32px;
+}
+.span-prev{
+	display:inline-block;
+	height:32px;
+	width:32px;
+	color:#666666;
+	font-size:20px;
+	text-align:center;
+	line-height:32px;
+	font-weight:bold;
+	background:#eeeeee;
+	border-left:1px dashed #ccc;
+	cursor:pointer;
+}
+.detail-p-bt{
+	color:#f76120;
+	padding-top:10px;
+}
+.gouwu-btn p{
+	float:left;
+}
+.goumai-tijiao{
+	margin-right:10px;
+	margin-left:70px;
+}
+.dibu-fuwu{
+	margin-top:16px;
+}
+.dibu-f-ul{
+	padding-left:10px;
+}
+.dibu-f-ul li{
+	width:74px;
+	height:16px;
+	float:left;
+}
+.dibu-f-ul .fu-cn-li{
+	width:70px;
+	color:#999999;
+}
+.left-bg{
+	background:url(images/tui.png) no-repeat;
+	padding-left:20px;
+}
+/*--内容结束--*/
+
+
+/*--其他美团部分开始--*/
+.qita-meituan{
+	width:980px;
+	margin:0 auto;
+}
+.qita-mt-left{
+	float:left;
+	width:700px;
+}
+.mt-dc{
+	border:1px solid #ccc;
+	height:102px;
+}
+.mt-gg{
+	float:left;
+	width:180PX;
+	border-right:1px solid #CCC;
+}
+.mt-yonghu{
+	float:left;
+	color:#666;
+	padding-left:15px;
+	line-height:102px;
+}
+.mt-jg{
+	height:96px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-top:28px;
+}
+.mt-qitasj{
+	height:58px;
+	border-bottom:2px solid #666;
+}
+.mt-qitasj h6{
+	float:left;
+	width:466px;
+	font-size:18px;
+	font-weight:bold;
+	color:#333;
+	padding-top:28px;
+}
+.mt-sj-jg{
+	float:left;
+	padding-top:30px;
+	color:#999;
+	font-weight:bold;
+	font-size:14px;
+}
+.mt-sj-jg span{
+	float:left;
+}
+.mt-md-jg{
+	padding-left:60px;
+	padding-right:45px;
+}
+.mt-zgc-fd{
+	float:left;
+	width:456px;
+	line-height:36px;
+	color:#666;
+	padding-left:10px;
+}
+.mt-zgc .mt-sj-jg{
+	line-height:36px;
+	height:36px;
+	padding:0;
+}
+.mt-zgc .mt-sp-bs{
+	color:#f76120;
+}
+.mt-zgc .mt-md-jg{
+	padding-left:73px;
+	padding-right:55px;
+}
+.qita-sj-xx{
+	width:700px;
+	height:40px;
+	margin-top:50px;
+	border:1px solid #ccc;
+	border-right:none;
+	background:#f9f9f9;
+}
+.qita-listing li{
+	float:left;
+	width:139px;
+	border-right:1px solid #ccc;
+	text-align:center;
+	line-height:40px;
+	color:#666666;
+	cursor:pointer;
+}
+.qita-listing .active{
+	background:#2bb8aa;
+	color:#fff;
+}
+.qita-listing-nr{
+	width:700px;
+	height:338px;
+	margin-top:40px;
+}
+.qita-lsting-lt{
+	display:none;
+	width:700px;
+	height:338px;
+}
+.qita-listing-bt{
+	height:34px;
+	font-weight:bold;
+	color:#333;
+	font-size:18px;
+}
+.sj-lst-wz{
+	width:700px;
+	height:302px;
+	border-top:2px solid #777777;
+	border-bottom:1px solid #ccc;
+}
+.sj-map{
+	float:left;
+	width:380px;
+	height:302px;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.sj-map img{
+	width:380px;
+	height:302px;
+}
+.sj-dizhi{
+	float:left;
+	width:303PX;
+	height:302px;
+	padding-left:15px;
+}
+.sj-dizhi h5{
+	font-size:14px;
+	color:#2bb8aa;
+	margin-top:22px;
+	margin-bottom:18px;
+	font-weight:bold;
+}
+.sj-p-p1{
+	margin-bottom:14px;
+	clear:#666;
+}
+.sjpj-span1{
+	color:#666666;
+}
+.sjpj-span2{
+	color:#2bb8aa;
+}
+.sj-p-p2{
+	color:#f76120;
+	margin-left:42px;
+	margin-bottom:12px;
+}
+.sj-p-p3{
+	float:left;
+	color:#333;
+}
+.sj-p-d{
+	float:left;
+	width:234px;
+	padding-left:6px;
+}
+.sj-jutidizhi{
+	color:#333;
+}
+.sj-p-p4{
+	margin-bottom:14px;
+}
+.gsluxian{
+	margin-top:12px;
+	margin-bottom:12px;
+	color:#2bb8aa;
+}
+.sj-s-span3,.sj-s-span4{
+	color:#333;
+}
+.qita-listing-nr .listing-active{
+	display:block;
+}
+
+
+.qita-mt-right{
+	float:right;
+	width:242px;
+}
+/*--其他美团部分结束--*/
+
+
+/*--尾部开始--*/
+.end{
+	width:980px;
+	height:80px;
+	margin:0 auto;
+	margin-top:40px;
+}
+.end-link{
+	width:819px;
+	border-right:1px solid #ccc;
+}
+.end-link>li{
+	float:left;
+	width:90px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc
+}
+.end-link>li:hover{
+	-background:#ccc;
+}
+.end-link>li>a{
+	color:#666;
+}
+.active{
+	background:#ccc;
+}
+.end-yqlink{
+	padding-left:10px;
+	height:50px;
+	line-height:50px;
+	border:1px solid #ccc;
+}
+.end-yqlink>a{
+	color:#666;
+	float:left;
+	margin-right:50px;
+}
+.end-yqlink>a:hover{
+	text-decoration:underline;
+}
+.dabou{
+	width:980px;
+	margin:0 auto;
+	margin-top:1px;
+	border-top:1px solid #ccc;
+}
+.end-fuwu{
+	border-top:1px solid #ccc;
+	width:980px;
+	height:236px;
+	margin:0 auto;
+	margin-top:45px;
+}
+.end-dl{
+	float:left;
+	width:169px;
+	padding-left:10px;
+}
+.end-dl dt{
+	font-size:14px;
+	font-weight:bold;
+	margin:20px 0;
+}
+.end-dl dd{
+	color:#666;
+	line-height:20px;
+}
+.end-right-dd{
+	width:200px;
+}
+.end-dl dd a{
+	color:#666;
+}
+.end-right{
+	float:left;
+	border-left:1px solid #ccc;
+	height:180px;
+	margin-top:20px;
+	padding-left:30px;
+}
+.end-p1{
+	color:#666;
+	font-size:14px;
+	margin-top:30px;
+}
+.end-p2{
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:30px;
+}
+.end-p2 span{
+	font-size:12px;
+	font-weight:normal;
+}
+.end-p3{
+	color:#666;
+	font-size:12px;
+	margin-bottom:5px;
+}
+.end-p4{
+	color:#2bb8aa;
+	font-size:12px;
+}
+.end-beian{
+	border-top:1px solid #ccc;
+}
+.end-beian p{
+	width:980px;
+	margin:0 auto;
+	line-height:50px;
+	text-align:center;
+	color:#666;
+	margin-bottom:80px;
+}
+
+/*--尾部结束--*/
+
+
+/*--右按钮部分开始--*/
+.right-btn{
+	position:fixed; right:0; bottom:30px;
+	width:41px;
+	height:168px;
+	border:1px solid #ccc;
+	border-top:none;
+}
+.right-btn p{
+	width:41px;
+	height:34px;
+	border-top:1px solid #ccc;
+	text-align:center;
+	color:#fff;
+	cursor:pointer;
+	padding-top:7px;
+}
+.right-btn-p1{
+	background:url(images/up.png) no-repeat 0 0;
+}
+.right-btn-p2{
+	background:url(images/up.png) no-repeat 0 -44px;
+}
+.right-btn-p3{
+	background:url(images/up.png) no-repeat 0 -88px;
+}
+.right-btn-p4{
+	background:url(images/up.png) no-repeat 0 -132px;
+}
+/*--右按钮部分结束--*/
+
+
+
+
+/*--js代码开始--*/
+		/*--头部下拉开始--*/
+.mymeituan{
+	display:none;
+	position:absolute; right:-1px; top:29px;
+	width:130px;
+	text-align:center;
+	border:1px solid #ccc;
+	background:#fafafa;
+	z-index:-1;
+}
+.header-link-right-ul .link-active{
+	height:30px;
+	border:1px solid #ccc;
+	border-bottom:none;
+	background:#fafafa;
+	position:relative;
+}	
+.link-active>b{
+	position:absolute; left:-4px; top:6px;
+	height:20px;
+	width:2px;
+	background:#fafafa;
+}
+		/*--头部下拉结束--*/
+		
+
+		/*--主题导航开始--*/
+.content-nav .nav-active{
+	background:#00c3b0;
+}		
+		/*--主题导航结束--*/
+		
+		
+		/*--主题左导航开始--*/
+.list-content{
+	position:absolute; left:245px; top:0px;
+	width:280px;
+	height:475px;
+	border:1px solid #eeeeee;
+	border-left:none;
+	background:#f4f4f4;
+	z-index:4;
+	padding-left:20px;
+	display:none;
+}
+.show.content-list{
+	border-left:1px solid #666;
+	border-bottom:1px solid #666;
+}
+.lsit-content-ct li{
+	line-height:50px;
+}
+.active.list-bt{
+	width:224px;
+	background:#f4f4f4;
+	height:52px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.active.list-content{
+	display:block;
+	border-bottom:1px solid #666;
+	border-right:1px solid #666;
+}
+		/*--主题左导航结束--*/
+
+
+		/*--主题选项卡开始--*/
+.content-tab{
+	position:relative;
+	margin-left:19px;
+}
+.content-tab ul{
+	position:absolute; left:0; top:0;
+	-display:none;
+}
+.content-tab .tab-active{
+	-display:block;
+}
+.tab-btn-l{
+	position:absolute; left:0; top:110px;
+	display:inline-block;
+	width:30px;
+	height:39px;
+	z-index:3;
+	display:none;
+	background:url(images/jiao.png) no-repeat 0 -150px;
+}
+.tab-btn-r{
+	position:absolute; left:628px; top:110px;
+	display:inline-block;
+	width:55px;
+	height:39px;
+	z-index:3;
+	display:none;
+	padding-left:5px;
+	line-height:39px;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	background:url(images/jiao.png) no-repeat 0 -228px;
+}
+		/*--主题选项卡结束--*/
+		
+		
+		/*--抢购开始--*/
+.shoping-snap{
+	position:absolute; left:0; top:0;
+}
+.sp-prev{
+	position:absolute; left:0; top:114px;
+	z-index:2;
+	display:inline-block;
+	width:30px;
+	height:39px;
+	background:url(images/jiao.png) no-repeat 0 -150px;
+}	
+.sp-next{
+	position:absolute; right:0; top:114px;
+	z-index:2;
+	display:inline-block;
+	width:60px;
+	height:39px;
+	background:url(images/jiao.png) no-repeat 0 -228px;
+}	
+		/*--抢购结束--*/
+		
+		
+		/*--尾部开始--*/
+.end-tab-list div{
+	display:none;
+}	
+.end-tab-list .end-active{
+	display:block;
+}	
+		/*--尾部结束--*/		
+/*--js代码结束--*/
+
+
+
+
+</style>
+<script src="js/public.js"></script>
+<script src="js/details.js"></script>
+<script src="js/move.js"></script>
+<script>
+window.onload=function(){
+	meituan.public.Header(); //头部下拉列表
+	meituan.public.Ad();  //公共广告
+	meituan.public.Vav(); //公共导航
+	meituan.public.NavTop(); //导航吸顶条
+	meituan.public.RightList();  //主题左列表
+	meituan.public.EndTab(); //公共尾部选项卡	
+	meituan.public.RigthBtn();  //右边定位按钮
+	meituan.details.Listing(); //详情页商家信息选项卡	
+	meituan.details.DetaTab();  //详情页主图选项卡
+	meituan.details.detailSp(); //商品购买数量增加或减少
+};
+</script>
+</head>
+
+<body>
+
+<!--头部开始-->
+<div class="header">
+	<div class="header-link clearfix">
+    	<div class="header-link-left clearfix">
+        	<i></i>
+            <a href="javascript:;">
+                收藏美团
+            </a>
+            <a href="javascript:;" class="header-login">
+            	登录
+            </a>
+            <a href="javascript:;" class="header-enroll">
+            	注册 |
+            </a>
+            <div class="mobile-box">
+                <a href="javascript:;" class="header-mobile">
+                    <i class="i-left"></i>
+                    <i class="i-right"></i>
+                    手机美图
+                </a>
+                <p class="mobile-p">
+                    <img src="images/erweima.png" />
+                </p>
+            </div>
+        </div>
+        <div class="header-link-right"> 
+        	<ul class="header-link-right-ul">
+            	<li class="header-link-mymt">
+              		<a href="javascript:;">
+                    	我的订单
+                    </a>
+                </li>
+                <li class="mymt-huoqu">
+                    <div  class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            我的美团
+                        </a>
+                        <i></i> 
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            最近浏览
+                        </a>
+                        <i></i>
+                    </div>  
+                    <b></b> 
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt header-cart">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <span></span>
+                        <a href="javascript:;" class="mymt-linka">
+                            购物车0件
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>消费记录</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            练习客服
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>消费记录</li>
+                            <li>预约地址</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            我是商家
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+                <li class="mymt-huoqu">
+                    <div class="header-link-mymt">
+                        <ul class="mymeituan">
+                            <li>我的美团</li>
+                            <li>我的订单</li>
+                            <li>代金卷</li>
+                            <li>优惠卷</li>
+                        </ul>
+                        <a href="javascript:;" class="mymt-linka">
+                            更多
+                        </a>
+                        <i></i>
+                    </div>
+                    <b></b>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="heaser-ad" id="ad">
+	<img src="images/top-ad.jpg" />
+    <span class="heaser-ad-btn"></span>
+</div>
+<!--头部结束-->
+
+
+<!--logo部分开始-->
+<div class="logo clearfix">
+	<div class="logo-left clearfix">
+    	<h1>
+        	<a href="javascript:;">美团</a>
+        </h1>
+        <div class="logo-city">
+        	<h2>北京</h2>
+            <span>切换城市</span>
+        </div>
+    </div>
+    <div class="logo-center">
+        <input type="text" placeholder="请输入商品名称,地址等" />
+        <span class="logo-group">团购</span>
+        <i class="logo-subling">搜索</i>
+    </div>
+    <div class="logo-right">
+    	<ul class="logo-right-fw clearfix">
+        	<li>
+            	<p class="logo-right-pic"></p>
+                <p logo-right-text>随时退</p>
+            </li>
+            <li>
+            	<p class="logo-right-pic1"></p>
+                <p logo-right-text>不满意免单</p>
+            </li>
+            <li>
+            	<p class="logo-right-pic2"></p>
+                <p logo-right-text>过期退</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--logo部分结束-->
+
+
+<!--导航部分开始-->
+<div class="content clearfix" id="nav-top1">
+	<div class="content-left">
+    	<span class="cont-jiao-span"></span>
+    	全部分类
+        <div class="cont-list-dw">
+            <ul class="content-list" id="list-ul">
+                <li class="list-bt clearfix ct-list">
+                    <h4>美食</h4>
+                    <div class="liast-right">
+                        <a href="javascript:;">经济型酒店</a>
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>东坡肘子</li>
+                            <li>眉州东坡酒</li>
+                            <li>东坡肘子</li>
+                            <li>东坡肘子</li>
+                            <li>眉州东坡酒</li>
+                            <li>东坡肘子</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix ct-list">
+                    <h4>酒店/客栈</h4>
+                    <div class="liast-right">
+                        <a href="javascript:;">经济型酒店</a>
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>眉州东坡酒</li>
+                            <li>眉州东坡酒</li>
+                            <li>眉州东坡酒</li>
+                            <li>眉州东坡酒</li>
+                            <li>眉州东坡酒</li>
+                            <li>眉州东坡酒</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix ct-list">
+                    <h4>电影/在线选座</h4>
+                    <div class="liast-right">
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>【23店通用】张老坎轻火锅</li>
+                            <li>【23店通用】张老坎轻火锅</li>
+                            <li>【23店通用】张老坎轻火锅</li>
+                            <li>【23店通用】张老坎轻火锅</li>
+                            <li>【23店通用】张老坎轻火锅</li>
+                            <li>【23店通用】张老坎轻火锅</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix">
+                    <h4>KTV/在线预定</h4>
+                </li>
+                <li class="list-bt clearfix ct-list">
+                    <h4>休闲娱乐</h4>
+                    <div class="liast-right">
+                        <a href="javascript:;">足疗按摩</a>
+                        <a href="javascript:;">温泉</a>
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>【通州北苑】汉釜宫</li>
+                            <li>【通州北苑】汉釜宫</li>
+                            <li>【通州北苑】汉釜宫</li>
+                            <li>【通州北苑】汉釜宫</li>
+                            <li>【通州北苑】汉釜宫</li>
+                            <li>【通州北苑】汉釜宫</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix ct-list">
+                    <h4>周边旅游</h4>
+                    <div class="liast-right">
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>【31店通用】汉堡王</li>
+                            <li>【31店通用】汉堡王</li>
+                            <li>【31店通用】汉堡王</li>
+                            <li>【31店通用】汉堡王</li>
+                            <li>【31店通用】汉堡王</li>
+                            <li>【31店通用】汉堡王</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix ct-list">
+                    <h4>生活服务</h4>
+                    <div class="liast-right">
+                        <a href="javascript:;">家具</a>
+                        <a href="javascript:;">生活</a>
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>【31店通用】全聚德烤鸭</li>
+                            <li>【31店通用】汉拿山烤肉</li>
+                            <li>【31店通用】辣子鸡</li>
+                            <li>【31店通用】烤全羊</li>
+                            <li>【31店通用】风干羊肉</li>
+                            <li>【31店通用】碳烤羊腿</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix ct-list">
+                    <h4>购物</h4>
+                    <div class="liast-right">
+                        <a href="javascript:;">男装</a>
+                        <a href="javascript:;">女装</a>
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>【19店通用】悠唐购物中心</li>
+                            <li>【19店通用】悠唐购物中心</li>
+                            <li>【19店通用】悠唐购物中心</li>
+                            <li>【19店通用】悠唐购物中心</li>
+                            <li>【19店通用】悠唐购物中心</li>
+                            <li>【19店通用】悠唐购物中心</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-bt clearfix ct-list" style="border-bottom:none">
+                    <h4>丽人</h4>
+                    <div class="liast-right">
+                        <i class="triangle"></i>
+                    </div>
+                    <div class="list-content ct-content">
+                        <ul class="lsit-content-ct">
+                            <li>甘露素食主义</li>
+                            <li>甘露素食主义</li>
+                            <li>甘露素食主义</li>
+                            <li>甘露素食主义</li>
+                            <li>甘露素食主义</li>
+                            <li>甘露素食主义</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>   
+        </div> 
+    </div>
+    <div class="content-right clearfix">
+    	<ul class="content-nav clearfix" id="nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="list.html">今日新单</a></li>
+            <li><a href="details.html">购物</a></li>
+            <li><a href="list.html">身边外卖</a></li>
+            <li><a href="details.html">名店抢购</a></li>
+        </ul>
+    </div>
+</div>
+<div class="cont-yc" id="nav-top2"></div>
+<!--导航部分结束-->
+
+
+<!--内容开始-->
+<div class="detail-cont">
+	<div class="detail-header">
+    	<a href="javascript:;">北京美团</a> >>
+        <a href="javascript:;">休闲娱乐团购</a> >>
+        <a href="javascript:;">运动健身</a> >>
+        <a href="javascript:;">海淀区</a> >>
+        <a href="javascript:;">中关村</a> >>
+        <a href="javascript:;">夜时尚</a>
+    </div>
+    <div class="detail-tip">
+    	<h2>【23店通用】张老坎轻火锅</h2>
+        <p>进店送100元代金券1张，除酒水饮料外全场通用。</p>
+    </div>
+    <div class="detail-xq clearfix">
+    	<div class="detail-left">
+        	<p class="detail-btnb" id="detail-btn1">
+            	<img src="images/huoguo1.jpg" class="img-active" />
+                <img src="images/baozi.jpg" />
+                <img src="images/kaoyu.jpg" />
+                <img src="images/xiangguo.jpg" />
+                <img src="images/taocan-pic1.jpg" />
+            </p>
+            <div class="detail-pic" id="detail-pic">
+            	<img src="images/huoguo.jpg" class="xb-bg xb-active" />
+                <img src="images/baozi1.jpg" class="xb-bg" /> 
+                <img src="images/kaoyu1.jpg" class="xb-bg" />
+                <img src="images/xiangguo1.jpg" class="xb-bg" />
+                <img src="images/taocan-pic.jpg" class="xb-bg" /> 
+            </div>
+        </div>
+        <div class="detail-right">
+        	<p class="de-r-p1 clearfix">
+            	<span class="de-r-span1">团购价</span>
+                <span class="de-r-span2">￥59</span>
+                <span class="de-r-span3">门店价</span>
+                <span class="de-r-span4">￥126</span>
+            </p>
+            <p class="de-r-p2 clearfix">
+            	<span class="de-r-p2-span1">已售</span>
+                <span class="de-r-p2-span2">2036</span>
+                <span class="de-r-p2-span3">4.1</span>
+                <span class="de-r-p2-span4">分</span>
+                <span class="de-r-p2-span5">897</span>
+                <span class="de-r-p2-span6">人评价</span>
+            </p>
+            <div class="detail-cent">
+            	<p class="detail-cent-p1 clearfix">
+                	<span class="cent-span1">有效期</span>
+                    <span class="cent-span2">截止到2016年01.19日</span>
+                    <span class="cent-span3">周末,法定节假日通用</span>
+                </p>
+                <div class="detail-cent-p2 clearfix">
+                	<p class="detail-p-left">数量</p>
+                    <p class="detail-p-cent clearfix">
+                    	<span class="span-next" id="span-next">-</span>
+                        <span class="span-content" id="span-content">1</span>
+                        <span class="span-prev" id="span-prev">+</span>
+                    </p>
+                    <p class="detail-p-bt">最少一件起售</p>
+                </div>
+                <div class="gouwu-btn clearfix">
+                	<p class="goumai-tijiao"><img src="images/goumai.jpg" /></p>
+                    <p><img src="images/gouwuche.jpg" /></p>
+                </div>
+            </div>
+            <div class="dibu-fuwu">
+            	<ul class="dibu-f-ul clearfix">
+                	<li class="fu-cn-li">服务承诺</li>
+                    <li class="left-bg">随时退</li>
+                    <li class="left-bg">过期退</li>
+                    <li class="left-bg">极速退</li>
+                    <li class="left-bg">真实评价</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--内容结束-->
+
+
+<!--其他团购开始-->
+<div class="qita-meituan clearfix">
+	<div class="qita-mt-left">
+    	<div class="mt-dc clearfix">
+        	<p class="mt-gg"><img src="images/shengyin.jpg" /></p>
+            <p class="mt-yonghu">
+            	100元代金券1张，除酒水饮料外全场通用,100元代金券1张，除酒水饮料外全场通用
+            </p>
+        </div>
+        <div class="mt-jg">
+            <div class="mt-qitasj clearfix">
+            	<h6>该商家的其他团购</h6>
+                <p class="mt-sj-jg clearfix">
+                	<span>团购价</span>
+                    <span class="mt-md-jg">门店价</span>
+                    <span>已售</span>
+                </p>
+            </div>
+            <div class="mt-zgc clearfix">
+            	<p class="mt-zgc-fd">100元代金券1张，除酒水饮料外全场通用</p>
+                <p class="mt-sj-jg clearfix">
+                	<span class="mt-sp-bs">￥20</span>
+                    <span class="mt-md-jg">￥42</span>
+                    <span>6749</span>
+                </p>
+            </div>
+        </div>
+        <div class="qita-sj-xx">
+        	<ul class="qita-listing" id="listing-lb">
+            	<li class="active">商家位置</li>
+                <li>购买须知</li>
+                <li>本单详情</li>
+                <li>商家介绍</li>
+                <li>消费评价</li>
+            </ul>
+        </div>
+        <div class="qita-listing-nr" id="listing-nr">
+        	<div class="qita-lsting-lt listing-active">
+            	<h3 class="qita-listing-bt">商家位置</h3>
+                <div class="sj-lst-wz clearfix">
+                    <p class="sj-map">
+                        <img src="images/map.jpg" />
+                    </p>
+                    <div class="sj-dizhi">
+                    	<h5>夜时尚(中关村店)</h5>
+                        <p class="sj-p-p1">
+                        	<span class="sjpj-span1">评价：</span>
+                            <span class="sjpj-span2">32432人评价</span>
+                        </p>
+                        <p class="sj-p-p2">4.3分高于同行业6.7%</p>
+                        <div class="sj-sjdizhi clearfix">
+                        	<p class="sj-p-p3">地址：</p>
+                            <div class="sj-p-d">
+                            	<p class="sj-jutidizhi">海淀区苏州街29号维亚大厦B1楼(苏州街地铁站北侧)</p>
+                                <p class="gsluxian">查看地图/公交路线</p>
+                            </div>
+                        </div>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">地铁：</span>
+                            <span class="sj-s-span4">苏州街站约500米</span>
+                        </p>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">电话：</span>
+                            <span class="sj-s-span4">010-52712345</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="qita-lsting-lt">
+            	<h3 class="qita-listing-bt">购买须知</h3>
+                <div class="sj-lst-wz clearfix">
+                    <p class="sj-map">
+                        <img src="images/xuzhi.jpg" />
+                    </p>
+                    <div class="sj-dizhi">
+                    	<h5>夜时尚(中关村店)</h5>
+                        <p class="sj-p-p1">
+                        	<span class="sjpj-span1">评价：</span>
+                            <span class="sjpj-span2">3939人评价</span>
+                        </p>
+                        <p class="sj-p-p2">5.3分高于同行业12.7%</p>
+                        <div class="sj-sjdizhi clearfix">
+                        	<p class="sj-p-p3">地址：</p>
+                            <div class="sj-p-d">
+                            	<p class="sj-jutidizhi">朝阳区苏州街29号洪福大厦B1楼(德胜门地铁站北侧)</p>
+                                <p class="gsluxian">查看地图/公交路线</p>
+                            </div>
+                        </div>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">地铁：</span>
+                            <span class="sj-s-span4">德胜门地铁站约500米</span>
+                        </p>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">电话：</span>
+                            <span class="sj-s-span4">010-39329876</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="qita-lsting-lt">
+            	<h3 class="qita-listing-bt">本单详情</h3>
+                <div class="sj-lst-wz clearfix">
+                    <p class="sj-map">
+                        <img src="images/bendan.jpg" />
+                    </p>
+                    <div class="sj-dizhi">
+                    	<h5>海底捞(东城区店)</h5>
+                        <p class="sj-p-p1">
+                        	<span class="sjpj-span1">评价：</span>
+                            <span class="sjpj-span2">3124234人评价</span>
+                        </p>
+                        <p class="sj-p-p2">6.3分高于同行业21.7%</p>
+                        <div class="sj-sjdizhi clearfix">
+                        	<p class="sj-p-p3">地址：</p>
+                            <div class="sj-p-d">
+                            	<p class="sj-jutidizhi">东城区大街苏州街29号维亚大厦B1楼(地铁站北侧)</p>
+                                <p class="gsluxian">查看地图/公交路线</p>
+                            </div>
+                        </div>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">地铁：</span>
+                            <span class="sj-s-span4">地铁站约300米</span>
+                        </p>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">电话：</span>
+                            <span class="sj-s-span4">010-22334455</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="qita-lsting-lt">
+            	<h3 class="qita-listing-bt">商家介绍</h3>
+                <div class="sj-lst-wz clearfix">
+                    <p class="sj-map">
+                        <img src="images/xiaofei.jpg" />
+                    </p>
+                    <div class="sj-dizhi">
+                    	<h5>全聚德(昌平店)</h5>
+                        <p class="sj-p-p1">
+                        	<span class="sjpj-span1">评价：</span>
+                            <span class="sjpj-span2">243509人评价</span>
+                        </p>
+                        <p class="sj-p-p2">4.3分高于同行业6.7%</p>
+                        <div class="sj-sjdizhi clearfix">
+                        	<p class="sj-p-p3">地址：</p>
+                            <div class="sj-p-d">
+                            	<p class="sj-jutidizhi">昌平去平西府街29号维亚大厦B1楼(平西府地铁站北侧)</p>
+                                <p class="gsluxian">查看地图/公交路线</p>
+                            </div>
+                        </div>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">地铁：</span>
+                            <span class="sj-s-span4">平西府站约500米</span>
+                        </p>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">电话：</span>
+                            <span class="sj-s-span4">010-98989898</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="qita-lsting-lt">
+            	<h3 class="qita-listing-bt">消费评价</h3>
+                <div class="sj-lst-wz clearfix">
+                    <p class="sj-map">
+                        <img src="images/shangjia.jpg" />
+                    </p>
+                    <div class="sj-dizhi">
+                    	<h5>夜时尚(中关村店)</h5>
+                        <p class="sj-p-p1">
+                        	<span class="sjpj-span1">评价：</span>
+                            <span class="sjpj-span2">32432人评价</span>
+                        </p>
+                        <p class="sj-p-p2">4.3分高于同行业6.7%</p>
+                        <div class="sj-sjdizhi clearfix">
+                        	<p class="sj-p-p3">地址：</p>
+                            <div class="sj-p-d">
+                            	<p class="sj-jutidizhi">海淀区苏州街29号维亚大厦B1楼(苏州街地铁站北侧)</p>
+                                <p class="gsluxian">查看地图/公交路线</p>
+                            </div>
+                        </div>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">地铁：</span>
+                            <span class="sj-s-span4">苏州街站约500米</span>
+                        </p>
+                        <p class="sj-p-p4">
+                        	<span class="sj-s-span3">电话：</span>
+                            <span class="sj-s-span4">010-52712345</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="qita-mt-right">
+    	<img src="images/right-t.jpg" />
+    </div>
+</div>
+<!--其他团购结束-->
+
+
+<!--尾部开始-->
+<div class="end" id="end">
+	<ul class="end-link clearfix">
+    	<li class="active">
+        	<a href="javascript:;">团购分类</a>
+        </li>
+        <li>
+        	<a href="javascript:;">热门地标</a>
+        </li>
+        <li>
+        	<a href="javascript:;">热门团购</a>
+        </li>
+        <li>
+        	<a href="javascript:;">精品推荐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">热门城市</a>
+        </li>
+        <li>
+        	<a href="javascript:;">历史团购</a>
+        </li>
+        <li>
+        	<a href="javascript:;">周边城市</a>
+        </li>
+        <li>
+        	<a href="javascript:;">美团推荐</a>
+        </li>
+        <li>
+        	<a href="javascript:;">品牌推荐</a>
+        </li>
+    </ul>
+    <div class="end-tab-list" id="end-tab">
+        <div class="end-yqlink end-active clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">电影团购</a>
+            <a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+        </div>
+        <div class="end-yqlink clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+        </div>
+        <div class="end-yqlink clearfix">
+         	<a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+        	<a href="javascript:;">休闲娱乐</a>
+            <a href="javascript:;">旅游团购</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">购物团购</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+        </div>
+        <div class="end-yqlink clearfix">
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+            <a href="javascript:;">美食</a>
+        </div>
+        <div class="end-yqlink clearfix">
+        	<a href="javascript:;">丽人团购</a>
+            <a href="javascript:;">团购评论</a>
+            <a href="javascript:;">品牌团购</a>
+            <a href="javascript:;">美食</a>
+            <a href="javascript:;">生活服务</a>
+            <a href="javascript:;">购物团购</a>
+            <a href="javascript:;">专题团购</a>
+            <a href="javascript:;">美团团购</a>
+        </div>
+    </div>
+</div>
+
+<div class="end-fuwu clearfix">
+	<div class="dabou"></div>
+	<dl class="end-dl">
+    	<dt>获取更新</dt>
+        <dd><a href="javascript:;">邮件订阅</a></dd>
+        <dd><a href="javascript:;">iPhone/Android</a></dd>
+        <dd><a href="javascript:;">美团QQ空间</a></dd>
+        <dd><a href="javascript:;">美团新浪微博</a></dd>
+        <dd><a href="javascript:;">sitemap</a></dd>
+        <dd><a href="javascript:;">RSS订阅</a></dd>
+    </dl>
+    <dl class="end-dl">
+    	<dt>商务合作</dt>
+        <dd><a href="javascript:;">商家合作</a></dd>
+        <dd><a href="javascript:;">美团商家营销平台</a></dd>
+        <dd><a href="javascript:;">市场合作</a></dd>
+        <dd><a href="javascript:;">美团联盟</a></dd>
+        <dd><a href="javascript:;">美团云</a></dd>
+        <dd><a href="javascript:;">廉正邮箱</a></dd>
+    </dl>
+    <dl class="end-dl">
+    	<dt>公司信息</dt>
+        <dd><a href="javascript:;">公司信息</a></dd>
+        <dd><a href="javascript:;">关于美团</a></dd>
+        <dd><a href="javascript:;">美团承诺</a></dd>
+        <dd><a href="javascript:;">媒体报道</a></dd>
+        <dd><a href="javascript:;">加入我们</a></dd>
+        <dd><a href="javascript:;">法律声明</a></dd>
+    </dl>
+    <dl class="end-dl end-right-dd">
+    	<dt>用户帮助</dt>
+        <dd><a href="javascript:;">用户帮助</a></dd>
+        <dd><a href="javascript:;">申请退款</a></dd>
+        <dd><a href="javascript:;">查看美团券密码</a></dd>
+        <dd><a href="javascript:;">常见问题</a></dd>
+        <dd><a href="javascript:;">反诈骗公告</a></dd>
+    </dl>
+    <div class="end-right">
+    	<p class="end-p1">客服电话</p>
+        <p class="end-p2">400-660-5335 <span>(9:00-23:00)</span></p>
+        <p class="end-p3">退款、退换货、查看美团券</p>
+        <p class="end-p4">参考教程，轻松搞定!</p>
+    </div>
+</div>
+
+<div class="end-beian">
+	<p>©2015美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则</p>
+</div>
+<!--尾部结束-->
+
+
+<!--右按钮部分开始-->
+<div class="right-btn">
+	<p class="right-btn-p1" id="btn-p1"></p>
+    <p class="right-btn-p2" id="btn-p2"></p>
+    <p class="right-btn-p3" id="btn-p3"></p>
+    <p class="right-btn-p4" id="btn-p4"></p>
+</div>
+<!--右按钮部分结束-->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
