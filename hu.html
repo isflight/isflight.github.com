@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社—http://www.zhinengshe.com</title>
+    <style>
+        body{
+            background: #000;
+        }
+        #c1{
+            background: #fff;
+        }
+    </style>
+    <script>
+        function d2a(n){
+            return n*Math.PI/180;
+        }
+        window.onload=function(){
+            var oC=document.getElementById('c1');
+            var gd=oC.getContext('2d');
+            var cx=200;
+            var cy=200;
+
+            gd.lineWidth=20;
+
+            function drawArc(start,end,r,color){
+                start-=90;
+                end-=90;
+
+                gd.beginPath();
+                gd.strokeStyle=color;
+                gd.arc(cx,cy,r,d2a(start),d2a(end),false);
+
+                gd.stroke();
+            }
+
+            function tick(){
+                gd.clearRect(0,0,oC.width,oC.height);
+
+                var oDate=new Date();
+                var h=oDate.getHours();
+                var m=oDate.getMinutes();
+                var s=oDate.getSeconds();
+                var ms=oDate.getMilliseconds();
+
+                drawArc(0,h%12*30+m/60*30,80,'#ff0');  //时
+                drawArc(0,m*6+s/60*6,100,'#f00'); //分
+                drawArc(0,s*6+ms/1000*6,120,'#000'); //秒
+
+                //画文字
+                gd.font='30px 黑体';
+                gd.textAlign='center';
+                gd.textBaseline='middle';
+                var str=h+':'+m+':'+s;
+                gd.fillText(str,cx,cy);
+            }
+            tick();
+            setInterval(tick,16);
+
+        };
+    </script>
+</head>
+<body>
+    <canvas id="c1" width="800" height="600"></canvas>
+</body>
+</html>
+
+
+
+
