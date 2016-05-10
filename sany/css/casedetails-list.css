@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+body{ 
+	background:#f6f6f6;}
+html{
+	font-size: 20px;
+}
+
+/*--nav start--*/
+.nav{
+	width:100%;
+	height:1.33rem;
+	border-bottom:1px solid #676767;
+}
+.logo,.logo img{
+	width:3.55rem;
+	height:1.33rem;
+}
+.logo{
+	float:left;
+}
+.nav-list{
+	float:left;
+}
+.nav-list li{
+	float:left;
+}
+.nav-list li h3{
+	line-height:1.33rem;
+	margin-left:1rem;
+	font-size:0.53rem;
+}
+
+/*--nav end--*/
+
+
+
+/*--Product description start--*/
+.construction-case{
+	width:100%;
+}
+.construction-case-pic,.construction-case-pic img{
+	width:100%;
+	height:8.31rem;
+}
+.construction-case-pic{
+	position:relative;	
+}
+.case-pic-tit{
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:1.33rem;
+	line-height:1.33rem;
+	font-size:0.53rem;
+	color:#ffffff;
+	text-align:center;
+	background:rgba(0, 0, 0, 0.7); 
+}
+.cc-case-bt{
+	padding-left:1rem;
+	padding:0.44rem 0 0.44rem 1rem;
+}
+.cc-case-p1{
+	font-size:0.48rem;
+	color:#616161;
+}
+.cc-case-tm{
+	padding:0.44rem 0;
+}
+.cc-case-clear{
+	padding:0;
+}
+.cc-case-tm-p1{
+	float:left;
+	font-size:0.48rem;
+	width:6.08rem;
+	color:#616161;
+	margin-right:0.93rem;
+}
+.cc-case-tm-p2{
+	float:left;
+	font-size:0.48rem;
+	color:#616161;
+}
+.cc-case-ms{
+	padding:0.44rem 1rem;
+	border-top:0.22rem solid #c7c7c7;
+}
+.cc-case-ms p{
+	font-size:0.48rem;
+	color:#616161;
+	line-height:0.84rem;
+}
+.site-top{
+	width:100%;
+	border-top:0.22rem solid #c7c7c7;
+}
+.site-top h3{
+	height:1.33rem;
+	line-height:1.33rem;
+	font-size:0.48rem;
+	color:#616161;
+	padding-left:1rem;
+}
+.site-top img{
+	width:100%;
+	height:9.68rem;
+}
+.site-top-pic{
+	height:9.68rem;
+	border-top:0.22rem solid #c7c7c7;
+	border-bottom:0.22rem solid #c7c7c7;
+}
+.related-products{
+	padding:0.35rem 0 0.66rem;
+}
+.related-products h3{
+	padding-left:1rem;
+	font-size:0.48rem;
+	color:#616161;
+}
+.related-products-list{
+	padding-left:1rem;
+	margin:0 auto;
+}
+.related-products-list li{
+	width:7.22rem;
+}
+.related-products-list li a{
+	font-size:0.4rem;
+	color:#000000;
+}
+/*--Product description end--*/
+
+
+
+/*--footer start--*/
+.footer{
+	width:100%;
+	border-top:0.44rem solid #c7c7c7;
+	background:#d9d9d9;
+	padding:1rem 0;
+}
+.footer p{
+	padding:0 0.5rem;
+	font-size:0.35rem;
+	color:#000000;
+	text-align:center;
+	margin-bottom:0.22rem;
+}
+/*--footer end--*/

@@ -1,0 +1,30 @@
+// JavaScript Document
+<!--特点介绍-->
+$(document).ready(function(){
+	$(".policy-service-btn").click(function(){
+	  $(".policy-service-d1").hide();
+	  $(".policy-service-d2").show();
+	  $(".policy-service-span").hide();
+	});
+});
+$(document).ready(function(){
+	$(".policy-service-btn1").click(function(){
+	  $(".policy-service-d1").show();
+	  $(".policy-service-d2").hide();
+	});
+});
+
+<!--技术参数-->
+$(document).ready(function(){
+	$(".jscanshu-btn").click(function(){
+	  $(".policy-jscanshu1").hide();
+	  $(".policy-jscanshu2").show();
+	  $(".jscanshu-span").hide();
+	});
+});
+$(document).ready(function(){
+	$(".jscanshu-btn1").click(function(){
+	  $(".policy-jscanshu1").show();
+	  $(".policy-jscanshu2").hide();
+	});
+});
