@@ -135,14 +135,14 @@ html{
 	height:1.44rem;
 }
 .news-title{
-	width:3.95rem;
+	width:4.73rem;
 	height:0.93rem;
 	float:left;
 	margin-top:0.31rem;
 	margin-left:0.17rem;
 }
 .news-title img{
-	width:3.95rem;
+	width:4.73rem;
 	height:0.93rem;
 }
 .news-more{
@@ -166,9 +166,10 @@ html{
 	height:15.36rem;
 }
 .news-whole li{
-	width:14.22rem;
+	width:13.78rem;
 	padding:0.88rem 0;
-	border-top:1px solid #d9d9d9
+	border-top:1px solid #d9d9d9;
+	padding-left:0.45rem;
 }
 .news-pic,.news-pic img{
 	width:5.33rem;
@@ -178,14 +179,13 @@ html{
 	float:left;
 }
 .news-cont{
-	width:8.86rem;
+	width:7.97rem;
 	float:left;
 }
 .news-cont-p1{
 	height:2.4rem;
 	line-height:0.8rem;
 	padding-left:0.37rem;
-	padding-right:0.55rem;
 	margin-bottom:0.4rem;
 }
 .news-cont-p1 a{
@@ -208,7 +208,6 @@ html{
 	height:0.35rem;
 	font-size:0.5rem;
 	padding-left:0.82rem;
-	padding-right:0.55rem;
 	background:url(../images/tick.png) no-repeat left center;
 	background-size:contain;
 }
@@ -226,14 +225,14 @@ html{
 	height:1.44rem;
 }
 .case-title{
-	width:3.68rem;
+	width:4.82rem;
 	height:0.93rem;
 	float:left;
 	margin-top:0.31rem;
 	margin-left:0.17rem;
 }
 .case-title img{
-	width:3.95rem;
+	width:4.82rem;
 	height:0.93rem;
 }
 .case-more{
