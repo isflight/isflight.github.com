@@ -38,7 +38,7 @@ html{
 .nav-list li h3{
 	line-height:1.33rem;
 	margin-left:1.2rem;
-	font-size:0.53rem;
+	font-size:0.58rem;
 }
 /*--nav end--*/
 
@@ -197,7 +197,7 @@ html{
 	padding-left:0.37rem;
 	margin-bottom:0.4rem;
 }
-.news-cont-p1 a{
+.news-cont-p1>a{
 	display:block;
 	font-size:0.58rem;
 	color:#434343;
@@ -284,7 +284,7 @@ html{
 	background:#f4f4f4;
 	padding-bottom:0.22rem;
 }
-.case-cont-nr h5{
+.case-cont-nr>h5{
 	height:2.44rem;
 	text-align:center;
 	font-size:0.58rem;
