@@ -40,7 +40,9 @@ html{
 	margin-left:1.2rem;
 	font-size:0.58rem;
 }
-
+.nav-list li h3 .map-color{
+	color:#e21001;
+}
 /*--nav end--*/
 
 /*--all products start--*/
