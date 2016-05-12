@@ -6,15 +6,15 @@ $(document).ready(function() {
     $(function() {
     	$(window).scroll(function() {
         	if ($(window).scrollTop() > 300) {
-            	$("#back-to-top").fadeIn(1000);
+            	$("#back-to-top").fadeIn(200);
             } else {
-            	$("#back-to-top").fadeOut(1000);
+            	$("#back-to-top").fadeOut(200);
         	}
     	});
     	$("#back-to-top").click(function() {
         	$('body,html').animate({
             	scrollTop: 0
-    		},1000);
+    		},200);
         	return false;
       	});
 	});
