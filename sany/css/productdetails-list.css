@@ -14,6 +14,14 @@ html{
 	height:1.33rem;
 	border-bottom:1px solid #676767;
 	background:#ffffff;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+.nav-bg-dw{
+	width:100%;
+	height:1.33rem;
 }
 .logo,.logo img{
 	width:3.55rem;
@@ -30,8 +38,8 @@ html{
 }
 .nav-list li h3{
 	line-height:1.33rem;
-	margin-left:1rem;
-	font-size:0.53rem;
+	margin-left:1.2rem;
+	font-size:0.58rem;
 }
 
 /*--nav end--*/
@@ -55,7 +63,7 @@ html{
 	height:10.88rem;
 }
 .info-cont h4{
-	font-size:0.57rem;
+	font-size:0.58rem;
 	color:#616161;
 	text-align:center;
 }
@@ -90,7 +98,7 @@ html{
 }
 .quality a{
 	display:inline-block;
-	font-size:0.4rem;
+	font-size:0.5rem;
 	color:#828282;
 	height:0.93rem;
 	line-height:0.93rem;
@@ -120,14 +128,20 @@ html{
 	background:#ffffff;
 	margin-bottom:0.44rem;
 }
+
 .policy-service h3{
-	font-size:0.57rem;
+	font-size:0.58rem;
 	color:#666161;
 	text-align:center;
 	height:1.77rem;
 	line-height:1.77rem;
 }
+.policy-service h3 a{
+	font-size:0.57rem;
+	color:#666161;
+}
 .policy-service h4{
+	font-size:0.55rem;
 	text-align:center;
 	color:#616161;
 	margin-bottom:0.4rem;
@@ -292,7 +306,7 @@ html{
 }
 .news-cont-p1 a{
 	display:block;
-	font-size:0.48rem;
+	font-size:0.57rem;
 	color:#1b1b1b;
 	font-weight:bold;
 }
@@ -312,6 +326,30 @@ html{
 /*--products exhibition end--*/
 
 
+/*--right fixed start--*/
+.right-fiexd{
+	position:fixed;
+	right:0;
+	bottom:0.45rem;
+	width:1.33rem;
+	z-index:88;
+}
+.return-top{
+	width:1.33rem;
+	height:1.33rem;
+	margin-bottom:0.45rem;
+}
+.return-top img{
+	width:1.33rem;
+	height:1.33rem;
+}
+.ask,.ask img{
+	width:1.33rem;
+	height:3.22rem;
+}
+/*--right fixed end--*/
+
+
 /*--footer start--*/
 .footer{
 	width:100%;
@@ -321,7 +359,7 @@ html{
 }
 .footer p{
 	padding:0 0.5rem;
-	font-size:0.35rem;
+	font-size:0.5rem;
 	color:#000000;
 	text-align:center;
 	margin-bottom:0.22rem;

@@ -12,6 +12,15 @@ html{
 	width:100%;
 	height:1.33rem;
 	border-bottom:1px solid #676767;
+	background:#ffffff;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:2;
+}
+.nav-bg-dw{
+	width:100%;
+	height:1.33rem;
 }
 .logo,.logo img{
 	width:3.55rem;
@@ -28,8 +37,8 @@ html{
 }
 .nav-list li h3{
 	line-height:1.33rem;
-	margin-left:1rem;
-	font-size:0.53rem;
+	margin-left:1.2rem;
+	font-size:0.58rem;
 }
 
 /*--nav end--*/
@@ -45,7 +54,7 @@ html{
 }
 .product-name-tit h2{
 	float:left;
-	font-size:0.48rem;
+	font-size:0.55rem;
 	font-weight:bold;
 	color:616161;
 	margin-left:0.82rem;
@@ -54,18 +63,7 @@ html{
 .product-name-tit a{
 	float:left;
 	display:inline-block;
-	font-size:0.48rem;
-	color:#e60012;
-	line-height:1.37rem;
-	margin-left:4.02rem;
-	background:url(../images/top-horn.png) no-repeat right center;
-	background-size:0.4rem 0.31rem;
-	padding-right:0.66rem;
-}
-.product-name-tit a.on{
-	float:left;
-	display:inline-block;
-	font-size:0.48rem;
+	font-size:0.55rem;
 	color:#e60012;
 	line-height:1.37rem;
 	margin-left:4.02rem;
@@ -73,8 +71,20 @@ html{
 	background-size:0.4rem 0.31rem;
 	padding-right:0.66rem;
 }
+.product-name-tit a.on{
+	float:left;
+	display:inline-block;
+	font-size:0.55rem;
+	color:#e60012;
+	line-height:1.37rem;
+	margin-left:4.02rem;
+	background:url(../images/top-horn.png) no-repeat right center;
+	background-size:0.4rem 0.31rem;
+	padding-right:0.66rem;
+}
 
 .product-name-introduce{
+	display:none;
 	width:100%;
 }
 .product-list-name{
@@ -170,6 +180,31 @@ html{
 }
 /*--products exhibition end--*/
 
+
+/*--right fixed start--*/
+.right-fiexd{
+	position:fixed;
+	right:0;
+	bottom:0.45rem;
+	width:1.33rem;
+	z-index:88;
+}
+.return-top{
+	width:1.33rem;
+	height:1.33rem;
+	margin-bottom:0.45rem;
+}
+.return-top img{
+	width:1.33rem;
+	height:1.33rem;
+}
+.ask,.ask img{
+	width:1.33rem;
+	height:3.22rem;
+}
+/*--right fixed end--*/
+
+
 /*--footer start--*/
 .footer{
 	width:100%;
@@ -179,7 +214,7 @@ html{
 }
 .footer p{
 	padding:0 0.5rem;
-	font-size:0.35rem;
+	font-size:0.5rem;
 	color:#000000;
 	text-align:center;
 	margin-bottom:0.22rem;
