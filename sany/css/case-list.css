@@ -29,6 +29,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:block;
+}
 .nav-list{
 	float:left;
 }
@@ -177,7 +180,7 @@ html{
 	padding-right:0.55rem;
 	margin-bottom:0.4rem;
 }
-.news-cont-p1 a{
+.news-cont-p1{
 	display:block;
 	font-size:0.55rem;
 	color:#1b1b1b;

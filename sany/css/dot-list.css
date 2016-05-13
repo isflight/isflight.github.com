@@ -29,6 +29,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:block;
+}
 .nav-list{
 	float:left;
 }
@@ -69,7 +72,7 @@ html{
 	float:right;
 	font-size:0.58rem;
 	color:#e60012;
-	background:url(../images/dress-iphone.png) no-repeat right center;
+	background:url(../images/dress-iphone.jpg) no-repeat right center;
 	background-size:0.88rem 0.88rem;
 	padding-right:1.24rem;
 }

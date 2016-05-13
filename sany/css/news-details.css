@@ -30,6 +30,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:block;
+}
 .nav-list{
 	float:left;
 }
@@ -176,7 +179,7 @@ html{
 }
 .news-list h3{
 	width:13.88rem;
-	font-size:0.57rem;
+	font-size:0.60rem;
 	height:1.77rem;
 	text-align:center;
 	color:#616161;
@@ -202,7 +205,7 @@ html{
 	float:left;
 }
 .news-cont h5{
-	font-size:0.53rem;
+	font-size:0.6rem;
 	color:#616161;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -214,10 +217,7 @@ html{
 	height:1.9rem;
 	line-height:0.8rem;
 	padding-left:0.37rem;
-}
-.news-cont-p1 a{
-	display:block;
-	font-size:0.48rem;
+	font-size:0.57rem;
 	color:#808080;
 }
 

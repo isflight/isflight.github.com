@@ -29,6 +29,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:inline-block;
+}
 .nav-list{
 	float:left;
 }
@@ -115,6 +118,11 @@ html{
 	margin:0 auto;
 	width:13.88rem;
 }
+.product-ul a{
+	font-size:0.58rem;
+	float:left;
+	width:3.47rem;
+}
 .product-ul li{
 	float:left;
 	width:3.47rem;
@@ -126,7 +134,7 @@ html{
 	width:1.55rem;
 	height:1.55rem;
 }
-.span-name a{
+.span-name{
 	text-align:center;
 	display:block;
 	font-size:0.58rem;

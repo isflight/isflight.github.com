@@ -5,12 +5,14 @@
 <title>无标题文档</title>
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/parts.css" />
+<link rel="stylesheet" href="css/swiper.min.css" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <script src="js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="js/base-common.js"></script>
 <script type="text/javascript" src="js/parts.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="js/public.js"></script>
 </head>
 
@@ -54,7 +56,39 @@
 <!--product info start-->
 <div class="info">
 	<div class="info-pic">
-    	<img src="images/chan-car.jpg" />
+    	<div class="swiper-container">
+        	<div class="swiper-wrapper">
+            	<div class="swiper-slide">
+    				<img src="images/chan-car.jpg" />
+                </div>
+                <div class="swiper-slide">
+    				<img src="images/chan-car.jpg" />
+                </div>
+                <div class="swiper-slide">
+    				<img src="images/chan-car.jpg" />
+                </div>
+                <div class="swiper-slide">
+    				<img src="images/chan-car.jpg" />
+                </div>
+                <div class="swiper-slide">
+    				<img src="images/chan-car.jpg" />
+                </div>
+                <div class="swiper-slide">
+    				<img src="images/chan-car.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        	<script>
+		   		//轮播图
+			   var swiper = new Swiper('.swiper-container', {
+				   pagination: '.swiper-pagination',
+				   paginationClickable: true,
+				   autoplay : 5000,
+				   autoplayDisableOnInteraction:false,
+				   loop:true
+			   });
+		   </script>
     </div>
     <div class="info-cont">
     	<h4>SYM5163THBDS 23V8 V8系列混凝土泵车</h4>

@@ -29,6 +29,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:block;
+}
 .nav-list{
 	float:left;
 }
@@ -124,6 +127,7 @@ html{
 	width:14.66rem;
 	margin:0 auto;
 	padding-top:0.44rem;
+	padding-bottom:0.44rem;
 }
 .product-exhibition-list li{
 	width:14.66rem;
@@ -133,9 +137,7 @@ html{
 	margin-bottom:0.44rem;
 	overflow:hidden;
 }
-.product-exhibition-list .clear-margin{
-	margin:0;
-}
+
 .product-exhibition-left,.product-exhibition-left img{
 	width:4.48rem;
 	height:2.71rem;
@@ -211,7 +213,6 @@ html{
 /*--footer start--*/
 .footer{
 	width:100%;
-	border-top:0.44rem solid #c7c7c7;
 	background:#d9d9d9;
 	padding:1rem 0;
 }

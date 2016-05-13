@@ -30,6 +30,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:block;
+}
 .nav-list{
 	float:left;
 }
@@ -52,18 +55,41 @@ html{
 
 /*--product info start--*/
 .info{
-	width:14.66rem;
+	width:92.2%;
 	margin:0 auto;
-	border-radius:0.22rem;
+	border-radius:0.3rem;
 	overflow:hidden;
 	margin-bottom:0.44rem;
 	margin-top:0.44rem;
 	background:#ffffff;
+	position:relative;
+	padding-top:0.4rem;
 }
-.info-pic,.info-pic img{
-	width:14.66rem;
+
+.info-pic{
+	margin:0 auto;
+	width:99%;
 	height:10.88rem;
 }
+.info-pic img{
+	width:99%;
+	height:10.88rem !important;
+	background-size:contain;
+}
+.info-pic .swiper-container{
+	width:99.5%;
+	height:10.88rem !important;
+}
+.info-pic .swiper-slide{
+	width:99%;
+	height:10.88rem !important;
+}
+.info-pic .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	width:99%;
+}
+
+
+
 .info-cont h4{
 	font-size:0.57rem;
 	color:#616161;

@@ -30,6 +30,9 @@ html{
 .logo{
 	float:left;
 }
+.logo a{
+	display:block;
+}
 .nav-list{
 	float:left;
 }
@@ -140,13 +143,10 @@ html{
 	padding-left:0.37rem;
 	padding-right:0.55rem;
 	margin-bottom:0.4rem;
-}
-.news-cont-p1 a{
-	display:block;
-	height:2.4rem;
-	font-size:0.5rem;
+	font-size:0.58rem;
 	color:#808080;
 }
+
 
 .news-cont-p2{
 	text-align:right;
