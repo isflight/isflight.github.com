@@ -87,7 +87,9 @@ html{
 .info-pic .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
 	width:99%;
 }
-
+.info-pic .swiper-pagination-bullet-active{
+	background:red;
+}
 
 
 .info-cont h4{
